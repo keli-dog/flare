@@ -5,6 +5,7 @@ Created on Sat Mar 27 16:49:38 2021
 
 @author: soyeonmin
 """
+import os
 import pickle
 import json
 import alfred_utils.gen.constants as constants
@@ -21,23 +22,24 @@ task_type_dict = {2: 'pick_and_place_simple',
 
 
 def read_test_dict(test, appended, unseen):
+    mmp_dir = os.environ.get('MMP_RESULTS_DIR', 'MMP_results')
     if test:
         if appended:
             if unseen:
-                return json.load(open('MMP_results/tests_unseen.json', 'rb'))
+                return json.load(open(os.path.join(mmp_dir, 'tests_unseen.json'), 'rb'))
             else:
-                return json.load(open("MMP_results/tests_seen.json", "rb"))
+                return json.load(open(os.path.join(mmp_dir, "tests_seen.json"), "rb"))
         else:
             if unseen:
-                return json.load(open("MMP_results/tests_unseen_no_append.json", "rb"))
+                return json.load(open(os.path.join(mmp_dir, "tests_unseen_no_append.json"), "rb"))
             else:
-                return json.load(open('MMP_results/tests_seen_no_append.json', 'rb'))
+                return json.load(open(os.path.join(mmp_dir, 'tests_seen_no_append.json'), 'rb'))
     else:
         if appended:
             if unseen:
-                return json.load(open("MMP_results/valid_unseen.json", "rb"))
+                return json.load(open(os.path.join(mmp_dir, "valid_unseen.json"), "rb"))
             else:
-                return json.load(open('MMP_results/valid_seen.json', 'rb'))
+                return json.load(open(os.path.join(mmp_dir, 'valid_seen.json'), 'rb'))
         else:
             if unseen:
                 raise NotImplementedError("Not Implemented.")

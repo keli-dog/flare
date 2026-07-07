@@ -25,20 +25,43 @@ python retriever.py
 ```
 This will create `few_examples_from_song/few-song-{sp}_retrieved_keys_clip_Img1_Txt1_panoramic.json` which contains retrieved in-context examples for each tasks.
 
-## Generate plan with GPT-4
-**Modify your openai API key** in `generate_plans.py`.
-Then run `generate_plans.py` to generate plans with GPT-4
+## Generate plan with LLM (Qwen / GPT-4)
+
+Install the OpenAI Python SDK (used in OpenAI-compatible mode):
 ```
-python generate_plans.py --dn dn
+pip install openai
 ```
 
-Finally, run `postprocess.py` to postprocess llm generated plans to ALFRED executable action sequences.
+Set API credentials via environment variables (do **not** hardcode keys in source):
 ```
-python postprocess.py --dn dn
+export LLM_API_KEY="your-api-key"
+export LLM_BASE_URL="https://llm-1316nm7shgmikwyq.cn-beijing.maas.aliyuncs.com/compatible-mode/v1"
+export LLM_MODEL="qwen3.7-plus"
 ```
 
-This will create `.json` files in `planner_results/dn`.
-You can use them by editting `read_test_dict` in `models/instructions_processed_LP/ALFRED_task_helper.py` to use your files.
+Generate plans:
+```
+cd planner
+python generate_plans.py --dn qwen3.7-plus
+# or test one split first:
+python generate_plans.py --dn qwen3.7-plus --split valid_unseen
+```
+
+Postprocess LLM output into ALFRED executable action sequences:
+```
+python postprocess.py --dn qwen3.7-plus --output-mmp-dir ../MMP_results_qwen
+```
+
+This writes `planner_results/qwen3.7-plus/turbo-bias-{split}_result.json`.
+With `--output-mmp-dir`, it also writes `MMP_results_qwen/{split}.json`.
+
+Use your generated plans at inference time:
+```
+export MMP_RESULTS_DIR=MMP_results_qwen
+bash eval.sh tests_unseen 0 64 flare
+```
+
+For original GPT-4 generation, pass `--use-gpt4-bias` and point `--base-url` / `--model` to OpenAI.
 ## Hardware 
 Tested on:
 - **GPU** - RTX A6000

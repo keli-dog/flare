@@ -3,8 +3,11 @@ from argparse import ArgumentDefaultsHelpFormatter, ArgumentParser
 
 
 
-def main(sp, destination):
-    save_path = f'planner_results/{destination}/turbo-bias-{sp}_result.json'
+PLANNER_DIR = os.path.dirname(os.path.abspath(__file__))
+
+
+def main(sp, destination, output_mmp_dir=None):
+    save_path = os.path.join(PLANNER_DIR, f'planner_results/{destination}/turbo-bias-{sp}_result.json')
     result = json.load(open(save_path))
     for k in result.keys():    
         result[k]['triplet'][0] = result[k]['triplet'][0][1:]
@@ -157,13 +160,33 @@ def main(sp, destination):
     with open(save_path, 'w') as f:
         json.dump(result, f, indent=4)
 
+    if output_mmp_dir:
+        os.makedirs(output_mmp_dir, exist_ok=True)
+        mmp_path = os.path.join(output_mmp_dir, f'{sp}.json')
+        with open(mmp_path, 'w') as f:
+            json.dump(result, f, indent=4)
+        print(f'Wrote {mmp_path}')
+
 if __name__ == "__main__":
     # parser
     parser = ArgumentParser(formatter_class=ArgumentDefaultsHelpFormatter)
 
     # settings
-    parser.add_argument('--dn', help='desination', default='all_examples', type=str)
+    parser.add_argument('--dn', help='desination', default='qwen3.7-plus', type=str)
+    parser.add_argument(
+        '--output-mmp-dir',
+        help='Also write postprocessed plans as MMP_results/{split}.json',
+        default=None,
+        type=str,
+    )
+    parser.add_argument(
+        '--split',
+        help='Run a single split only (default: all four splits)',
+        default=None,
+        choices=['tests_seen', 'tests_unseen', 'valid_seen', 'valid_unseen'],
+    )
     args = parser.parse_args()
 
-    for split in ['tests_seen', 'tests_unseen', 'valid_seen', 'valid_unseen']:
-        main(split, args.dn)
+    splits = [args.split] if args.split else ['tests_seen', 'tests_unseen', 'valid_seen', 'valid_unseen']
+    for split in splits:
+        main(split, args.dn, output_mmp_dir=args.output_mmp_dir)
