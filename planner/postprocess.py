@@ -9,9 +9,18 @@ PLANNER_DIR = os.path.dirname(os.path.abspath(__file__))
 def main(sp, destination, output_mmp_dir=None):
     save_path = os.path.join(PLANNER_DIR, f'planner_results/{destination}/turbo-bias-{sp}_result.json')
     result = json.load(open(save_path))
-    for k in result.keys():    
-        result[k]['triplet'][0] = result[k]['triplet'][0][1:]
-        
+    for k in result.keys():
+        s = result[k]['triplet'][0].strip()
+        # GPT-4 with logit_bias may prepend one extra char; Qwen output does not.
+        valid_starts = (
+            'PickupObject', 'PutObject', 'ToggleObject', 'CleanObject',
+            'HeatObject', 'CoolObject', 'SliceObject',
+        )
+        if not any(s.startswith(a) for a in valid_starts):
+            s = s[1:].strip()
+        if s.startswith('ickupObject'):
+            s = 'P' + s
+        result[k]['triplet'][0] = s
 
     for k in result.keys():    
         tmp = []
