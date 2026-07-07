@@ -4,6 +4,20 @@ import pickle
 import numpy as np
 from sentence_transformers import SentenceTransformer
 
+_BERT_MODEL = None
+_BERT_MODEL_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'bert-base-nli-mean-tokens')
+
+
+def _get_bert_model():
+    global _BERT_MODEL
+    if _BERT_MODEL is None:
+        if os.path.isdir(_BERT_MODEL_DIR):
+            _BERT_MODEL = SentenceTransformer(_BERT_MODEL_DIR)
+        else:
+            _BERT_MODEL = SentenceTransformer('bert-base-nli-mean-tokens')
+    return _BERT_MODEL
+
+
 def retrieve(candidate, objects_in_scene, ispickupable):
 
     def calculate_cosine_similarity(embedding_vector, dictionary_vectors):
@@ -19,7 +33,7 @@ def retrieve(candidate, objects_in_scene, ispickupable):
             most_similar_keys.append(list(embedding_dictionary.keys())[idx])
         return most_similar_keys
 
-    model = SentenceTransformer('bert-base-nli-mean-tokens')
+    model = _get_bert_model()
 
     if ispickupable:
         train_dict = pickle.load(open('models/BERT_retriever/pickupable_NoLamp_emb.p', 'rb'))
