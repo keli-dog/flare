@@ -5,44 +5,72 @@ from argparse import ArgumentDefaultsHelpFormatter, ArgumentParser
 
 PLANNER_DIR = os.path.dirname(os.path.abspath(__file__))
 
+VALID_ACTIONS = (    'PickupObject', 'PutObject', 'ToggleObject', 'CleanObject',
+    'HeatObject', 'CoolObject', 'SliceObject',
+)
+
+
+def fix_action_name(action):
+    if action.startswith('ickupObject'):
+        return 'P' + action
+    return action
+
+
+def normalize_llm_plan_string(raw):
+    s = raw.strip()
+    if not any(s.startswith(a) for a in VALID_ACTIONS):
+        s = s[1:].strip()
+    if s.startswith('ickupObject'):
+        s = 'P' + s
+    return s
+
+
+def parse_plan_to_triplet(plan_entry):
+    triplet = plan_entry.get('triplet', [])
+    if not triplet:
+        return []
+
+    first = triplet[0]
+    if isinstance(first, list):
+        parsed = []
+        for item in triplet:
+            if isinstance(item, list) and len(item) >= 3:
+                parsed.append([fix_action_name(item[0]), item[1], item[2]])
+        return parsed
+
+    if isinstance(first, str):
+        s = normalize_llm_plan_string(first)
+        tmp = []
+        parts = s.split(',')
+        for i in range(len(parts)):
+            if 'Object' in parts[i]:
+                action = fix_action_name(parts[i].strip())
+                obj = parts[i + 1].strip()
+                try:
+                    recep = parts[i + 2].strip()
+                except IndexError:
+                    recep = "0"
+                tmp.append([action, obj, recep])
+        return tmp
+
+    return []
+
 
 def main(sp, destination, output_mmp_dir=None):
     save_path = os.path.join(PLANNER_DIR, f'planner_results/{destination}/turbo-bias-{sp}_result.json')
     result = json.load(open(save_path))
+
     for k in result.keys():
-        s = result[k]['triplet'][0].strip()
-        # GPT-4 with logit_bias may prepend one extra char; Qwen output does not.
-        valid_starts = (
-            'PickupObject', 'PutObject', 'ToggleObject', 'CleanObject',
-            'HeatObject', 'CoolObject', 'SliceObject',
-        )
-        if not any(s.startswith(a) for a in valid_starts):
-            s = s[1:].strip()
-        if s.startswith('ickupObject'):
-            s = 'P' + s
-        result[k]['triplet'][0] = s
-
-    for k in result.keys():    
-        tmp = []
-        for i in range(len(result[k]['triplet'][0].split(','))):
-            if 'Object' in result[k]['triplet'][0].split(',')[i]:
-                action = result[k]['triplet'][0].split(',')[i].strip()
-                obj = result[k]['triplet'][0].split(',')[i+1].strip()
-                try:
-                    recep = result[k]['triplet'][0].split(',')[i+2].strip()
-                except:
-                    recep = "0"
-                tmp.append([action, obj, recep])
-        result[k]['triplet_beforeDC'] = tmp
-        result[k]['triplet'] = tmp
-
+        parsed = parse_plan_to_triplet(result[k])
+        result[k]['triplet_beforeDC'] = parsed
+        result[k]['triplet'] = parsed
 
     OPENABLE = ['Fridge', 'Cabinet', 'Microwave', 'Drawer', 'Safe']
-    for k in result.keys():    
+    for k in result.keys():
         tmp_actions = []
         tmp_classes = []
         tmp_idxs = []
-        skipped_cnt=0
+        skipped_cnt = 0
         DC_indices = []
         for i in range(len(result[k]['triplet_beforeDC'])):
             action = result[k]['triplet_beforeDC'][i][0]
