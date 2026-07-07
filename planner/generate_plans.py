@@ -57,7 +57,7 @@ Next plan: """
     return text
 
 
-def main(sp, destination, client, model, use_gpt4_bias=False, rate_limit_batch=100, rate_limit_sleep=5):
+def main(sp, destination, client, model, use_gpt4_bias=False, rate_limit_batch=100, rate_limit_sleep=5, from_idx=0, to_idx=None):
     bias = None
     if use_gpt4_bias:
         with open(os.path.join(PLANNER_DIR, "bias_gpt4.json")) as f:
@@ -78,9 +78,15 @@ def main(sp, destination, client, model, use_gpt4_bias=False, rate_limit_batch=1
     os.makedirs(output_dir, exist_ok=True)
     output_path = os.path.join(output_dir, f"turbo-bias-{sp}_result.json")
 
+    tasks = splits[sp][from_idx:to_idx]
+    print(f"Running {sp}: tasks [{from_idx}:{to_idx if to_idx is not None else len(splits[sp])}] ({len(tasks)} entries)")
+
     result = defaultdict(dict)
+    if os.path.isfile(output_path):
+        result = defaultdict(dict, json.load(open(output_path)))
+
     cnt = 0
-    for task in tqdm(splits[sp]):
+    for task in tqdm(tasks):
         cnt += 1
         if cnt > rate_limit_batch:
             time.sleep(rate_limit_sleep)
@@ -155,6 +161,8 @@ if __name__ == "__main__":
         help="Use GPT-4 logit_bias from bias_gpt4.json (OpenAI only)",
         action="store_true",
     )
+    parser.add_argument("--from_idx", type=int, default=0, help="Start index in split list")
+    parser.add_argument("--to_idx", type=int, default=None, help="End index in split list (exclusive)")
     parser.add_argument("--rate-limit-batch", type=int, default=100)
     parser.add_argument("--rate-limit-sleep", type=int, default=5)
     args = parser.parse_args()
@@ -170,4 +178,6 @@ if __name__ == "__main__":
             use_gpt4_bias=args.use_gpt4_bias,
             rate_limit_batch=args.rate_limit_batch,
             rate_limit_sleep=args.rate_limit_sleep,
+            from_idx=args.from_idx,
+            to_idx=args.to_idx,
         )
