@@ -1,0 +1,11 @@
+# Local BERT retriever model (download via ModelScope, do not commit)
+models/BERT_retriever/bert-base-nli-mean-tokens/
+
+# Planner / eval outputs
+planner/planner_results/
+MMP_results_qwen/
+results/
+
+# Python
+__pycache__/
+*.pyc
