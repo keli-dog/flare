@@ -1,12 +1,20 @@
-import json
-import statistics
+#!/usr/bin/env python3
+"""Analyze valid_seen task difficulty vs MMP plan complexity (offline stats).
+
+Example:
+  export ALFRED_ROOT=/path/to/alfred
+  python scripts/analyze_split_difficulty.py
+"""
+
+import argparse
 import collections
+import json
+import os
+import statistics
+import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
-SPLIT_PATH = Path(
-    r"C:\Users\gengz\.cursor\projects\c-Users-gengz-Desktop-Flare\agent-tools\51b29876-de81-4288-9682-343192f7d771.txt"
-)
+from _paths import REPO_ROOT
 
 COMPLEX_TYPES = {
     "pick_heat_then_place_in_recep",
@@ -17,11 +25,19 @@ COMPLEX_TYPES = {
 }
 
 
-def load_records():
-    split = json.load(open(SPLIT_PATH, encoding="utf-8"))
+def resolve_split_path(alfred_root: str) -> Path:
+    for name in ("oct21.json", "oct24.json"):
+        path = Path(alfred_root) / "data" / "splits" / name
+        if path.is_file():
+            return path
+    raise FileNotFoundError(f"No oct21/oct24 split under {alfred_root}/data/splits/")
+
+
+def load_records(alfred_root: str):
+    split = json.load(open(resolve_split_path(alfred_root), encoding="utf-8"))
     tasks = split["valid_seen"]
-    mmp = json.load(open(ROOT / "MMP_results" / "valid_seen.json", encoding="utf-8"))
-    langs = json.load(open(ROOT / "planner" / "valid_seen_langs.json", encoding="utf-8"))
+    mmp = json.load(open(REPO_ROOT / "MMP_results" / "valid_seen.json", encoding="utf-8"))
+    langs = json.load(open(REPO_ROOT / "planner" / "valid_seen_langs.json", encoding="utf-8"))
 
     records = []
     missing = 0
@@ -90,7 +106,15 @@ def summarize(name, recs):
 
 
 def main():
-    records = load_records()
+    parser = argparse.ArgumentParser(description="Analyze valid_seen difficulty vs MMP plans")
+    parser.add_argument("--alfred_root", default=os.environ.get("ALFRED_ROOT", ""))
+    args = parser.parse_args()
+
+    if not args.alfred_root:
+        print("Set ALFRED_ROOT or pass --alfred_root", file=sys.stderr)
+        sys.exit(1)
+
+    records = load_records(args.alfred_root)
 
     summarize("First 32 [0,32)", records[:32])
     summarize("Next 32 [32,64)", records[32:64])
@@ -137,7 +161,6 @@ def main():
         ),
     )
 
-    # sliding window avg complexity
     window = 32
     scores = []
     for i in range(0, len(records) - window + 1, 16):

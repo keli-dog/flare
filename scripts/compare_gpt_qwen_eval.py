@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Compare GPT-4 (MMP_results) vs Qwen (MMP_results_qwen) eval on the same split slice."""
+"""Compare GPT-4 (MMP_results) vs Qwen (MMP_results_qwen) eval on the same split slice.
+
+Example:
+  export ALFRED_ROOT=/path/to/alfred
+  python scripts/compare_gpt_qwen_eval.py --split valid_seen --from_idx 0 --to_idx 32
+"""
 
 import argparse
 import json
@@ -8,6 +13,8 @@ import pickle
 import subprocess
 import sys
 from datetime import datetime
+
+from _paths import REPO_ROOT
 
 
 def load_split_tasks(alfred_root, split, from_idx, to_idx):
@@ -257,7 +264,7 @@ def main():
     parser.add_argument("--split", default="valid_seen")
     parser.add_argument("--from_idx", type=int, default=0)
     parser.add_argument("--to_idx", type=int, default=32)
-    parser.add_argument("--repo_root", default=os.path.dirname(os.path.abspath(__file__)))
+    parser.add_argument("--repo_root", default=REPO_ROOT)
     parser.add_argument("--alfred_root", default=os.environ.get("ALFRED_ROOT", ""))
     parser.add_argument("--gpt_mmp_dir", default="MMP_results")
     parser.add_argument("--qwen_mmp_dir", default="MMP_results_qwen")

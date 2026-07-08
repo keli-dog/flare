@@ -11,7 +11,7 @@ Requires ALFRED_ROOT pointing to a local alfred clone with data/ installed.
 
 Example (server):
   export ALFRED_ROOT=/media/ubuntu/Student/gengzeyu/flare/alfred
-  python compare_plan_gt.py --split valid_seen --from_idx 0 --to_idx 32 \\
+  python scripts/compare_plan_gt.py --split valid_seen --from_idx 0 --to_idx 32 \\
       --mmp-dirs MMP_results MMP_results_qwen --labels GPT-4 Qwen
 """
 
@@ -21,7 +21,8 @@ import os
 import sys
 from datetime import datetime
 
-REPO_ROOT = os.path.dirname(os.path.abspath(__file__))
+from _paths import REPO_ROOT
+
 sys.path.insert(0, REPO_ROOT)
 
 from planner.postprocess import parse_plan_to_triplet  # noqa: E402
