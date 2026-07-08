@@ -1,0 +1,712 @@
+
+===================================================
+episode # is 0
+step #:  0 , list of actions is  [['Bowl', 'PickupObject', 'Bowl', '0', 0], ['DeskLamp', 'ToggleObjectOn', 'DeskLamp', '0', 1]]
+step #:  2 , total cat2idx is  {'Knife': 0, 'SinkBasin': 1, 'ArmChair': 2, 'BathtubBasin': 3, 'Bed': 4, 'Cabinet': 5, 'Cart': 6, 'CoffeeMachine': 7, 'CoffeeTable': 8, 'CounterTop': 9, 'Desk': 10, 'DiningTable': 11, 'Drawer': 12, 'Dresser': 13, 'Fridge': 14, 'GarbageCan': 15, 'Microwave': 16, 'Ottoman': 17, 'Safe': 18, 'Shelf': 19, 'SideTable': 20, 'Sofa': 21, 'StoveBurner': 22, 'TVStand': 23, 'Toilet': 24, 'DeskLamp': 25, 'Bowl': 26, '0': 27, 'ToiletPaperHanger': 28, 'SoapBar': 29, 'Newspaper': 30, 'Watch': 31, 'Ladle': 32, 'Kettle': 33, 'Lettuce': 34, 'Pan': 35, 'Pencil': 36, 'TissueBox': 37, 'Sink': 38, 'Plunger': 39, 'Cloth': 40, 'Cup': 41, 'Faucet': 42, 'FloorLamp': 43, 'WineBottle': 44, 'Book': 45, 'CellPhone': 46, 'BaseballBat': 47, 'RemoteControl': 48, 'Plate': 49, 'PotatoSliced': 50, 'ToiletPaper': 51, 'PepperShaker': 52, 'Fork': 53, 'BasketBall': 54, 'DishSponge': 55, 'SaltShaker': 56, 'Box': 57, 'KeyChain': 58, 'Mug': 59, 'Vase': 60, 'Pen': 61, 'TennisRacket': 62, 'BreadSliced': 63, 'Potato': 64, 'Spatula': 65, 'Spoon': 66, 'TomatoSliced': 67, 'AlarmClock': 68, 'AppleSliced': 69, 'Glassbottle': 70, 'WateringCan': 71, 'SprayBottle': 72, 'Pot': 73, 'Pillow': 74, 'Apple': 75, 'ButterKnife': 76, 'Statue': 77, 'Candle': 78, 'CD': 79, 'Tomato': 80, 'CreditCard': 81, 'Bathtub': 82, 'Bread': 83, 'LettuceSliced': 84, 'Laptop': 85, 'SoapBottle': 86, 'HandTowel': 87, 'Egg': 88, 'None': 89}
+step #:  2 , None of that
+step #:  2 , planner broken is  False
+step #:  3 , obj type for mask is : Bowl
+step #:  3 , Tried to lookdownupleft
+step #:  6 , Tried to lookdownupleft
+step #:  10 , None of that
+step #:  10 , planner broken is  False
+step #:  11 , obj type for mask is : Bowl
+step #:  11 , Tried to lookdownupleft
+step #:  14 , Tried to lookdownupleft
+step #:  18 , None of that
+step #:  18 , planner broken is  False
+step #:  19 , obj type for mask is : Bowl
+step #:  19 , Tried to lookdownupleft
+step #:  22 , Tried to lookdownupleft
+step #:  26 , None of that
+step #:  26 , planner broken is  False
+step #:  27 , obj type for mask is : Bowl
+step #:  27 , Tried to lookdownupleft
+step #:  30 , Tried to lookdownupleft
+step #:  34 , None of that
+step #:  34 , planner broken is  False
+step #:  35 , obj type for mask is : Bowl
+step #:  35 , None of that
+step #:  35 , planner broken is  False
+step #:  36 , obj type for mask is : Bowl
+step #:  36 , None of that
+step #:  36 , planner broken is  False
+step #:  37 , obj type for mask is : Bowl
+step #:  37 , None of that
+step #:  37 , planner broken is  False
+step #:  38 , obj type for mask is : Bowl
+step #:  38 , None of that
+step #:  38 , planner broken is  False
+step #:  39 , obj type for mask is : Bowl
+step #:  39 , None of that
+step #:  39 , planner broken is  False
+step #:  40 , obj type for mask is : Bowl
+step #:  40 , None of that
+step #:  40 , planner broken is  False
+step #:  41 , obj type for mask is : Bowl
+step #:  41 , None of that
+step #:  41 , planner broken is  False
+step #:  42 , obj type for mask is : Bowl
+step #:  42 , None of that
+step #:  42 , planner broken is  False
+step #:  43 , obj type for mask is : Bowl
+step #:  43 , None of that
+step #:  43 , planner broken is  False
+step #:  44 , obj type for mask is : Bowl
+step #:  44 , None of that
+step #:  44 , planner broken is  False
+step #:  45 , obj type for mask is : Bowl
+step #:  45 , None of that
+step #:  45 , planner broken is  False
+step #:  46 , obj type for mask is : Bowl
+step #:  46 , None of that
+step #:  46 , planner broken is  False
+step #:  47 , obj type for mask is : Bowl
+step #:  47 , newly goal set
+step #:  47 , None of that
+step #:  47 , planner broken is  False
+step #:  48 , obj type for mask is : Bowl
+step #:  48 , None of that
+step #:  48 , planner broken is  False
+step #:  49 , obj type for mask is : Bowl
+step #:  49 , None of that
+step #:  49 , planner broken is  False
+step #:  50 , obj type for mask is : Bowl
+step #:  50 , None of that
+step #:  50 , planner broken is  False
+step #:  51 , obj type for mask is : Bowl
+step #:  51 , None of that
+step #:  51 , planner broken is  False
+step #:  52 , obj type for mask is : Bowl
+step #:  52 , None of that
+step #:  52 , planner broken is  False
+step #:  53 , obj type for mask is : Bowl
+step #:  53 , None of that
+step #:  53 , planner broken is  False
+step #:  54 , obj type for mask is : Bowl
+step #:  54 , step:  54 , err is  CoffeeTable_1b732e39 is blocking Agent 0 from moving 0
+step #:  54 , action taken in step  54 : 
+step #:  54 , None of that
+step #:  54 , planner broken is  False
+step #:  55 , obj type for mask is : Bowl
+step #:  55 , None of that
+step #:  55 , planner broken is  False
+step #:  56 , obj type for mask is : Bowl
+step #:  56 , None of that
+step #:  56 , planner broken is  False
+step #:  57 , obj type for mask is : Bowl
+step #:  57 , None of that
+step #:  57 , planner broken is  False
+step #:  58 , obj type for mask is : Bowl
+step #:  58 , None of that
+step #:  58 , planner broken is  False
+step #:  59 , obj type for mask is : Bowl
+step #:  59 , None of that
+step #:  59 , planner broken is  False
+step #:  60 , obj type for mask is : Bowl
+step #:  60 , None of that
+step #:  60 , planner broken is  False
+step #:  61 , obj type for mask is : Bowl
+step #:  61 , None of that
+step #:  61 , planner broken is  False
+step #:  62 , obj type for mask is : Bowl
+step #:  62 , None of that
+step #:  62 , planner broken is  False
+step #:  63 , obj type for mask is : Bowl
+step #:  63 , None of that
+step #:  63 , planner broken is  False
+step #:  64 , obj type for mask is : Bowl
+step #:  64 , None of that
+step #:  64 , planner broken is  False
+step #:  65 , obj type for mask is : Bowl
+step #:  65 , None of that
+step #:  65 , planner broken is  False
+step #:  66 , obj type for mask is : Bowl
+step #:  66 , None of that
+step #:  66 , planner broken is  False
+step #:  67 , obj type for mask is : Bowl
+step #:  67 , None of that
+step #:  67 , planner broken is  False
+step #:  68 , obj type for mask is : Bowl
+step #:  68 , None of that
+step #:  68 , planner broken is  False
+step #:  69 , obj type for mask is : Bowl
+step #:  69 , None of that
+step #:  69 , planner broken is  False
+step #:  70 , obj type for mask is : Bowl
+step #:  70 , Tried to lookdownupleft
+step #:  73 , Tried to lookdownupleft
+step #:  77 , newly goal set
+step #:  77 , None of that
+step #:  77 , planner broken is  False
+step #:  78 , obj type for mask is : Bowl
+step #:  78 , None of that
+step #:  78 , planner broken is  False
+step #:  79 , obj type for mask is : Bowl
+step #:  79 , None of that
+step #:  79 , planner broken is  False
+step #:  80 , obj type for mask is : Bowl
+step #:  80 , None of that
+step #:  80 , planner broken is  False
+step #:  81 , obj type for mask is : Bowl
+step #:  81 , None of that
+step #:  81 , planner broken is  False
+step #:  82 , obj type for mask is : Bowl
+step #:  82 , None of that
+step #:  82 , planner broken is  False
+step #:  83 , obj type for mask is : Bowl
+step #:  83 , None of that
+step #:  83 , planner broken is  False
+step #:  84 , obj type for mask is : Bowl
+step #:  84 , None of that
+step #:  84 , planner broken is  False
+step #:  85 , obj type for mask is : Bowl
+step #:  85 , None of that
+step #:  85 , planner broken is  False
+step #:  86 , obj type for mask is : Bowl
+step #:  86 , None of that
+step #:  86 , planner broken is  False
+step #:  87 , obj type for mask is : Bowl
+step #:  87 , step:  87 , err is  Chair_df4c85aa is blocking Agent 0 from moving 0
+step #:  87 , action taken in step  87 : 
+step #:  87 , None of that
+step #:  87 , planner broken is  False
+step #:  88 , obj type for mask is : Bowl
+step #:  88 , None of that
+step #:  88 , planner broken is  False
+step #:  89 , obj type for mask is : Bowl
+step #:  89 , None of that
+step #:  89 , planner broken is  False
+step #:  90 , obj type for mask is : Bowl
+step #:  90 , None of that
+step #:  90 , planner broken is  False
+step #:  91 , obj type for mask is : Bowl
+step #:  91 , None of that
+step #:  91 , planner broken is  False
+step #:  92 , obj type for mask is : Bowl
+step #:  92 , None of that
+step #:  92 , planner broken is  False
+step #:  93 , obj type for mask is : Bowl
+step #:  93 , None of that
+step #:  93 , planner broken is  False
+step #:  94 , obj type for mask is : Bowl
+step #:  94 , None of that
+step #:  94 , planner broken is  False
+step #:  95 , obj type for mask is : Bowl
+step #:  95 , None of that
+step #:  95 , planner broken is  False
+step #:  96 , obj type for mask is : Bowl
+step #:  96 , None of that
+step #:  96 , planner broken is  False
+step #:  97 , obj type for mask is : Bowl
+step #:  97 , None of that
+step #:  97 , planner broken is  False
+step #:  98 , obj type for mask is : Bowl
+step #:  98 , None of that
+step #:  98 , planner broken is  False
+step #:  99 , obj type for mask is : Bowl
+step #:  99 , None of that
+step #:  99 , planner broken is  False
+step #:  100 , obj type for mask is : Bowl
+step #:  100 , None of that
+step #:  100 , planner broken is  False
+step #:  101 , obj type for mask is : Bowl
+step #:  101 , None of that
+step #:  101 , planner broken is  False
+step #:  102 , obj type for mask is : Bowl
+step #:  102 , step:  102 , err is  Sofa_de7b032e is blocking Agent 0 from moving 0
+step #:  102 , action taken in step  102 : 
+step #:  102 , newly goal set
+step #:  102 , None of that
+step #:  102 , planner broken is  False
+step #:  103 , obj type for mask is : Bowl
+step #:  103 , None of that
+step #:  103 , planner broken is  False
+step #:  104 , obj type for mask is : Bowl
+step #:  104 , None of that
+step #:  104 , planner broken is  False
+step #:  105 , obj type for mask is : Bowl
+step #:  105 , None of that
+step #:  105 , planner broken is  False
+step #:  106 , obj type for mask is : Bowl
+step #:  106 , step:  106 , err is  Chair_df4c85aa is blocking Agent 0 from moving 0
+step #:  106 , action taken in step  106 : 
+step #:  106 , None of that
+step #:  106 , planner broken is  False
+step #:  107 , obj type for mask is : Bowl
+step #:  107 , None of that
+step #:  107 , planner broken is  False
+step #:  108 , obj type for mask is : Bowl
+step #:  108 , None of that
+step #:  108 , planner broken is  False
+step #:  109 , obj type for mask is : Bowl
+step #:  109 , None of that
+step #:  109 , planner broken is  False
+step #:  110 , obj type for mask is : Bowl
+step #:  110 , None of that
+step #:  110 , planner broken is  False
+step #:  111 , obj type for mask is : Bowl
+step #:  111 , None of that
+step #:  111 , planner broken is  False
+step #:  112 , obj type for mask is : Bowl
+step #:  112 , None of that
+step #:  112 , planner broken is  False
+step #:  113 , obj type for mask is : Bowl
+step #:  113 , None of that
+step #:  113 , planner broken is  False
+step #:  114 , obj type for mask is : Bowl
+step #:  114 , None of that
+step #:  114 , planner broken is  False
+step #:  115 , obj type for mask is : Bowl
+step #:  115 , None of that
+step #:  115 , planner broken is  False
+step #:  116 , obj type for mask is : Bowl
+step #:  116 , None of that
+step #:  116 , planner broken is  False
+step #:  117 , obj type for mask is : Bowl
+step #:  117 , None of that
+step #:  117 , planner broken is  False
+step #:  118 , obj type for mask is : Bowl
+step #:  118 , None of that
+step #:  118 , planner broken is  False
+step #:  119 , obj type for mask is : Bowl
+step #:  119 , None of that
+step #:  119 , planner broken is  False
+step #:  120 , obj type for mask is : Bowl
+step #:  120 , None of that
+step #:  120 , planner broken is  False
+step #:  121 , obj type for mask is : Bowl
+step #:  121 , Tried to lookdownupleft
+step #:  124 , Tried to lookdownupleft
+step #:  128 , None of that
+step #:  128 , planner broken is  False
+step #:  129 , obj type for mask is : Bowl
+step #:  129 , Tried to lookdownupleft
+step #:  132 , Tried to lookdownupleft
+step #:  136 , None of that
+step #:  136 , planner broken is  False
+step #:  137 , obj type for mask is : Bowl
+step #:  137 , Tried to lookdownupleft
+step #:  140 , Tried to lookdownupleft
+step #:  144 , None of that
+step #:  144 , planner broken is  False
+step #:  145 , obj type for mask is : Bowl
+step #:  145 , None of that
+step #:  145 , planner broken is  False
+step #:  146 , obj type for mask is : Bowl
+step #:  146 , None of that
+step #:  146 , planner broken is  False
+step #:  147 , obj type for mask is : Bowl
+step #:  147 , None of that
+step #:  147 , planner broken is  False
+step #:  148 , obj type for mask is : Bowl
+step #:  148 , None of that
+step #:  148 , planner broken is  False
+step #:  149 , obj type for mask is : Bowl
+step #:  149 , None of that
+step #:  149 , planner broken is  False
+step #:  150 , obj type for mask is : Bowl
+step #:  150 , None of that
+step #:  150 , planner broken is  False
+step #:  151 , obj type for mask is : Bowl
+step #:  151 , None of that
+step #:  151 , planner broken is  False
+step #:  152 , obj type for mask is : Bowl
+step #:  152 , None of that
+step #:  152 , planner broken is  False
+step #:  153 , obj type for mask is : Bowl
+step #:  153 , None of that
+step #:  153 , planner broken is  False
+step #:  154 , obj type for mask is : Bowl
+step #:  154 , None of that
+step #:  154 , planner broken is  False
+step #:  155 , obj type for mask is : Bowl
+step #:  155 , None of that
+step #:  155 , planner broken is  False
+step #:  156 , obj type for mask is : Bowl
+step #:  156 , None of that
+step #:  156 , planner broken is  False
+step #:  157 , obj type for mask is : Bowl
+step #:  157 , None of that
+step #:  157 , goal found!
+step #:  157 , planner broken is  False
+step #:  158 , obj type for mask is : Bowl
+step #:  158 , Center done
+step #:  158 , None of that
+step #:  158 , goal found!
+step #:  158 , planner broken is  False
+step #:  159 , obj type for mask is : Bowl
+step #:  159 , None of that
+step #:  159 , goal found!
+step #:  159 , planner broken is  False
+step #:  160 , obj type for mask is : Bowl
+step #:  160 , None of that
+step #:  160 , goal found!
+step #:  160 , planner broken is  False
+step #:  161 , obj type for mask is : Bowl
+step #:  161 , None of that
+step #:  161 , goal found!
+step #:  161 , planner broken is  False
+step #:  162 , obj type for mask is : Bowl
+step #:  163 , pointer increased goal name  ['DeskLamp', 'ToggleObjectOn', 'DeskLamp', '0', 1]
+step #:  163 , None of that
+step #:  163 , goal found!
+step #:  163 , planner broken is  False
+step #:  164 , obj type for mask is : DeskLamp
+This episode is probably Success!
+
+===================================================
+episode # is 0
+step #:  0 , list of actions is  [['Bowl', 'PickupObject', 'Bowl', '0', 0], ['DeskLamp', 'ToggleObjectOn', 'DeskLamp', '0', 1]]
+step #:  2 , total cat2idx is  {'Knife': 0, 'SinkBasin': 1, 'ArmChair': 2, 'BathtubBasin': 3, 'Bed': 4, 'Cabinet': 5, 'Cart': 6, 'CoffeeMachine': 7, 'CoffeeTable': 8, 'CounterTop': 9, 'Desk': 10, 'DiningTable': 11, 'Drawer': 12, 'Dresser': 13, 'Fridge': 14, 'GarbageCan': 15, 'Microwave': 16, 'Ottoman': 17, 'Safe': 18, 'Shelf': 19, 'SideTable': 20, 'Sofa': 21, 'StoveBurner': 22, 'TVStand': 23, 'Toilet': 24, 'DeskLamp': 25, 'Bowl': 26, '0': 27, 'BaseballBat': 28, 'Vase': 29, 'Pot': 30, 'WateringCan': 31, 'PotatoSliced': 32, 'Apple': 33, 'Pillow': 34, 'AppleSliced': 35, 'Spoon': 36, 'PepperShaker': 37, 'SprayBottle': 38, 'SoapBar': 39, 'BreadSliced': 40, 'Pen': 41, 'Candle': 42, 'Box': 43, 'Pencil': 44, 'CellPhone': 45, 'ToiletPaperHanger': 46, 'Tomato': 47, 'Lettuce': 48, 'LettuceSliced': 49, 'Book': 50, 'Spatula': 51, 'ToiletPaper': 52, 'CD': 53, 'WineBottle': 54, 'Mug': 55, 'Bathtub': 56, 'Cup': 57, 'SaltShaker': 58, 'Potato': 59, 'ButterKnife': 60, 'Pan': 61, 'Plate': 62, 'Kettle': 63, 'TennisRacket': 64, 'Faucet': 65, 'Sink': 66, 'Glassbottle': 67, 'Ladle': 68, 'AlarmClock': 69, 'Fork': 70, 'FloorLamp': 71, 'Plunger': 72, 'Egg': 73, 'SoapBottle': 74, 'Cloth': 75, 'RemoteControl': 76, 'HandTowel': 77, 'Statue': 78, 'Watch': 79, 'BasketBall': 80, 'TissueBox': 81, 'TomatoSliced': 82, 'CreditCard': 83, 'Bread': 84, 'DishSponge': 85, 'KeyChain': 86, 'Laptop': 87, 'Newspaper': 88, 'None': 89}
+step #:  2 , None of that
+step #:  2 , planner broken is  False
+step #:  3 , obj type for mask is : Bowl
+step #:  3 , Tried to lookdownupleft
+step #:  6 , Tried to lookdownupleft
+step #:  10 , None of that
+step #:  10 , planner broken is  False
+step #:  11 , obj type for mask is : Bowl
+step #:  11 , Tried to lookdownupleft
+step #:  14 , Tried to lookdownupleft
+step #:  18 , None of that
+step #:  18 , planner broken is  False
+step #:  19 , obj type for mask is : Bowl
+step #:  19 , Tried to lookdownupleft
+step #:  22 , Tried to lookdownupleft
+step #:  26 , None of that
+step #:  26 , planner broken is  False
+step #:  27 , obj type for mask is : Bowl
+step #:  27 , Tried to lookdownupleft
+step #:  30 , Tried to lookdownupleft
+step #:  34 , None of that
+step #:  34 , planner broken is  False
+step #:  35 , obj type for mask is : Bowl
+step #:  35 , None of that
+step #:  35 , planner broken is  False
+step #:  36 , obj type for mask is : Bowl
+step #:  36 , None of that
+step #:  36 , planner broken is  False
+step #:  37 , obj type for mask is : Bowl
+step #:  37 , None of that
+step #:  37 , planner broken is  False
+step #:  38 , obj type for mask is : Bowl
+step #:  38 , None of that
+step #:  38 , planner broken is  False
+step #:  39 , obj type for mask is : Bowl
+step #:  39 , None of that
+step #:  39 , planner broken is  False
+step #:  40 , obj type for mask is : Bowl
+step #:  40 , None of that
+step #:  40 , planner broken is  False
+step #:  41 , obj type for mask is : Bowl
+step #:  41 , None of that
+step #:  41 , planner broken is  False
+step #:  42 , obj type for mask is : Bowl
+step #:  42 , None of that
+step #:  42 , planner broken is  False
+step #:  43 , obj type for mask is : Bowl
+step #:  43 , None of that
+step #:  43 , planner broken is  False
+step #:  44 , obj type for mask is : Bowl
+step #:  44 , None of that
+step #:  44 , planner broken is  False
+step #:  45 , obj type for mask is : Bowl
+step #:  45 , None of that
+step #:  45 , planner broken is  False
+step #:  46 , obj type for mask is : Bowl
+step #:  46 , None of that
+step #:  46 , planner broken is  False
+step #:  47 , obj type for mask is : Bowl
+step #:  47 , newly goal set
+step #:  47 , None of that
+step #:  47 , planner broken is  False
+step #:  48 , obj type for mask is : Bowl
+step #:  48 , None of that
+step #:  48 , planner broken is  False
+step #:  49 , obj type for mask is : Bowl
+step #:  49 , None of that
+step #:  49 , planner broken is  False
+step #:  50 , obj type for mask is : Bowl
+step #:  50 , None of that
+step #:  50 , planner broken is  False
+step #:  51 , obj type for mask is : Bowl
+step #:  51 , None of that
+step #:  51 , planner broken is  False
+step #:  52 , obj type for mask is : Bowl
+step #:  52 , None of that
+step #:  52 , planner broken is  False
+step #:  53 , obj type for mask is : Bowl
+step #:  53 , None of that
+step #:  53 , planner broken is  False
+step #:  54 , obj type for mask is : Bowl
+step #:  54 , step:  54 , err is  CoffeeTable_1b732e39 is blocking Agent 0 from moving 0
+step #:  54 , action taken in step  54 : 
+step #:  54 , None of that
+step #:  54 , planner broken is  False
+step #:  55 , obj type for mask is : Bowl
+step #:  55 , None of that
+step #:  55 , planner broken is  False
+step #:  56 , obj type for mask is : Bowl
+step #:  56 , None of that
+step #:  56 , planner broken is  False
+step #:  57 , obj type for mask is : Bowl
+step #:  57 , None of that
+step #:  57 , planner broken is  False
+step #:  58 , obj type for mask is : Bowl
+step #:  58 , None of that
+step #:  58 , planner broken is  False
+step #:  59 , obj type for mask is : Bowl
+step #:  59 , None of that
+step #:  59 , planner broken is  False
+step #:  60 , obj type for mask is : Bowl
+step #:  60 , None of that
+step #:  60 , planner broken is  False
+step #:  61 , obj type for mask is : Bowl
+step #:  61 , None of that
+step #:  61 , planner broken is  False
+step #:  62 , obj type for mask is : Bowl
+step #:  62 , None of that
+step #:  62 , planner broken is  False
+step #:  63 , obj type for mask is : Bowl
+step #:  63 , None of that
+step #:  63 , planner broken is  False
+step #:  64 , obj type for mask is : Bowl
+step #:  64 , None of that
+step #:  64 , planner broken is  False
+step #:  65 , obj type for mask is : Bowl
+step #:  65 , None of that
+step #:  65 , planner broken is  False
+step #:  66 , obj type for mask is : Bowl
+step #:  66 , None of that
+step #:  66 , planner broken is  False
+step #:  67 , obj type for mask is : Bowl
+step #:  67 , None of that
+step #:  67 , planner broken is  False
+step #:  68 , obj type for mask is : Bowl
+step #:  68 , None of that
+step #:  68 , planner broken is  False
+step #:  69 , obj type for mask is : Bowl
+step #:  69 , None of that
+step #:  69 , planner broken is  False
+step #:  70 , obj type for mask is : Bowl
+step #:  70 , Tried to lookdownupleft
+step #:  73 , Tried to lookdownupleft
+step #:  77 , newly goal set
+step #:  77 , None of that
+step #:  77 , planner broken is  False
+step #:  78 , obj type for mask is : Bowl
+step #:  78 , None of that
+step #:  78 , planner broken is  False
+step #:  79 , obj type for mask is : Bowl
+step #:  79 , None of that
+step #:  79 , planner broken is  False
+step #:  80 , obj type for mask is : Bowl
+step #:  80 , None of that
+step #:  80 , planner broken is  False
+step #:  81 , obj type for mask is : Bowl
+step #:  81 , None of that
+step #:  81 , planner broken is  False
+step #:  82 , obj type for mask is : Bowl
+step #:  82 , None of that
+step #:  82 , planner broken is  False
+step #:  83 , obj type for mask is : Bowl
+step #:  83 , None of that
+step #:  83 , planner broken is  False
+step #:  84 , obj type for mask is : Bowl
+step #:  84 , None of that
+step #:  84 , planner broken is  False
+step #:  85 , obj type for mask is : Bowl
+step #:  85 , None of that
+step #:  85 , planner broken is  False
+step #:  86 , obj type for mask is : Bowl
+step #:  86 , None of that
+step #:  86 , planner broken is  False
+step #:  87 , obj type for mask is : Bowl
+step #:  87 , step:  87 , err is  Chair_df4c85aa is blocking Agent 0 from moving 0
+step #:  87 , action taken in step  87 : 
+step #:  87 , None of that
+step #:  87 , planner broken is  False
+step #:  88 , obj type for mask is : Bowl
+step #:  88 , None of that
+step #:  88 , planner broken is  False
+step #:  89 , obj type for mask is : Bowl
+step #:  89 , None of that
+step #:  89 , planner broken is  False
+step #:  90 , obj type for mask is : Bowl
+step #:  90 , None of that
+step #:  90 , planner broken is  False
+step #:  91 , obj type for mask is : Bowl
+step #:  91 , None of that
+step #:  91 , planner broken is  False
+step #:  92 , obj type for mask is : Bowl
+step #:  92 , None of that
+step #:  92 , planner broken is  False
+step #:  93 , obj type for mask is : Bowl
+step #:  93 , None of that
+step #:  93 , planner broken is  False
+step #:  94 , obj type for mask is : Bowl
+step #:  94 , None of that
+step #:  94 , planner broken is  False
+step #:  95 , obj type for mask is : Bowl
+step #:  95 , None of that
+step #:  95 , planner broken is  False
+step #:  96 , obj type for mask is : Bowl
+step #:  96 , None of that
+step #:  96 , planner broken is  False
+step #:  97 , obj type for mask is : Bowl
+step #:  97 , None of that
+step #:  97 , planner broken is  False
+step #:  98 , obj type for mask is : Bowl
+step #:  98 , None of that
+step #:  98 , planner broken is  False
+step #:  99 , obj type for mask is : Bowl
+step #:  99 , None of that
+step #:  99 , planner broken is  False
+step #:  100 , obj type for mask is : Bowl
+step #:  100 , None of that
+step #:  100 , planner broken is  False
+step #:  101 , obj type for mask is : Bowl
+step #:  101 , None of that
+step #:  101 , planner broken is  False
+step #:  102 , obj type for mask is : Bowl
+step #:  102 , step:  102 , err is  Sofa_de7b032e is blocking Agent 0 from moving 0
+step #:  102 , action taken in step  102 : 
+step #:  102 , newly goal set
+step #:  102 , None of that
+step #:  102 , planner broken is  False
+step #:  103 , obj type for mask is : Bowl
+step #:  103 , None of that
+step #:  103 , planner broken is  False
+step #:  104 , obj type for mask is : Bowl
+step #:  104 , None of that
+step #:  104 , planner broken is  False
+step #:  105 , obj type for mask is : Bowl
+step #:  105 , None of that
+step #:  105 , planner broken is  False
+step #:  106 , obj type for mask is : Bowl
+step #:  106 , step:  106 , err is  Chair_df4c85aa is blocking Agent 0 from moving 0
+step #:  106 , action taken in step  106 : 
+step #:  106 , None of that
+step #:  106 , planner broken is  False
+step #:  107 , obj type for mask is : Bowl
+step #:  107 , None of that
+step #:  107 , planner broken is  False
+step #:  108 , obj type for mask is : Bowl
+step #:  108 , None of that
+step #:  108 , planner broken is  False
+step #:  109 , obj type for mask is : Bowl
+step #:  109 , None of that
+step #:  109 , planner broken is  False
+step #:  110 , obj type for mask is : Bowl
+step #:  110 , None of that
+step #:  110 , planner broken is  False
+step #:  111 , obj type for mask is : Bowl
+step #:  111 , None of that
+step #:  111 , planner broken is  False
+step #:  112 , obj type for mask is : Bowl
+step #:  112 , None of that
+step #:  112 , planner broken is  False
+step #:  113 , obj type for mask is : Bowl
+step #:  113 , None of that
+step #:  113 , planner broken is  False
+step #:  114 , obj type for mask is : Bowl
+step #:  114 , None of that
+step #:  114 , planner broken is  False
+step #:  115 , obj type for mask is : Bowl
+step #:  115 , None of that
+step #:  115 , planner broken is  False
+step #:  116 , obj type for mask is : Bowl
+step #:  116 , None of that
+step #:  116 , planner broken is  False
+step #:  117 , obj type for mask is : Bowl
+step #:  117 , None of that
+step #:  117 , planner broken is  False
+step #:  118 , obj type for mask is : Bowl
+step #:  118 , None of that
+step #:  118 , planner broken is  False
+step #:  119 , obj type for mask is : Bowl
+step #:  119 , None of that
+step #:  119 , planner broken is  False
+step #:  120 , obj type for mask is : Bowl
+step #:  120 , None of that
+step #:  120 , planner broken is  False
+step #:  121 , obj type for mask is : Bowl
+step #:  121 , Tried to lookdownupleft
+step #:  124 , Tried to lookdownupleft
+step #:  128 , None of that
+step #:  128 , planner broken is  False
+step #:  129 , obj type for mask is : Bowl
+step #:  129 , Tried to lookdownupleft
+step #:  132 , Tried to lookdownupleft
+step #:  136 , None of that
+step #:  136 , planner broken is  False
+step #:  137 , obj type for mask is : Bowl
+step #:  137 , Tried to lookdownupleft
+step #:  140 , Tried to lookdownupleft
+step #:  144 , None of that
+step #:  144 , planner broken is  False
+step #:  145 , obj type for mask is : Bowl
+step #:  145 , None of that
+step #:  145 , planner broken is  False
+step #:  146 , obj type for mask is : Bowl
+step #:  146 , None of that
+step #:  146 , planner broken is  False
+step #:  147 , obj type for mask is : Bowl
+step #:  147 , None of that
+step #:  147 , planner broken is  False
+step #:  148 , obj type for mask is : Bowl
+step #:  148 , None of that
+step #:  148 , planner broken is  False
+step #:  149 , obj type for mask is : Bowl
+step #:  149 , None of that
+step #:  149 , planner broken is  False
+step #:  150 , obj type for mask is : Bowl
+step #:  150 , None of that
+step #:  150 , planner broken is  False
+step #:  151 , obj type for mask is : Bowl
+step #:  151 , None of that
+step #:  151 , planner broken is  False
+step #:  152 , obj type for mask is : Bowl
+step #:  152 , None of that
+step #:  152 , planner broken is  False
+step #:  153 , obj type for mask is : Bowl
+step #:  153 , None of that
+step #:  153 , planner broken is  False
+step #:  154 , obj type for mask is : Bowl
+step #:  154 , None of that
+step #:  154 , planner broken is  False
+step #:  155 , obj type for mask is : Bowl
+step #:  155 , None of that
+step #:  155 , planner broken is  False
+step #:  156 , obj type for mask is : Bowl
+step #:  156 , None of that
+step #:  156 , planner broken is  False
+step #:  157 , obj type for mask is : Bowl
+step #:  157 , None of that
+step #:  157 , goal found!
+step #:  157 , planner broken is  False
+step #:  158 , obj type for mask is : Bowl
+step #:  158 , Center done
+step #:  158 , None of that
+step #:  158 , goal found!
+step #:  158 , planner broken is  False
+step #:  159 , obj type for mask is : Bowl
+step #:  159 , None of that
+step #:  159 , goal found!
+step #:  159 , planner broken is  False
+step #:  160 , obj type for mask is : Bowl
+step #:  160 , None of that
+step #:  160 , goal found!
+step #:  160 , planner broken is  False
+step #:  161 , obj type for mask is : Bowl
+step #:  161 , None of that
+step #:  161 , goal found!
+step #:  161 , planner broken is  False
+step #:  162 , obj type for mask is : Bowl
+step #:  163 , pointer increased goal name  ['DeskLamp', 'ToggleObjectOn', 'DeskLamp', '0', 1]
+step #:  163 , None of that
+step #:  163 , goal found!
+step #:  163 , planner broken is  False
+step #:  164 , obj type for mask is : DeskLamp
+This episode is probably Success!

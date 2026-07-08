@@ -1,0 +1,267 @@
+========================================================================
+GPT-4 vs Qwen MMP Eval Comparison
+Generated: 2026-07-07T23:38:21
+Split: valid_seen  indices: [0, 32)  (32 entries)
+GPT plan dir: MMP_results          eval dn: gpt_mmp_32
+Qwen plan dir: MMP_results_qwen    eval dn: qwen_mmp_32
+========================================================================
+
+## Summary
+Metric                              GPT-4         Qwen        Delta
+------------------------------------------------------------------------
+Evaluated episodes                     32           32            0
+Success count                           3            2           -1
+Success rate (SR)                   9.4%        6.2%       -3.1%
+Avg success SPL                     0.021        0.014       -0.007
+Avg goal-condition rate             0.281        0.266       -0.016
+
+## Per-episode Details
+
+[  0] DIFF | GPT: FAIL | Qwen: FAIL
+      trial: trial_T20190909_115736_122556
+      goal:  Place a cooked potato slice in the sinkturn to the right twice and to to the end...
+      GPT plan:  PickupObject(Knife,0) -> SliceObject(Potato,Fridge) -> PutObject(Knife,Microwave) -> PickupObject(PotatoSliced,Fridge) -> HeatObject(PotatoSliced,Microwave) -> PutObject(PotatoSliced,SinkBasin)
+      Qwen plan: PickupObject(Knife,0) -> SliceObject(Potato,0) -> PutObject(Knife,Microwave) -> PickupObject(PotatoSliced,Fridge) -> HeatObject(PotatoSliced,Microwave) -> PutObject(PotatoSliced,Sink)
+      GPT  metrics: SPL=0.000 GC=0.000 steps=1002
+      Qwen metrics: SPL=0.000 GC=0.000 steps=1001
+
+[  1] DIFF | GPT: FAIL | Qwen: FAIL
+      trial: trial_T20190909_115736_122556
+      goal:  Put a cooked piece of potato in the sink.Go to the counter across the room from ...
+      GPT plan:  PickupObject(ButterKnife,0) -> SliceObject(Potato,0) -> PutObject(ButterKnife,Microwave) -> PickupObject(PotatoSliced,Fridge) -> HeatObject(PotatoSliced,Microwave) -> PutObject(PotatoSliced,SinkBasin)
+      Qwen plan: (empty)
+      GPT  metrics: SPL=0.000 GC=0.000 steps=1002
+      Qwen metrics: SPL=0.000 GC=0.000 steps=2
+
+[  2] DIFF | GPT: FAIL | Qwen: FAIL
+      trial: trial_T20190909_115736_122556
+      goal:  Put a sliced egg inside the sinkTurn right, turn right, walk straight, turn left...
+      GPT plan:  PickupObject(Knife,0) -> SliceObject(Egg,0) -> PutObject(Knife,Microwave) -> PickupObject(EggSliced,Fridge) -> PutObject(EggSliced,Sink)
+      Qwen plan: PickupObject(Knife,0) -> SliceObject(Egg,0) -> PutObject(Knife,Microwave) -> PickupObject(EggSliced,Fridge) -> HeatObject(EggSliced,Microwave) -> PickupObject(EggSliced,Microwave) -> PutObject(EggSliced,Sink)
+      GPT  metrics: SPL=0.000 GC=0.000 steps=378
+      Qwen metrics: SPL=0.000 GC=0.000 steps=454
+
+[  3] SAME | GPT: FAIL | Qwen: FAIL
+      trial: trial_T20190909_091246_807206
+      goal:  Place a vase on a coffee tableTurn right and cross the room, turn right  and wal...
+      GPT  metrics: SPL=0.000 GC=0.000 steps=132
+      Qwen metrics: SPL=0.000 GC=0.000 steps=132
+
+[  4] SAME | GPT: FAIL | Qwen: FAIL
+      trial: trial_T20190909_091246_807206
+      goal:  Place a bowl on a table.Turn right, take a right at the wall and walk to the fro...
+      GPT  metrics: SPL=0.000 GC=0.000 steps=1002
+      Qwen metrics: SPL=0.000 GC=0.000 steps=1002
+
+[  5] SAME | GPT: FAIL | Qwen: FAIL
+      trial: trial_T20190909_091246_807206
+      goal:  Move bowl to coffee table.Turn and go to the tv.Pick up the bowl that is on the ...
+      GPT  metrics: SPL=0.000 GC=0.000 steps=1002
+      Qwen metrics: SPL=0.000 GC=0.000 steps=1002
+
+[  6] DIFF | GPT: FAIL | Qwen: FAIL
+      trial: trial_T20190918_184236_557252
+      goal:  place a knife on the microwave oven tablemove forward towards the sinkpick up a ...
+      GPT plan:  PickupObject(Knife,Sink) -> PutObject(Knife,Microwave)
+      Qwen plan: PickupObject(Knife,0) -> PutObject(Knife,CounterTop)
+      GPT  metrics: SPL=0.000 GC=0.000 steps=277
+      Qwen metrics: SPL=0.000 GC=0.000 steps=291
+
+[  7] SAME | GPT: FAIL | Qwen: FAIL
+      trial: trial_T20190918_184236_557252
+      goal:  Put a knife on the counter. Go left, then right to got to the sink.Pick up the k...
+      GPT  metrics: SPL=0.000 GC=0.000 steps=301
+      Qwen metrics: SPL=0.000 GC=0.000 steps=263
+
+[  8] SAME | GPT: FAIL | Qwen: FAIL
+      trial: trial_T20190918_184236_557252
+      goal:  move a knife over to the microwaves cabinetwalk over to the kitchen sinkgrab the...
+      GPT  metrics: SPL=0.000 GC=0.000 steps=318
+      Qwen metrics: SPL=0.000 GC=0.000 steps=318
+
+[  9] DIFF | GPT: FAIL | Qwen: FAIL
+      trial: trial_T20190908_052007_212776
+      goal:  Place a rinsed knife inside a drawer.Turn left, hang a right around the counter ...
+      GPT plan:  PickupObject(Knife,0) -> CleanObject(Knife,Faucet) -> PutObject(Knife,Drawer)
+      Qwen plan: PickupObject(Knife,0) -> CleanObject(Knife,Sink) -> PutObject(Knife,Drawer)
+      GPT  metrics: SPL=0.000 GC=0.000 steps=150
+      Qwen metrics: SPL=0.000 GC=0.000 steps=41
+
+[ 10] SAME | GPT: FAIL | Qwen: FAIL
+      trial: trial_T20190908_052007_212776
+      goal:  Put a cleaned knife in a drawer. Move around the left side of the island, go to ...
+      GPT  metrics: SPL=0.000 GC=0.000 steps=122
+      Qwen metrics: SPL=0.000 GC=0.000 steps=326
+
+[ 11] SAME | GPT: FAIL | Qwen: FAIL
+      trial: trial_T20190908_052007_212776
+      goal:  place a clean knife in the drawermove forward to the tablepick up the knife from...
+      GPT  metrics: SPL=0.000 GC=0.000 steps=150
+      Qwen metrics: SPL=0.000 GC=0.000 steps=150
+
+[ 12] DIFF | GPT: SUCCESS | Qwen: FAIL
+      trial: trial_T20190907_232225_725376
+      goal:  Place a cooked slice of apple to the right of the yellow knife on the counter.Wa...
+      GPT plan:  PickupObject(Knife,0) -> SliceObject(Apple,0) -> PutObject(Knife,Sink) -> PickupObject(AppleSliced,0) -> HeatObject(AppleSliced,Microwave) -> PutObject(AppleSliced,CounterTop)
+      Qwen plan: PickupObject(Knife,0) -> SliceObject(Apple,0) -> PutObject(Knife,Sink) -> PickupObject(AppleSliced,0) -> PutObject(AppleSliced,Plate) -> HeatObject(AppleSliced,Microwave) -> PickupObject(AppleSliced,Microwave) -> PutObject(AppleSliced,CounterTop)
+      GPT  metrics: SPL=0.228 GC=1.000 steps=193
+      Qwen metrics: SPL=0.000 GC=0.500 steps=380
+
+[ 13] DIFF | GPT: SUCCESS | Qwen: SUCCESS
+      trial: trial_T20190907_232225_725376
+      goal:  Slice an apple, cook it and set it on the counterGo forward, turn to your left a...
+      GPT plan:  PickupObject(Knife,0) -> SliceObject(Apple,0) -> PutObject(Knife,SinkBasin) -> PickupObject(AppleSliced,0) -> HeatObject(AppleSliced,Microwave) -> PutObject(AppleSliced,CounterTop)
+      Qwen plan: PickupObject(Knife,0) -> SliceObject(Apple,0) -> PutObject(Knife,Sink) -> PickupObject(AppleSliced,0) -> HeatObject(AppleSliced,Microwave) -> PutObject(AppleSliced,CounterTop)
+      GPT  metrics: SPL=0.228 GC=1.000 steps=193
+      Qwen metrics: SPL=0.228 GC=1.000 steps=193
+
+[ 14] DIFF | GPT: SUCCESS | Qwen: SUCCESS
+      trial: trial_T20190907_232225_725376
+      goal:  Put a warm apple slice on the counter. Go straight towards the fridge, then make...
+      GPT plan:  PickupObject(Knife,0) -> SliceObject(Apple,0) -> PutObject(Knife,SinkBasin) -> PickupObject(AppleSliced,0) -> HeatObject(AppleSliced,Microwave) -> PutObject(AppleSliced,CounterTop)
+      Qwen plan: PickupObject(Knife,0) -> SliceObject(Apple,0) -> PutObject(Knife,Sink) -> PickupObject(AppleSliced,0) -> HeatObject(AppleSliced,Microwave) -> PutObject(AppleSliced,CounterTop)
+      GPT  metrics: SPL=0.228 GC=1.000 steps=193
+      Qwen metrics: SPL=0.228 GC=1.000 steps=193
+
+[ 15] DIFF | GPT: FAIL | Qwen: FAIL
+      trial: trial_T20190908_065238_500229
+      goal:  Move two spoons to the kitchen counter. Look down at the sink in front of you. P...
+      GPT plan:  PickupObject(Spoon,Sink) -> PutObject(Spoon,CounterTop) -> PickupObject(Spoon,Table) -> PutObject(Spoon,CounterTop)
+      Qwen plan: PickupObject(Spoon,0) -> PutObject(Spoon,CounterTop) -> PickupObject(Spoon,0) -> PutObject(Spoon,CounterTop)
+      GPT  metrics: SPL=0.000 GC=0.500 steps=333
+      Qwen metrics: SPL=0.000 GC=0.500 steps=333
+
+[ 16] DIFF | GPT: FAIL | Qwen: FAIL
+      trial: trial_T20190908_065238_500229
+      goal:  Pick up the spoons from the sink and table, put them both on the counter.Move fo...
+      GPT plan:  PickupObject(Spoon,Sink) -> PutObject(Spoon,CounterTop) -> PickupObject(Spoon,Table) -> PutObject(Spoon,CounterTop)
+      Qwen plan: PickupObject(Spoon,Sink) -> PutObject(Spoon,CounterTop) -> PickupObject(Spoon,DiningTable) -> PutObject(Spoon,CounterTop)
+      GPT  metrics: SPL=0.000 GC=0.500 steps=324
+      Qwen metrics: SPL=0.000 GC=0.500 steps=324
+
+[ 17] DIFF | GPT: FAIL | Qwen: FAIL
+      trial: trial_T20190908_065238_500229
+      goal:  Place two spoons on a counter.Look down at the cabinets under the counter and wa...
+      GPT plan:  PickupObject(Spoon,Sink) -> PutObject(Spoon,CounterTop) -> PickupObject(Spoon,Table) -> PutObject(Spoon,CounterTop)
+      Qwen plan: PickupObject(Spoon,Sink) -> PutObject(Spoon,CounterTop) -> PickupObject(Spoon,DiningTable) -> PutObject(Spoon,CounterTop)
+      GPT  metrics: SPL=0.000 GC=0.500 steps=324
+      Qwen metrics: SPL=0.000 GC=0.500 steps=333
+
+[ 18] DIFF | GPT: FAIL | Qwen: FAIL
+      trial: trial_T20190908_192636_561572
+      goal:  Put a spoon in a pan on the counter.Turn around and walk to the table with the  ...
+      GPT plan:  PickupObject(Spoon,0) -> PutObject(Spoon,Pan) -> PickupObject(Pan,0) -> PutObject(Pan,CounterTop)
+      Qwen plan: PickupObject(Spoon,0) -> PutObject(Spoon,Pan) -> PickupObject(Pan,Fridge) -> PutObject(Pan,CounterTop)
+      GPT  metrics: SPL=0.000 GC=0.000 steps=443
+      Qwen metrics: SPL=0.000 GC=0.000 steps=443
+
+[ 19] SAME | GPT: FAIL | Qwen: FAIL
+      trial: trial_T20190908_192636_561572
+      goal:  Put a pan with spoon in it, in the sink. Turn around, move to the table in front...
+      GPT  metrics: SPL=0.000 GC=0.000 steps=443
+      Qwen metrics: SPL=0.000 GC=0.000 steps=443
+
+[ 20] DIFF | GPT: FAIL | Qwen: FAIL
+      trial: trial_T20190908_192636_561572
+      goal:  put pan and ladle into kitchen sinkwalk to face wooden tablepick up ladle from t...
+      GPT plan:  PickupObject(Ladle,0) -> PutObject(Ladle,Pan) -> PickupObject(Pan,0) -> PutObject(Pan,SinkBasin)
+      Qwen plan: PickupObject(Ladle,0) -> PutObject(Ladle,Pan) -> PickupObject(Pan,Fridge) -> PutObject(Pan,Sink) -> PutObject(Ladle,Sink)
+      GPT  metrics: SPL=0.000 GC=0.000 steps=1002
+      Qwen metrics: SPL=0.000 GC=0.000 steps=1002
+
+[ 21] SAME | GPT: FAIL | Qwen: FAIL
+      trial: trial_T20190908_165525_911839
+      goal:  Put a chilled slice of tomato in the microwave.Turn and go to the counter by the...
+      GPT  metrics: SPL=0.000 GC=0.500 steps=532
+      Qwen metrics: SPL=0.000 GC=0.500 steps=532
+
+[ 22] SAME | GPT: FAIL | Qwen: FAIL
+      trial: trial_T20190908_165525_911839
+      goal:  Put the chilled sliced tomato in the microwaveTurn left then face the sink count...
+      GPT  metrics: SPL=0.000 GC=0.500 steps=532
+      Qwen metrics: SPL=0.000 GC=0.500 steps=532
+
+[ 23] SAME | GPT: FAIL | Qwen: FAIL
+      trial: trial_T20190908_165525_911839
+      goal:  Place a tomato and a knife in the microwave.Turn left then face the sink on your...
+      GPT  metrics: SPL=0.000 GC=0.500 steps=532
+      Qwen metrics: SPL=0.000 GC=0.500 steps=532
+
+[ 24] DIFF | GPT: FAIL | Qwen: FAIL
+      trial: trial_T20190911_131350_027076
+      goal:  put clean spoon on the tableturn around, walk forward, turn left to face tablepi...
+      GPT plan:  PickupObject(Spoon,0) -> CleanObject(Spoon,SinkBasin) -> PutObject(Spoon,DiningTable)
+      Qwen plan: PickupObject(Spoon,0) -> CleanObject(Spoon,Sink) -> PickupObject(Spoon,Sink) -> PutObject(Spoon,DiningTable)
+      GPT  metrics: SPL=0.000 GC=0.333 steps=134
+      Qwen metrics: SPL=0.000 GC=0.333 steps=134
+
+[ 25] DIFF | GPT: FAIL | Qwen: FAIL
+      trial: trial_T20190911_131350_027076
+      goal:  Place a clean ladle on a table.Turn around and veer left to the white table.Pick...
+      GPT plan:  PickupObject(Ladle,0) -> CleanObject(Ladle,SinkBasin) -> PutObject(Ladle,DiningTable)
+      Qwen plan: PickupObject(Ladle,0) -> CleanObject(Ladle,Sink) -> PutObject(Ladle,DiningTable)
+      GPT  metrics: SPL=0.000 GC=0.333 steps=121
+      Qwen metrics: SPL=0.000 GC=0.333 steps=121
+
+[ 26] DIFF | GPT: FAIL | Qwen: FAIL
+      trial: trial_T20190911_131350_027076
+      goal:  wash the spoon and put it back on the tablego through the kitchen to the tablepi...
+      GPT plan:  PickupObject(Spoon,DiningTable) -> CleanObject(Spoon,Sink) -> PutObject(Spoon,DiningTable)
+      Qwen plan: PickupObject(Spoon,0) -> CleanObject(Spoon,SinkBasin) -> PutObject(Spoon,DiningTable)
+      GPT  metrics: SPL=0.000 GC=0.333 steps=134
+      Qwen metrics: SPL=0.000 GC=0.333 steps=134
+
+[ 27] DIFF | GPT: FAIL | Qwen: FAIL
+      trial: trial_T20190907_151802_277016
+      goal:  Slice an apple or vegetable followed by rinsing itTurn to the right and walk to ...
+      GPT plan:  PickupObject(Knife,0) -> SliceObject(Apple,0) -> PutObject(Knife,CounterTop) -> PickupObject(AppleSliced,0) -> CleanObject(AppleSliced,Sink) -> PutObject(AppleSliced,CounterTop)
+      Qwen plan: PickupObject(Knife,0) -> SliceObject(Apple,0) -> PutObject(Knife,Lettuce) -> PickupObject(AppleSliced,0) -> CleanObject(AppleSliced,Sink) -> PutObject(AppleSliced,DiningTable)
+      GPT  metrics: SPL=0.000 GC=0.500 steps=91
+      Qwen metrics: SPL=0.000 GC=0.500 steps=81
+
+[ 28] DIFF | GPT: FAIL | Qwen: FAIL
+      trial: trial_T20190907_151802_277016
+      goal:  Put a washed slice of apple on the table.Move to the right and go to the table.P...
+      GPT plan:  PickupObject(Knife,0) -> SliceObject(Apple,0) -> PutObject(Knife,DiningTable) -> PickupObject(AppleSliced,0) -> CleanObject(AppleSliced,SinkBasin) -> PutObject(AppleSliced,DiningTable)
+      Qwen plan: PickupObject(Knife,0) -> SliceObject(Apple,0) -> PutObject(Knife,DiningTable) -> PickupObject(AppleSliced,0) -> CleanObject(AppleSliced,Sink) -> PutObject(AppleSliced,DiningTable)
+      GPT  metrics: SPL=0.000 GC=0.500 steps=97
+      Qwen metrics: SPL=0.000 GC=0.500 steps=97
+
+[ 29] DIFF | GPT: FAIL | Qwen: FAIL
+      trial: trial_T20190907_151802_277016
+      goal:  Cut an apple with a knife, wash the apple slice, place the apple slice on the ta...
+      GPT plan:  PickupObject(Knife,0) -> SliceObject(Apple,0) -> PutObject(Knife,DiningTable) -> PickupObject(AppleSliced,0) -> CleanObject(AppleSliced,SinkBasin) -> PutObject(AppleSliced,DiningTable)
+      Qwen plan: PickupObject(Knife,0) -> SliceObject(Apple,0) -> PutObject(Knife,DiningTable) -> PickupObject(AppleSliced,0) -> CleanObject(AppleSliced,Sink) -> PickupObject(AppleSliced,Sink) -> PutObject(AppleSliced,DiningTable)
+      GPT  metrics: SPL=0.000 GC=0.500 steps=97
+      Qwen metrics: SPL=0.000 GC=0.500 steps=97
+
+[ 30] DIFF | GPT: FAIL | Qwen: FAIL
+      trial: trial_T20190907_151802_277016
+      goal:  Put a clean apple on the table. Turn to the right and go to the dining table. Pi...
+      GPT plan:  PickupObject(Knife,DiningTable) -> SliceObject(Apple,DiningTable) -> PutObject(Knife,DiningTable) -> PickupObject(AppleSliced,DiningTable) -> CleanObject(AppleSliced,Sink) -> PutObject(AppleSliced,DiningTable)
+      Qwen plan: PickupObject(Knife,0) -> SliceObject(Apple,0) -> PutObject(Knife,DiningTable) -> PickupObject(AppleSliced,0) -> CleanObject(AppleSliced,Sink) -> PutObject(AppleSliced,DiningTable)
+      GPT  metrics: SPL=0.000 GC=0.500 steps=97
+      Qwen metrics: SPL=0.000 GC=0.500 steps=97
+
+[ 31] SAME | GPT: FAIL | Qwen: FAIL
+      trial: trial_T20190909_010644_297017
+      goal:  Put the credit card in the drawer.Turn right and go forward to the wall, then tu...
+      GPT  metrics: SPL=0.000 GC=0.000 steps=283
+      Qwen metrics: SPL=0.000 GC=0.000 steps=283
+
+========================================================================
+## Plan Comparison
+Same triplet:     12
+Different triplet:20
+Missing GPT plan: 0
+Missing Qwen plan:0
+
+## Outcome Comparison (where both eval ran)
+Both success:  2
+Both fail:     29
+GPT only win:  1
+Qwen only win: 0
+
+Episodes with different outcomes:
+  [12] GPT only | trial_T20190907_232225_725376 | Place a cooked slice of apple to the right of the yellow knife on the counter.Wa...
+========================================================================
