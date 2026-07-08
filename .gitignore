@@ -1,11 +1,63 @@
-# Local BERT retriever model (download via ModelScope, do not commit)
+# =============================================================================
+# Downloaded models & weights (FILM / MOCA / ModelScope / manual download)
+# =============================================================================
 models/BERT_retriever/bert-base-nli-mean-tokens/
+models/depth/depth_models/
+models/segmentation/maskrcnn_alfworld/
+models/semantic_policy/best_model_multi.pt
+weight_maskrcnn.pt
 
-# Planner / eval outputs
+# Common large weight formats (repo .p embeddings are whitelisted below)
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.msgpack
+*.onnx
+*.h5
+*.ot
+
+# Small pickles shipped with the repo
+!models/BERT_retriever/*.p
+!planner/few_examples_from_song/*.p
+!miscellaneous/*.p
+
+# =============================================================================
+# ALFRED dataset (symlink on server, never commit)
+# =============================================================================
+alfred_data_all/
+
+# =============================================================================
+# Offline planner outputs (regenerate locally)
+# =============================================================================
 planner/planner_results/
+planner/*failed.json
 MMP_results_qwen/
-results/
 
-# Python
+# =============================================================================
+# Eval outputs: keep text/small summaries for sharing; ignore heavy artifacts
+# =============================================================================
+results/pictures/
+results/leaderboard/
+results/analyze_recs/
+results/completed_episodes*.p
+
+# Allowed under results/ (will be committed if you git add them):
+#   results/compare_*.txt          - GPT vs Qwen comparison reports
+#   results/logs/*.txt             - per-episode eval logs
+#   results/successes/*.p          - small pickle summaries
+#   results/fails/*.p
+
+# =============================================================================
+# Python / IDE
+# =============================================================================
 __pycache__/
 *.pyc
+*.pyo
+.pytest_cache/
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
