@@ -1,0 +1,118 @@
+nohup: 忽略输入
+Auto GPU config:
+Number of processes: 14
+Number of processes on GPU 0: 14
+Number of processes per GPU: 0
+Auto GPU config:
+Number of processes: 14
+Number of processes on GPU 0: 14
+Number of processes per GPU: 0
+dn is  flare_paper
+Found path: /home/ubuntu/.ai2thor/releases/thor-201909061227-Linux64/thor-201909061227-Linux64
+Mono path[0] = '/home/ubuntu/.ai2thor/releases/thor-201909061227-Linux64/thor-201909061227-Linux64_Data/Managed'
+Mono config path = '/home/ubuntu/.ai2thor/releases/thor-201909061227-Linux64/thor-201909061227-Linux64_Data/Mono/etc'
+Preloaded 'ScreenSelector.so'
+Display 0 'P27FBA-RA 27"': 1920x1080 (primary device).
+Logging to /home/ubuntu/.config/unity3d/Allen Institute for Artificial Intelligence/AI2-Thor/Player.log
+Auto GPU config:
+Number of processes: 14
+Number of processes on GPU 0: 14
+Number of processes per GPU: 0
+ThorEnv started.
+instruction goal is  Place a set of keys on a couch.
+list_of_highlevel_actions: ['KeyChain', 'PickupObject', 'KeyChain', '0', 0]
+list_of_highlevel_actions: ['Sofa', 'PutObject', 'KeyChain', 'Sofa', 1]
+[False, False]
+self.goal_idx2cat is  {0: 'Knife', 1: 'SinkBasin', 2: 'ArmChair', 3: 'BathtubBasin', 4: 'Bed', 5: 'Cabinet', 6: 'Cart', 7: 'CoffeeMachine', 8: 'CoffeeTable', 9: 'CounterTop', 10: 'Desk', 11: 'DiningTable', 12: 'Drawer', 13: 'Dresser', 14: 'Fridge', 15: 'GarbageCan', 16: 'Microwave', 17: 'Ottoman', 18: 'Safe', 19: 'Shelf', 20: 'SideTable', 21: 'Sofa', 22: 'StoveBurner', 23: 'TVStand', 24: 'Toilet', 25: 'KeyChain', 26: '0', 27: 'Kettle', 28: 'Glassbottle', 29: 'PepperShaker', 30: 'Pan', 31: 'Cloth', 32: 'HandTowel', 33: 'Box', 34: 'DishSponge', 35: 'Pencil', 36: 'Ladle', 37: 'CellPhone', 38: 'PotatoSliced', 39: 'Cup', 40: 'CD', 41: 'Tomato', 42: 'Egg', 43: 'WateringCan', 44: 'Bread', 45: 'ToiletPaperHanger', 46: 'BaseballBat', 47: 'FloorLamp', 48: 'Potato', 49: 'AppleSliced', 50: 'Faucet', 51: 'Apple', 52: 'WineBottle', 53: 'Fork', 54: 'RemoteControl', 55: 'CreditCard', 56: 'ButterKnife', 57: 'Spoon', 58: 'Sink', 59: 'BreadSliced', 60: 'AlarmClock', 61: 'Spatula', 62: 'BasketBall', 63: 'Lettuce', 64: 'TomatoSliced', 65: 'Pot', 66: 'Pillow', 67: 'SaltShaker', 68: 'TennisRacket', 69: 'Plate', 70: 'Watch', 71: 'Newspaper', 72: 'Mug', 73: 'Candle', 74: 'Vase', 75: 'Bathtub', 76: 'Bowl', 77: 'Laptop', 78: 'Statue', 79: 'DeskLamp', 80: 'Plunger', 81: 'SoapBottle', 82: 'Pen', 83: 'ToiletPaper', 84: 'Book', 85: 'SprayBottle', 86: 'LettuceSliced', 87: 'SoapBar', 88: 'TissueBox', 89: 'None'}
+Resetting ThorEnv
+Task: Place a set of keys on a couch.
+instruction goal is  Move keys from the table to the sofa.
+list_of_highlevel_actions: ['KeyChain', 'PickupObject', 'KeyChain', 'CoffeeTable', 0]
+list_of_highlevel_actions: ['Sofa', 'PutObject', 'KeyChain', 'Sofa', 1]
+[False, False]
+self.goal_idx2cat is  {0: 'Knife', 1: 'SinkBasin', 2: 'ArmChair', 3: 'BathtubBasin', 4: 'Bed', 5: 'Cabinet', 6: 'Cart', 7: 'CoffeeMachine', 8: 'CoffeeTable', 9: 'CounterTop', 10: 'Desk', 11: 'DiningTable', 12: 'Drawer', 13: 'Dresser', 14: 'Fridge', 15: 'GarbageCan', 16: 'Microwave', 17: 'Ottoman', 18: 'Safe', 19: 'Shelf', 20: 'SideTable', 21: 'Sofa', 22: 'StoveBurner', 23: 'TVStand', 24: 'Toilet', 25: 'KeyChain', 26: 'Kettle', 27: 'Glassbottle', 28: 'PepperShaker', 29: 'Pan', 30: 'Cloth', 31: 'HandTowel', 32: 'Box', 33: 'DishSponge', 34: 'Pencil', 35: 'Ladle', 36: 'CellPhone', 37: 'PotatoSliced', 38: 'Cup', 39: 'CD', 40: 'Tomato', 41: 'Egg', 42: 'WateringCan', 43: 'Bread', 44: 'ToiletPaperHanger', 45: 'BaseballBat', 46: 'FloorLamp', 47: 'Potato', 48: 'AppleSliced', 49: 'Faucet', 50: 'Apple', 51: 'WineBottle', 52: 'Fork', 53: 'RemoteControl', 54: 'CreditCard', 55: 'ButterKnife', 56: 'Spoon', 57: 'Sink', 58: 'BreadSliced', 59: 'AlarmClock', 60: 'Spatula', 61: 'BasketBall', 62: 'Lettuce', 63: 'TomatoSliced', 64: 'Pot', 65: 'Pillow', 66: 'SaltShaker', 67: 'TennisRacket', 68: 'Plate', 69: 'Watch', 70: 'Newspaper', 71: 'Mug', 72: 'Candle', 73: 'Vase', 74: 'Bathtub', 75: 'Bowl', 76: 'Laptop', 77: 'Statue', 78: 'DeskLamp', 79: 'Plunger', 80: 'SoapBottle', 81: 'Pen', 82: 'ToiletPaper', 83: 'Book', 84: 'SprayBottle', 85: 'LettuceSliced', 86: 'SoapBar', 87: 'TissueBox', 88: 'None'}
+Resetting ThorEnv
+Task: Move keys from the table to the sofa.
+instruction goal is  Put two bottles of nail polish in a cupboard.
+list_of_highlevel_actions: ['Glassbottle', 'PickupObject', 'Glassbottle', '0', 0]
+list_of_highlevel_actions: ['Cabinet', 'OpenObject', 'Glassbottle', 'Cabinet', 1]
+list_of_highlevel_actions: ['Cabinet', 'PutObject', 'Glassbottle', 'Cabinet', 1]
+list_of_highlevel_actions: ['Cabinet', 'CloseObject', 'Glassbottle', 'Cabinet', 1]
+list_of_highlevel_actions: ['Glassbottle', 'PickupObject', 'Glassbottle', '0', 2]
+list_of_highlevel_actions: ['Cabinet', 'OpenObject', 'Glassbottle', 'Cabinet', 3]
+list_of_highlevel_actions: ['Cabinet', 'PutObject', 'Glassbottle', 'Cabinet', 3]
+list_of_highlevel_actions: ['Cabinet', 'CloseObject', 'Glassbottle', 'Cabinet', 3]
+[False, False, False, False, True, False, False, False]
+self.goal_idx2cat is  {0: 'Knife', 1: 'SinkBasin', 2: 'ArmChair', 3: 'BathtubBasin', 4: 'Bed', 5: 'Cabinet', 6: 'Cart', 7: 'CoffeeMachine', 8: 'CoffeeTable', 9: 'CounterTop', 10: 'Desk', 11: 'DiningTable', 12: 'Drawer', 13: 'Dresser', 14: 'Fridge', 15: 'GarbageCan', 16: 'Microwave', 17: 'Ottoman', 18: 'Safe', 19: 'Shelf', 20: 'SideTable', 21: 'Sofa', 22: 'StoveBurner', 23: 'TVStand', 24: 'Toilet', 25: 'Glassbottle', 26: '0', 27: 'Kettle', 28: 'PepperShaker', 29: 'Pan', 30: 'Cloth', 31: 'HandTowel', 32: 'Box', 33: 'DishSponge', 34: 'Pencil', 35: 'Ladle', 36: 'CellPhone', 37: 'PotatoSliced', 38: 'Cup', 39: 'CD', 40: 'Tomato', 41: 'Egg', 42: 'WateringCan', 43: 'Bread', 44: 'ToiletPaperHanger', 45: 'BaseballBat', 46: 'FloorLamp', 47: 'Potato', 48: 'AppleSliced', 49: 'Faucet', 50: 'Apple', 51: 'WineBottle', 52: 'Fork', 53: 'RemoteControl', 54: 'CreditCard', 55: 'ButterKnife', 56: 'Spoon', 57: 'Sink', 58: 'BreadSliced', 59: 'AlarmClock', 60: 'Spatula', 61: 'BasketBall', 62: 'Lettuce', 63: 'TomatoSliced', 64: 'Pot', 65: 'KeyChain', 66: 'Pillow', 67: 'SaltShaker', 68: 'TennisRacket', 69: 'Plate', 70: 'Watch', 71: 'Newspaper', 72: 'Mug', 73: 'Candle', 74: 'Vase', 75: 'Bathtub', 76: 'Bowl', 77: 'Laptop', 78: 'Statue', 79: 'DeskLamp', 80: 'Plunger', 81: 'SoapBottle', 82: 'Pen', 83: 'ToiletPaper', 84: 'Book', 85: 'SprayBottle', 86: 'LettuceSliced', 87: 'SoapBar', 88: 'TissueBox', 89: 'None'}
+Resetting ThorEnv
+Task: Put two bottles of nail polish in a cupboard.
+action that causes below error is  {'action': 'MoveAhead', 'forceAction': True}
+  -> ShowerDoor_b3f24a51 is blocking Agent 0 from moving 0
+action that causes below error is  {'action': 'MoveAhead', 'forceAction': True}
+  -> FP428:Baseboard.008 is blocking Agent 0 from moving 0
+action that causes below error is  {'action': 'MoveAhead', 'forceAction': True}
+  -> FP428:Baseboard.008 is blocking Agent 0 from moving 0
+action that causes below error is  {'action': 'MoveAhead', 'forceAction': True}
+  -> Toilet_06558e89 is blocking Agent 0 from moving 0
+action that causes below error is  {'action': 'MoveAhead', 'forceAction': True}
+  -> Toilet_06558e89 is blocking Agent 0 from moving 0
+dict_keys(['Faucet', 'Candle', 'Plunger', 'SoapBottle', 'ToiletPaper', 'Book', 'SprayBottle', 'SoapBar', 'HandTowel'])
+arg Swap! Glassbottle --> SoapBottle
+action that causes below error is  {'action': 'PutObject', 'objectId': 'Plunger|-01.88|+00.00|+02.28', 'receptacleObjectId': 'Cabinet|-01.48|+00.35|+02.36', 'forceAction': True, 'placeStationary': True}
+  -> No valid Receptacle found
+action that causes below error is  {'action': 'MoveAhead', 'forceAction': True}
+  -> Cabinet_3d4c3913 is blocking Agent 0 from moving 0
+action that causes below error is  {'action': 'LookUp_15', 'forceAction': True}
+  -> Cannot teleport due to hand object collision.
+action that causes below error is  {'action': 'LookUp_15', 'forceAction': True}
+  -> Cannot teleport due to hand object collision.
+action that causes below error is  {'action': 'PutObject', 'objectId': 'Plunger|-01.88|+00.00|+02.28', 'receptacleObjectId': 'Cabinet|-01.48|+00.37|+03.15', 'forceAction': True, 'placeStationary': True}
+  -> Target openable Receptacle is CLOSED, can't place if target is not open!
+instruction goal is  Move the two perfume bottles on the vanity to the right-most cupboard underneath the vanity.
+list_of_highlevel_actions: ['Glassbottle', 'PickupObject', 'Glassbottle', '0', 0]
+list_of_highlevel_actions: ['Cabinet', 'OpenObject', 'Glassbottle', 'Cabinet', 1]
+list_of_highlevel_actions: ['Cabinet', 'PutObject', 'Glassbottle', 'Cabinet', 1]
+list_of_highlevel_actions: ['Cabinet', 'CloseObject', 'Glassbottle', 'Cabinet', 1]
+list_of_highlevel_actions: ['Glassbottle', 'PickupObject', 'Glassbottle', '0', 2]
+list_of_highlevel_actions: ['Cabinet', 'OpenObject', 'Glassbottle', 'Cabinet', 3]
+list_of_highlevel_actions: ['Cabinet', 'PutObject', 'Glassbottle', 'Cabinet', 3]
+list_of_highlevel_actions:/home/ubuntu/miniconda3/envs/flare/lib/python3.6/multiprocessing/semaphore_tracker.py:143: UserWarning: semaphore_tracker: There appear to be 1 leaked semaphores to clean up at shutdown
+  len(cache))
+main.py:210: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  obs = torch.tensor(obs).to(device)
+/home/ubuntu/miniconda3/envs/flare/lib/python3.6/site-packages/torch/nn/functional.py:3891: UserWarning: Default grid_sample and affine_grid behavior has changed to align_corners=False since 1.3.0. Please specify align_corners=True if the old behavior is desired. See the documentation of grid_sample for details.
+  "Default grid_sample and affine_grid behavior has changed "
+main.py:523: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  obs = torch.tensor(obs).to(device)
+This episode is probably Success!
+episode #  870 ended and process number is 0
+steps taken for episode#  870  is  43
+second object is  [False, False]
+This episode is probably Success!
+episode #  871 ended and process number is 0
+steps taken for episode#  871  is  43
+second object is  [False, False, False, False, True, False, False, False]
+Interact API failed 10 times
+episode #  872 ended and process number is 0
+steps taken for episode#  872  is  548
+second object is  [False, False, False, False, True, False, False, False]
+Interact API failed 10 times
+episode #  873 ended and process number is 0
+steps taken for episode#  873  is  548
+second object is  [False, False, False, False, True, False, False, False]
+Traceback (most recent call last):
+  File "main.py", line 998, in <module>
+    main()
+  File "main.py", line 843, in main
+    obs, rew, done, infos, goal_success_s, next_step_dict_s,planner_inputs = envs.plan_act_and_preprocess(planner_inputs, goal_spotted_s)
+  File "/media/ubuntu/Student/gengzeyu/flare/envs/__init__.py", line 103, in plan_act_and_preprocess
+    obs, reward, done, info, gs, next_step_dict, planner_inputs  = self.venv.plan_act_and_preprocess(inputs, goal_spotted)
+  File "/media/ubuntu/Student/gengzeyu/flare/envs/utils/vector_env.py", line 691, in plan_act_and_preprocess
+    results.append(read_fn())
+  File "/home/ubuntu/miniconda3/envs/flare/lib/python3.6/multiprocessing/connection.py", line 250, in recv
+    buf = self._recv_bytes()
+  File "/home/ubuntu/miniconda3/envs/flare/lib/python3.6/multiprocessing/connection.py", line 407, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/ubuntu/miniconda3/envs/flare/lib/python3.6/multiprocessing/connection.py", line 383, in _recv
+    raise EOFError
+EOFError

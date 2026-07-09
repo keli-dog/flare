@@ -1,0 +1,2073 @@
+
+===================================================
+episode # is 870
+step #:  0 , list of actions is  [['KeyChain', 'PickupObject', 'KeyChain', '0', 0], ['Sofa', 'PutObject', 'KeyChain', 'Sofa', 1]]
+step #:  2 , total cat2idx is  {'Knife': 0, 'SinkBasin': 1, 'ArmChair': 2, 'BathtubBasin': 3, 'Bed': 4, 'Cabinet': 5, 'Cart': 6, 'CoffeeMachine': 7, 'CoffeeTable': 8, 'CounterTop': 9, 'Desk': 10, 'DiningTable': 11, 'Drawer': 12, 'Dresser': 13, 'Fridge': 14, 'GarbageCan': 15, 'Microwave': 16, 'Ottoman': 17, 'Safe': 18, 'Shelf': 19, 'SideTable': 20, 'Sofa': 21, 'StoveBurner': 22, 'TVStand': 23, 'Toilet': 24, 'KeyChain': 25, '0': 26, 'Kettle': 27, 'Glassbottle': 28, 'PepperShaker': 29, 'Pan': 30, 'Cloth': 31, 'HandTowel': 32, 'Box': 33, 'DishSponge': 34, 'Pencil': 35, 'Ladle': 36, 'CellPhone': 37, 'PotatoSliced': 38, 'Cup': 39, 'CD': 40, 'Tomato': 41, 'Egg': 42, 'WateringCan': 43, 'Bread': 44, 'ToiletPaperHanger': 45, 'BaseballBat': 46, 'FloorLamp': 47, 'Potato': 48, 'AppleSliced': 49, 'Faucet': 50, 'Apple': 51, 'WineBottle': 52, 'Fork': 53, 'RemoteControl': 54, 'CreditCard': 55, 'ButterKnife': 56, 'Spoon': 57, 'Sink': 58, 'BreadSliced': 59, 'AlarmClock': 60, 'Spatula': 61, 'BasketBall': 62, 'Lettuce': 63, 'TomatoSliced': 64, 'Pot': 65, 'Pillow': 66, 'SaltShaker': 67, 'TennisRacket': 68, 'Plate': 69, 'Watch': 70, 'Newspaper': 71, 'Mug': 72, 'Candle': 73, 'Vase': 74, 'Bathtub': 75, 'Bowl': 76, 'Laptop': 77, 'Statue': 78, 'DeskLamp': 79, 'Plunger': 80, 'SoapBottle': 81, 'Pen': 82, 'ToiletPaper': 83, 'Book': 84, 'SprayBottle': 85, 'LettuceSliced': 86, 'SoapBar': 87, 'TissueBox': 88, 'None': 89}
+step #:  2 , None of that
+step #:  2 , planner broken is  False
+step #:  3 , obj type for mask is : KeyChain
+step #:  3 , Tried to lookdownupleft
+step #:  6 , Tried to lookdownupleft
+step #:  10 , None of that
+step #:  10 , planner broken is  False
+step #:  11 , obj type for mask is : KeyChain
+step #:  11 , Tried to lookdownupleft
+step #:  14 , Tried to lookdownupleft
+step #:  18 , None of that
+step #:  18 , planner broken is  False
+step #:  19 , obj type for mask is : KeyChain
+step #:  19 , Tried to lookdownupleft
+step #:  22 , Tried to lookdownupleft
+step #:  26 , None of that
+step #:  26 , planner broken is  False
+step #:  27 , obj type for mask is : KeyChain
+step #:  27 , Tried to lookdownupleft
+step #:  30 , Tried to lookdownupleft
+step #:  34 , None of that
+step #:  34 , planner broken is  False
+step #:  35 , obj type for mask is : KeyChain
+step #:  35 , None of that
+step #:  35 , planner broken is  False
+step #:  36 , obj type for mask is : KeyChain
+step #:  36 , None of that
+step #:  36 , planner broken is  False
+step #:  37 , obj type for mask is : KeyChain
+step #:  37 , None of that
+step #:  37 , planner broken is  False
+step #:  38 , obj type for mask is : KeyChain
+step #:  39 , pointer increased goal name  ['Sofa', 'PutObject', 'KeyChain', 'Sofa', 1]
+step #:  39 , Center done
+step #:  39 , None of that
+step #:  39 , goal found!
+step #:  39 , planner broken is  False
+step #:  40 , obj type for mask is : Sofa
+step #:  40 , None of that
+step #:  40 , goal found!
+step #:  40 , planner broken is  False
+step #:  41 , obj type for mask is : Sofa
+step #:  41 , None of that
+step #:  41 , goal found!
+step #:  41 , planner broken is  False
+step #:  42 , obj type for mask is : Sofa
+This episode is probably Success!
+
+===================================================
+episode # is 871
+step #:  0 , list of actions is  [['KeyChain', 'PickupObject', 'KeyChain', 'CoffeeTable', 0], ['Sofa', 'PutObject', 'KeyChain', 'Sofa', 1]]
+step #:  2 , total cat2idx is  {'Knife': 0, 'SinkBasin': 1, 'ArmChair': 2, 'BathtubBasin': 3, 'Bed': 4, 'Cabinet': 5, 'Cart': 6, 'CoffeeMachine': 7, 'CoffeeTable': 8, 'CounterTop': 9, 'Desk': 10, 'DiningTable': 11, 'Drawer': 12, 'Dresser': 13, 'Fridge': 14, 'GarbageCan': 15, 'Microwave': 16, 'Ottoman': 17, 'Safe': 18, 'Shelf': 19, 'SideTable': 20, 'Sofa': 21, 'StoveBurner': 22, 'TVStand': 23, 'Toilet': 24, 'KeyChain': 25, 'Kettle': 26, 'Glassbottle': 27, 'PepperShaker': 28, 'Pan': 29, 'Cloth': 30, 'HandTowel': 31, 'Box': 32, 'DishSponge': 33, 'Pencil': 34, 'Ladle': 35, 'CellPhone': 36, 'PotatoSliced': 37, 'Cup': 38, 'CD': 39, 'Tomato': 40, 'Egg': 41, 'WateringCan': 42, 'Bread': 43, 'ToiletPaperHanger': 44, 'BaseballBat': 45, 'FloorLamp': 46, 'Potato': 47, 'AppleSliced': 48, 'Faucet': 49, 'Apple': 50, 'WineBottle': 51, 'Fork': 52, 'RemoteControl': 53, 'CreditCard': 54, 'ButterKnife': 55, 'Spoon': 56, 'Sink': 57, 'BreadSliced': 58, 'AlarmClock': 59, 'Spatula': 60, 'BasketBall': 61, 'Lettuce': 62, 'TomatoSliced': 63, 'Pot': 64, 'Pillow': 65, 'SaltShaker': 66, 'TennisRacket': 67, 'Plate': 68, 'Watch': 69, 'Newspaper': 70, 'Mug': 71, 'Candle': 72, 'Vase': 73, 'Bathtub': 74, 'Bowl': 75, 'Laptop': 76, 'Statue': 77, 'DeskLamp': 78, 'Plunger': 79, 'SoapBottle': 80, 'Pen': 81, 'ToiletPaper': 82, 'Book': 83, 'SprayBottle': 84, 'LettuceSliced': 85, 'SoapBar': 86, 'TissueBox': 87, 'None': 88}
+step #:  2 , newly goal set
+step #:  2 , None of that
+step #:  2 , planner broken is  False
+step #:  3 , obj type for mask is : KeyChain
+step #:  3 , Tried to lookdownupleft
+step #:  6 , Tried to lookdownupleft
+step #:  10 , None of that
+step #:  10 , planner broken is  False
+step #:  11 , obj type for mask is : KeyChain
+step #:  11 , Tried to lookdownupleft
+step #:  14 , Tried to lookdownupleft
+step #:  18 , None of that
+step #:  18 , planner broken is  False
+step #:  19 , obj type for mask is : KeyChain
+step #:  19 , Tried to lookdownupleft
+step #:  22 , Tried to lookdownupleft
+step #:  26 , None of that
+step #:  26 , planner broken is  False
+step #:  27 , obj type for mask is : KeyChain
+step #:  27 , Tried to lookdownupleft
+step #:  30 , Tried to lookdownupleft
+step #:  34 , None of that
+step #:  34 , planner broken is  False
+step #:  35 , obj type for mask is : KeyChain
+step #:  35 , None of that
+step #:  35 , planner broken is  False
+step #:  36 , obj type for mask is : KeyChain
+step #:  36 , None of that
+step #:  36 , planner broken is  False
+step #:  37 , obj type for mask is : KeyChain
+step #:  37 , None of that
+step #:  37 , planner broken is  False
+step #:  38 , obj type for mask is : KeyChain
+step #:  39 , pointer increased goal name  ['Sofa', 'PutObject', 'KeyChain', 'Sofa', 1]
+step #:  39 , Center done
+step #:  39 , None of that
+step #:  39 , goal found!
+step #:  39 , planner broken is  False
+step #:  40 , obj type for mask is : Sofa
+step #:  40 , None of that
+step #:  40 , goal found!
+step #:  40 , planner broken is  False
+step #:  41 , obj type for mask is : Sofa
+step #:  41 , None of that
+step #:  41 , goal found!
+step #:  41 , planner broken is  False
+step #:  42 , obj type for mask is : Sofa
+This episode is probably Success!
+
+===================================================
+episode # is 872
+step #:  0 , list of actions is  [['Glassbottle', 'PickupObject', 'Glassbottle', '0', 0], ['Cabinet', 'OpenObject', 'Glassbottle', 'Cabinet', 1], ['Cabinet', 'PutObject', 'Glassbottle', 'Cabinet', 1], ['Cabinet', 'CloseObject', 'Glassbottle', 'Cabinet', 1], ['Glassbottle', 'PickupObject', 'Glassbottle', '0', 2], ['Cabinet', 'OpenObject', 'Glassbottle', 'Cabinet', 3], ['Cabinet', 'PutObject', 'Glassbottle', 'Cabinet', 3], ['Cabinet', 'CloseObject', 'Glassbottle', 'Cabinet', 3]]
+step #:  2 , total cat2idx is  {'Knife': 0, 'SinkBasin': 1, 'ArmChair': 2, 'BathtubBasin': 3, 'Bed': 4, 'Cabinet': 5, 'Cart': 6, 'CoffeeMachine': 7, 'CoffeeTable': 8, 'CounterTop': 9, 'Desk': 10, 'DiningTable': 11, 'Drawer': 12, 'Dresser': 13, 'Fridge': 14, 'GarbageCan': 15, 'Microwave': 16, 'Ottoman': 17, 'Safe': 18, 'Shelf': 19, 'SideTable': 20, 'Sofa': 21, 'StoveBurner': 22, 'TVStand': 23, 'Toilet': 24, 'Glassbottle': 25, '0': 26, 'Kettle': 27, 'PepperShaker': 28, 'Pan': 29, 'Cloth': 30, 'HandTowel': 31, 'Box': 32, 'DishSponge': 33, 'Pencil': 34, 'Ladle': 35, 'CellPhone': 36, 'PotatoSliced': 37, 'Cup': 38, 'CD': 39, 'Tomato': 40, 'Egg': 41, 'WateringCan': 42, 'Bread': 43, 'ToiletPaperHanger': 44, 'BaseballBat': 45, 'FloorLamp': 46, 'Potato': 47, 'AppleSliced': 48, 'Faucet': 49, 'Apple': 50, 'WineBottle': 51, 'Fork': 52, 'RemoteControl': 53, 'CreditCard': 54, 'ButterKnife': 55, 'Spoon': 56, 'Sink': 57, 'BreadSliced': 58, 'AlarmClock': 59, 'Spatula': 60, 'BasketBall': 61, 'Lettuce': 62, 'TomatoSliced': 63, 'Pot': 64, 'KeyChain': 65, 'Pillow': 66, 'SaltShaker': 67, 'TennisRacket': 68, 'Plate': 69, 'Watch': 70, 'Newspaper': 71, 'Mug': 72, 'Candle': 73, 'Vase': 74, 'Bathtub': 75, 'Bowl': 76, 'Laptop': 77, 'Statue': 78, 'DeskLamp': 79, 'Plunger': 80, 'SoapBottle': 81, 'Pen': 82, 'ToiletPaper': 83, 'Book': 84, 'SprayBottle': 85, 'LettuceSliced': 86, 'SoapBar': 87, 'TissueBox': 88, 'None': 89}
+step #:  2 , newly goal set
+step #:  2 , None of that
+step #:  2 , planner broken is  False
+step #:  3 , obj type for mask is : Glassbottle
+step #:  3 , Tried to lookdownupleft
+step #:  6 , Tried to lookdownupleft
+step #:  10 , None of that
+step #:  10 , planner broken is  False
+step #:  11 , obj type for mask is : Glassbottle
+step #:  11 , Tried to lookdownupleft
+step #:  14 , Tried to lookdownupleft
+step #:  18 , None of that
+step #:  18 , planner broken is  False
+step #:  19 , obj type for mask is : Glassbottle
+step #:  19 , Tried to lookdownupleft
+step #:  22 , Tried to lookdownupleft
+step #:  26 , None of that
+step #:  26 , planner broken is  False
+step #:  27 , obj type for mask is : Glassbottle
+step #:  27 , Tried to lookdownupleft
+step #:  30 , Tried to lookdownupleft
+step #:  34 , None of that
+step #:  34 , planner broken is  False
+step #:  35 , obj type for mask is : Glassbottle
+step #:  35 , None of that
+step #:  35 , planner broken is  False
+step #:  36 , obj type for mask is : Glassbottle
+step #:  36 , None of that
+step #:  36 , planner broken is  False
+step #:  37 , obj type for mask is : Glassbottle
+step #:  37 , None of that
+step #:  37 , planner broken is  False
+step #:  38 , obj type for mask is : Glassbottle
+step #:  38 , None of that
+step #:  38 , planner broken is  False
+step #:  39 , obj type for mask is : Glassbottle
+step #:  39 , None of that
+step #:  39 , planner broken is  False
+step #:  40 , obj type for mask is : Glassbottle
+step #:  40 , None of that
+step #:  40 , planner broken is  False
+step #:  41 , obj type for mask is : Glassbottle
+step #:  41 , None of that
+step #:  41 , planner broken is  False
+step #:  42 , obj type for mask is : Glassbottle
+step #:  42 , None of that
+step #:  42 , planner broken is  False
+step #:  43 , obj type for mask is : Glassbottle
+step #:  43 , None of that
+step #:  43 , planner broken is  False
+step #:  44 , obj type for mask is : Glassbottle
+step #:  44 , None of that
+step #:  44 , planner broken is  False
+step #:  45 , obj type for mask is : Glassbottle
+step #:  45 , None of that
+step #:  45 , planner broken is  False
+step #:  46 , obj type for mask is : Glassbottle
+step #:  46 , None of that
+step #:  46 , planner broken is  False
+step #:  47 , obj type for mask is : Glassbottle
+step #:  47 , newly goal set
+step #:  47 , None of that
+step #:  47 , planner broken is  False
+step #:  48 , obj type for mask is : Glassbottle
+step #:  48 , None of that
+step #:  48 , planner broken is  False
+step #:  49 , obj type for mask is : Glassbottle
+step #:  49 , None of that
+step #:  49 , planner broken is  False
+step #:  50 , obj type for mask is : Glassbottle
+step #:  50 , None of that
+step #:  50 , planner broken is  False
+step #:  51 , obj type for mask is : Glassbottle
+step #:  51 , step:  51 , err is  ShowerDoor_b3f24a51 is blocking Agent 0 from moving 0
+step #:  51 , action taken in step  51 : 
+step #:  51 , None of that
+step #:  51 , planner broken is  False
+step #:  52 , obj type for mask is : Glassbottle
+step #:  52 , None of that
+step #:  52 , planner broken is  False
+step #:  53 , obj type for mask is : Glassbottle
+step #:  53 , None of that
+step #:  53 , planner broken is  False
+step #:  54 , obj type for mask is : Glassbottle
+step #:  54 , None of that
+step #:  54 , planner broken is  False
+step #:  55 , obj type for mask is : Glassbottle
+step #:  55 , None of that
+step #:  55 , planner broken is  False
+step #:  56 , obj type for mask is : Glassbottle
+step #:  56 , None of that
+step #:  56 , planner broken is  False
+step #:  57 , obj type for mask is : Glassbottle
+step #:  57 , step:  57 , err is  FP428:Baseboard.008 is blocking Agent 0 from moving 0
+step #:  57 , action taken in step  57 : 
+step #:  57 , None of that
+step #:  57 , planner broken is  False
+step #:  58 , obj type for mask is : Glassbottle
+step #:  58 , None of that
+step #:  58 , planner broken is  False
+step #:  59 , obj type for mask is : Glassbottle
+step #:  59 , None of that
+step #:  59 , planner broken is  False
+step #:  60 , obj type for mask is : Glassbottle
+step #:  60 , None of that
+step #:  60 , planner broken is  False
+step #:  61 , obj type for mask is : Glassbottle
+step #:  61 , step:  61 , err is  FP428:Baseboard.008 is blocking Agent 0 from moving 0
+step #:  61 , action taken in step  61 : 
+step #:  61 , None of that
+step #:  61 , planner broken is  False
+step #:  62 , obj type for mask is : Glassbottle
+step #:  62 , None of that
+step #:  62 , planner broken is  False
+step #:  63 , obj type for mask is : Glassbottle
+step #:  63 , None of that
+step #:  63 , planner broken is  False
+step #:  64 , obj type for mask is : Glassbottle
+step #:  64 , None of that
+step #:  64 , planner broken is  False
+step #:  65 , obj type for mask is : Glassbottle
+step #:  65 , None of that
+step #:  65 , planner broken is  False
+step #:  66 , obj type for mask is : Glassbottle
+step #:  66 , None of that
+step #:  66 , planner broken is  False
+step #:  67 , obj type for mask is : Glassbottle
+step #:  67 , None of that
+step #:  67 , planner broken is  False
+step #:  68 , obj type for mask is : Glassbottle
+step #:  68 , None of that
+step #:  68 , planner broken is  False
+step #:  69 , obj type for mask is : Glassbottle
+step #:  69 , None of that
+step #:  69 , planner broken is  False
+step #:  70 , obj type for mask is : Glassbottle
+step #:  70 , None of that
+step #:  70 , planner broken is  False
+step #:  71 , obj type for mask is : Glassbottle
+step #:  71 , None of that
+step #:  71 , planner broken is  False
+step #:  72 , obj type for mask is : Glassbottle
+step #:  72 , newly goal set
+step #:  72 , None of that
+step #:  72 , planner broken is  False
+step #:  73 , obj type for mask is : Glassbottle
+step #:  73 , None of that
+step #:  73 , planner broken is  False
+step #:  74 , obj type for mask is : Glassbottle
+step #:  74 , None of that
+step #:  74 , planner broken is  False
+step #:  75 , obj type for mask is : Glassbottle
+step #:  75 , None of that
+step #:  75 , planner broken is  False
+step #:  76 , obj type for mask is : Glassbottle
+step #:  76 , None of that
+step #:  76 , planner broken is  False
+step #:  77 , obj type for mask is : Glassbottle
+step #:  77 , Tried to lookdownupleft
+step #:  80 , Tried to lookdownupleft
+step #:  84 , None of that
+step #:  84 , planner broken is  False
+step #:  85 , obj type for mask is : Glassbottle
+step #:  85 , Tried to lookdownupleft
+step #:  88 , Tried to lookdownupleft
+step #:  92 , None of that
+step #:  92 , planner broken is  False
+step #:  93 , obj type for mask is : Glassbottle
+step #:  93 , Tried to lookdownupleft
+step #:  96 , Tried to lookdownupleft
+step #:  100 , None of that
+step #:  100 , planner broken is  False
+step #:  101 , obj type for mask is : Glassbottle
+step #:  101 , Tried to lookdownupleft
+step #:  104 , Tried to lookdownupleft
+step #:  108 , None of that
+step #:  108 , planner broken is  False
+step #:  109 , obj type for mask is : Glassbottle
+step #:  109 , None of that
+step #:  109 , planner broken is  False
+step #:  110 , obj type for mask is : Glassbottle
+step #:  110 , None of that
+step #:  110 , planner broken is  False
+step #:  111 , obj type for mask is : Glassbottle
+step #:  111 , None of that
+step #:  111 , planner broken is  False
+step #:  112 , obj type for mask is : Glassbottle
+step #:  112 , None of that
+step #:  112 , planner broken is  False
+step #:  113 , obj type for mask is : Glassbottle
+step #:  113 , None of that
+step #:  113 , planner broken is  False
+step #:  114 , obj type for mask is : Glassbottle
+step #:  114 , None of that
+step #:  114 , planner broken is  False
+step #:  115 , obj type for mask is : Glassbottle
+step #:  115 , None of that
+step #:  115 , planner broken is  False
+step #:  116 , obj type for mask is : Glassbottle
+step #:  116 , None of that
+step #:  116 , planner broken is  False
+step #:  117 , obj type for mask is : Glassbottle
+step #:  117 , newly goal set
+step #:  117 , None of that
+step #:  117 , planner broken is  False
+step #:  118 , obj type for mask is : Glassbottle
+step #:  118 , None of that
+step #:  118 , planner broken is  False
+step #:  119 , obj type for mask is : Glassbottle
+step #:  119 , None of that
+step #:  119 , planner broken is  False
+step #:  120 , obj type for mask is : Glassbottle
+step #:  120 , None of that
+step #:  120 , planner broken is  False
+step #:  121 , obj type for mask is : Glassbottle
+step #:  121 , None of that
+step #:  121 , planner broken is  False
+step #:  122 , obj type for mask is : Glassbottle
+step #:  122 , None of that
+step #:  122 , planner broken is  False
+step #:  123 , obj type for mask is : Glassbottle
+step #:  123 , None of that
+step #:  123 , planner broken is  False
+step #:  124 , obj type for mask is : Glassbottle
+step #:  124 , step:  124 , err is  Toilet_06558e89 is blocking Agent 0 from moving 0
+step #:  124 , action taken in step  124 : 
+step #:  124 , None of that
+step #:  124 , planner broken is  False
+step #:  125 , obj type for mask is : Glassbottle
+step #:  125 , None of that
+step #:  125 , planner broken is  False
+step #:  126 , obj type for mask is : Glassbottle
+step #:  126 , None of that
+step #:  126 , planner broken is  False
+step #:  127 , obj type for mask is : Glassbottle
+step #:  127 , None of that
+step #:  127 , planner broken is  False
+step #:  128 , obj type for mask is : Glassbottle
+step #:  128 , None of that
+step #:  128 , planner broken is  False
+step #:  129 , obj type for mask is : Glassbottle
+step #:  129 , None of that
+step #:  129 , planner broken is  False
+step #:  130 , obj type for mask is : Glassbottle
+step #:  130 , None of that
+step #:  130 , planner broken is  False
+step #:  131 , obj type for mask is : Glassbottle
+step #:  131 , None of that
+step #:  131 , planner broken is  False
+step #:  132 , obj type for mask is : Glassbottle
+step #:  132 , None of that
+step #:  132 , planner broken is  False
+step #:  133 , obj type for mask is : Glassbottle
+step #:  133 , Tried to lookdownupleft
+step #:  136 , Tried to lookdownupleft
+step #:  140 , None of that
+step #:  140 , planner broken is  False
+step #:  141 , obj type for mask is : Glassbottle
+step #:  141 , Tried to lookdownupleft
+step #:  144 , Tried to lookdownupleft
+step #:  148 , None of that
+step #:  148 , planner broken is  False
+step #:  149 , obj type for mask is : Glassbottle
+step #:  149 , Tried to lookdownupleft
+step #:  152 , Tried to lookdownupleft
+step #:  156 , None of that
+step #:  156 , planner broken is  False
+step #:  157 , obj type for mask is : Glassbottle
+step #:  157 , Tried to lookdownupleft
+step #:  160 , Tried to lookdownupleft
+step #:  164 , None of that
+step #:  164 , planner broken is  False
+step #:  165 , obj type for mask is : Glassbottle
+step #:  165 , None of that
+step #:  165 , planner broken is  False
+step #:  166 , obj type for mask is : Glassbottle
+step #:  166 , step:  166 , err is  Toilet_06558e89 is blocking Agent 0 from moving 0
+step #:  166 , action taken in step  166 : 
+step #:  166 , None of that
+step #:  166 , planner broken is  False
+step #:  167 , obj type for mask is : Glassbottle
+step #:  167 , None of that
+step #:  167 , planner broken is  False
+step #:  168 , obj type for mask is : Glassbottle
+step #:  168 , None of that
+step #:  168 , planner broken is  False
+step #:  169 , obj type for mask is : Glassbottle
+step #:  169 , None of that
+step #:  169 , planner broken is  False
+step #:  170 , obj type for mask is : Glassbottle
+step #:  170 , None of that
+step #:  170 , planner broken is  False
+step #:  171 , obj type for mask is : Glassbottle
+step #:  171 , None of that
+step #:  171 , planner broken is  False
+step #:  172 , obj type for mask is : Glassbottle
+step #:  172 , None of that
+step #:  172 , planner broken is  False
+step #:  173 , obj type for mask is : Glassbottle
+step #:  173 , None of that
+step #:  173 , planner broken is  False
+step #:  174 , obj type for mask is : Glassbottle
+step #:  174 , None of that
+step #:  174 , planner broken is  False
+step #:  175 , obj type for mask is : Glassbottle
+step #:  175 , None of that
+step #:  175 , planner broken is  False
+step #:  176 , obj type for mask is : Glassbottle
+step #:  176 , None of that
+step #:  176 , planner broken is  False
+step #:  177 , obj type for mask is : Glassbottle
+step #:  177 , None of that
+step #:  177 , planner broken is  False
+step #:  178 , obj type for mask is : Glassbottle
+step #:  178 , None of that
+step #:  178 , planner broken is  False
+step #:  179 , obj type for mask is : Glassbottle
+step #:  179 , None of that
+step #:  179 , planner broken is  False
+step #:  180 , obj type for mask is : Glassbottle
+step #:  180 , None of that
+step #:  180 , planner broken is  False
+step #:  181 , obj type for mask is : Glassbottle
+step #:  181 , None of that
+step #:  181 , planner broken is  False
+step #:  182 , obj type for mask is : Glassbottle
+step #:  182 , None of that
+step #:  182 , planner broken is  False
+step #:  183 , obj type for mask is : Glassbottle
+step #:  183 , None of that
+step #:  183 , planner broken is  False
+step #:  184 , obj type for mask is : Glassbottle
+step #:  184 , None of that
+step #:  184 , planner broken is  False
+step #:  185 , obj type for mask is : Glassbottle
+step #:  185 , None of that
+step #:  185 , planner broken is  False
+step #:  186 , obj type for mask is : Glassbottle
+step #:  186 , None of that
+step #:  186 , planner broken is  False
+step #:  187 , obj type for mask is : Glassbottle
+step #:  187 , newly goal set
+step #:  187 , None of that
+step #:  187 , planner broken is  False
+step #:  188 , obj type for mask is : Glassbottle
+step #:  188 , None of that
+step #:  188 , planner broken is  False
+step #:  189 , obj type for mask is : Glassbottle
+step #:  189 , None of that
+step #:  189 , planner broken is  False
+step #:  190 , obj type for mask is : Glassbottle
+step #:  190 , None of that
+step #:  190 , planner broken is  False
+step #:  191 , obj type for mask is : Glassbottle
+step #:  191 , None of that
+step #:  191 , planner broken is  False
+step #:  192 , obj type for mask is : Glassbottle
+step #:  192 , None of that
+step #:  192 , planner broken is  False
+step #:  193 , obj type for mask is : Glassbottle
+step #:  193 , None of that
+step #:  193 , planner broken is  False
+step #:  194 , obj type for mask is : Glassbottle
+step #:  194 , None of that
+step #:  194 , planner broken is  False
+step #:  195 , obj type for mask is : Glassbottle
+step #:  195 , None of that
+step #:  195 , planner broken is  False
+step #:  196 , obj type for mask is : Glassbottle
+step #:  196 , None of that
+step #:  196 , planner broken is  False
+step #:  197 , obj type for mask is : Glassbottle
+step #:  197 , None of that
+step #:  197 , planner broken is  False
+step #:  198 , obj type for mask is : Glassbottle
+step #:  198 , None of that
+step #:  198 , planner broken is  False
+step #:  199 , obj type for mask is : Glassbottle
+step #:  199 , None of that
+step #:  199 , planner broken is  False
+step #:  200 , obj type for mask is : Glassbottle
+step #:  200 , None of that
+step #:  200 , planner broken is  False
+step #:  201 , obj type for mask is : Glassbottle
+step #:  201 , Tried to lookdownupleft
+step #:  204 , Tried to lookdownupleft
+step #:  208 , None of that
+step #:  208 , planner broken is  False
+step #:  209 , obj type for mask is : Glassbottle
+step #:  209 , Tried to lookdownupleft
+step #:  212 , Tried to lookdownupleft
+step #:  216 , None of that
+step #:  216 , planner broken is  False
+step #:  217 , obj type for mask is : Glassbottle
+step #:  217 , Tried to lookdownupleft
+step #:  220 , Tried to lookdownupleft
+step #:  224 , None of that
+step #:  224 , planner broken is  False
+step #:  225 , obj type for mask is : Glassbottle
+step #:  225 , Tried to lookdownupleft
+step #:  228 , Tried to lookdownupleft
+step #:  232 , newly goal set
+step #:  232 , None of that
+step #:  232 , planner broken is  False
+step #:  233 , obj type for mask is : Glassbottle
+step #:  233 , None of that
+step #:  233 , planner broken is  False
+step #:  234 , obj type for mask is : Glassbottle
+step #:  234 , None of that
+step #:  234 , planner broken is  False
+step #:  235 , obj type for mask is : Glassbottle
+step #:  235 , None of that
+step #:  235 , planner broken is  False
+step #:  236 , obj type for mask is : Glassbottle
+step #:  236 , None of that
+step #:  236 , planner broken is  False
+step #:  237 , obj type for mask is : Glassbottle
+step #:  237 , None of that
+step #:  237 , planner broken is  False
+step #:  238 , obj type for mask is : Glassbottle
+step #:  238 , None of that
+step #:  238 , planner broken is  False
+step #:  239 , obj type for mask is : Glassbottle
+step #:  239 , None of that
+step #:  239 , planner broken is  False
+step #:  240 , obj type for mask is : Glassbottle
+step #:  240 , None of that
+step #:  240 , planner broken is  False
+step #:  241 , obj type for mask is : Glassbottle
+step #:  241 , None of that
+step #:  241 , planner broken is  False
+step #:  242 , obj type for mask is : Glassbottle
+step #:  242 , None of that
+step #:  242 , planner broken is  False
+step #:  243 , obj type for mask is : Glassbottle
+step #:  243 , None of that
+step #:  243 , planner broken is  False
+step #:  244 , obj type for mask is : Glassbottle
+step #:  244 , None of that
+step #:  244 , planner broken is  False
+step #:  245 , obj type for mask is : Glassbottle
+step #:  245 , Tried to lookdownupleft
+step #:  248 , Tried to lookdownupleft
+step #:  252 , None of that
+step #:  252 , planner broken is  False
+step #:  253 , obj type for mask is : Glassbottle
+step #:  253 , Tried to lookdownupleft
+step #:  256 , Tried to lookdownupleft
+step #:  260 , None of that
+step #:  260 , planner broken is  False
+step #:  261 , obj type for mask is : Glassbottle
+step #:  261 , Tried to lookdownupleft
+step #:  264 , Tried to lookdownupleft
+step #:  268 , None of that
+step #:  268 , planner broken is  False
+step #:  269 , obj type for mask is : Glassbottle
+step #:  269 , Tried to lookdownupleft
+step #:  272 , Tried to lookdownupleft
+step #:  276 , None of that
+step #:  276 , planner broken is  False
+step #:  277 , obj type for mask is : Glassbottle
+step #:  277 , newly goal set
+step #:  277 , None of that
+step #:  277 , planner broken is  False
+step #:  278 , obj type for mask is : Glassbottle
+step #:  278 , None of that
+step #:  278 , planner broken is  False
+step #:  279 , obj type for mask is : Glassbottle
+step #:  279 , None of that
+step #:  279 , planner broken is  False
+step #:  280 , obj type for mask is : Glassbottle
+step #:  280 , None of that
+step #:  280 , planner broken is  False
+step #:  281 , obj type for mask is : Glassbottle
+step #:  281 , None of that
+step #:  281 , planner broken is  False
+step #:  282 , obj type for mask is : Glassbottle
+step #:  282 , None of that
+step #:  282 , planner broken is  False
+step #:  283 , obj type for mask is : Glassbottle
+step #:  283 , None of that
+step #:  283 , planner broken is  False
+step #:  284 , obj type for mask is : Glassbottle
+step #:  284 , None of that
+step #:  284 , planner broken is  False
+step #:  285 , obj type for mask is : Glassbottle
+step #:  285 , None of that
+step #:  285 , planner broken is  False
+step #:  286 , obj type for mask is : Glassbottle
+step #:  286 , None of that
+step #:  286 , planner broken is  False
+step #:  287 , obj type for mask is : Glassbottle
+step #:  287 , None of that
+step #:  287 , planner broken is  False
+step #:  288 , obj type for mask is : Glassbottle
+step #:  288 , None of that
+step #:  288 , planner broken is  False
+step #:  289 , obj type for mask is : Glassbottle
+step #:  289 , None of that
+step #:  289 , planner broken is  False
+step #:  290 , obj type for mask is : Glassbottle
+step #:  290 , Tried to lookdownupleft
+step #:  293 , Tried to lookdownupleft
+step #:  297 , None of that
+step #:  297 , planner broken is  False
+step #:  298 , obj type for mask is : Glassbottle
+step #:  298 , Tried to lookdownupleft
+step #:  301 , Tried to lookdownupleft
+step #:  305 , None of that
+step #:  305 , planner broken is  False
+step #:  306 , obj type for mask is : Glassbottle
+step #:  306 , Tried to lookdownupleft
+step #:  309 , Tried to lookdownupleft
+step #:  313 , None of that
+step #:  313 , planner broken is  False
+step #:  314 , obj type for mask is : Glassbottle
+step #:  314 , Tried to lookdownupleft
+step #:  317 , Tried to lookdownupleft
+step #:  321 , None of that
+step #:  321 , planner broken is  False
+step #:  322 , obj type for mask is : Glassbottle
+step #:  322 , newly goal set
+step #:  322 , None of that
+step #:  322 , planner broken is  False
+step #:  323 , obj type for mask is : Glassbottle
+step #:  323 , arg Swap! Glassbottle --> SoapBottle
+step #:  323 , None of that
+step #:  323 , goal found!
+step #:  323 , planner broken is  False
+step #:  324 , obj type for mask is : SoapBottle
+step #:  324 , None of that
+step #:  324 , goal found!
+step #:  324 , planner broken is  False
+step #:  325 , obj type for mask is : SoapBottle
+step #:  325 , None of that
+step #:  325 , goal found!
+step #:  325 , planner broken is  False
+step #:  326 , obj type for mask is : SoapBottle
+step #:  326 , None of that
+step #:  326 , goal found!
+step #:  326 , planner broken is  False
+step #:  327 , obj type for mask is : SoapBottle
+step #:  327 , None of that
+step #:  327 , goal found!
+step #:  327 , planner broken is  False
+step #:  327 , moving until visible
+step #:  327 , current horizon is  45.0
+step #:  327 , move until visible order is  0
+step #:  328 , obj type for mask is : SoapBottle
+step #:  328 , moving until visible
+step #:  328 , current horizon is  45.0
+step #:  328 , move until visible order is  1
+step #:  329 , obj type for mask is : SoapBottle
+step #:  329 , moving until visible
+step #:  329 , current horizon is  45.0
+step #:  329 , move until visible order is  2
+step #:  330 , obj type for mask is : SoapBottle
+step #:  330 , moving until visible
+step #:  330 , current horizon is  45.0
+step #:  330 , move until visible order is  3
+step #:  331 , obj type for mask is : SoapBottle
+step #:  331 , moving until visible
+step #:  331 , current horizon is  45.0
+step #:  331 , move until visible order is  4
+step #:  336 , obj type for mask is : SoapBottle
+step #:  336 , moving until visible
+step #:  336 , current horizon is  0.0
+step #:  336 , move until visible order is  5
+step #:  339 , move until visible broken!
+step #:  339 , obj type for mask is : SoapBottle
+step #:  339 , moving until visible
+step #:  339 , current horizon is  45.0
+step #:  339 , move until visible order is  5
+step #:  344 , obj type for mask is : SoapBottle
+step #:  344 , moving until visible
+step #:  344 , current horizon is  0.0
+step #:  344 , move until visible order is  6
+step #:  347 , move until visible broken!
+step #:  347 , obj type for mask is : SoapBottle
+step #:  347 , moving until visible
+step #:  347 , current horizon is  45.0
+step #:  347 , move until visible order is  6
+step #:  352 , obj type for mask is : SoapBottle
+step #:  352 , moving until visible
+step #:  352 , current horizon is  0.0
+step #:  352 , move until visible order is  7
+step #:  355 , move until visible broken!
+step #:  355 , obj type for mask is : SoapBottle
+step #:  355 , moving until visible
+step #:  355 , current horizon is  45.0
+step #:  355 , move until visible order is  7
+step #:  360 , obj type for mask is : SoapBottle
+step #:  360 , moving until visible
+step #:  360 , current horizon is  0.0
+step #:  360 , move until visible order is  8
+step #:  363 , move until visible broken!
+step #:  363 , Went through one cycle of move until visible, step num is  363
+step #:  363 , obj type for mask is : SoapBottle
+step #:  363 , None of that
+step #:  363 , planner broken is  False
+step #:  364 , obj type for mask is : SoapBottle
+step #:  364 , None of that
+step #:  364 , planner broken is  False
+step #:  365 , obj type for mask is : SoapBottle
+step #:  365 , None of that
+step #:  365 , planner broken is  False
+step #:  366 , obj type for mask is : SoapBottle
+step #:  366 , None of that
+step #:  366 , planner broken is  False
+step #:  367 , obj type for mask is : SoapBottle
+step #:  367 , None of that
+step #:  367 , planner broken is  False
+step #:  368 , obj type for mask is : SoapBottle
+step #:  368 , None of that
+step #:  368 , planner broken is  False
+step #:  369 , obj type for mask is : SoapBottle
+step #:  369 , None of that
+step #:  369 , planner broken is  False
+step #:  370 , obj type for mask is : SoapBottle
+step #:  370 , None of that
+step #:  370 , planner broken is  False
+step #:  371 , obj type for mask is : SoapBottle
+step #:  371 , Tried to lookdownupleft
+step #:  374 , Tried to lookdownupleft
+step #:  378 , None of that
+step #:  378 , planner broken is  False
+step #:  379 , obj type for mask is : SoapBottle
+step #:  379 , None of that
+step #:  379 , planner broken is  False
+step #:  380 , obj type for mask is : SoapBottle
+step #:  380 , None of that
+step #:  380 , planner broken is  False
+step #:  381 , obj type for mask is : SoapBottle
+step #:  381 , None of that
+step #:  381 , planner broken is  False
+step #:  382 , obj type for mask is : SoapBottle
+step #:  382 , None of that
+step #:  382 , planner broken is  False
+step #:  383 , obj type for mask is : SoapBottle
+step #:  383 , None of that
+step #:  383 , planner broken is  False
+step #:  384 , obj type for mask is : SoapBottle
+step #:  384 , None of that
+step #:  384 , planner broken is  False
+step #:  385 , obj type for mask is : SoapBottle
+step #:  385 , None of that
+step #:  385 , planner broken is  False
+step #:  386 , obj type for mask is : SoapBottle
+step #:  386 , None of that
+step #:  386 , planner broken is  False
+step #:  387 , obj type for mask is : SoapBottle
+step #:  387 , None of that
+step #:  387 , planner broken is  False
+step #:  388 , obj type for mask is : SoapBottle
+step #:  388 , None of that
+step #:  388 , planner broken is  False
+step #:  389 , obj type for mask is : SoapBottle
+step #:  389 , None of that
+step #:  389 , planner broken is  False
+step #:  390 , obj type for mask is : SoapBottle
+step #:  390 , None of that
+step #:  390 , planner broken is  False
+step #:  391 , obj type for mask is : SoapBottle
+step #:  391 , Tried to lookdownupleft
+step #:  394 , Tried to lookdownupleft
+step #:  398 , None of that
+step #:  398 , planner broken is  False
+step #:  399 , obj type for mask is : SoapBottle
+step #:  399 , Tried to lookdownupleft
+step #:  402 , Tried to lookdownupleft
+step #:  406 , None of that
+step #:  406 , planner broken is  False
+step #:  407 , obj type for mask is : SoapBottle
+step #:  407 , Tried to lookdownupleft
+step #:  410 , Tried to lookdownupleft
+step #:  414 , None of that
+step #:  414 , planner broken is  False
+step #:  415 , obj type for mask is : SoapBottle
+step #:  415 , None of that
+step #:  415 , planner broken is  False
+step #:  416 , obj type for mask is : SoapBottle
+step #:  416 , newly goal set
+step #:  416 , None of that
+step #:  416 , planner broken is  False
+step #:  417 , obj type for mask is : SoapBottle
+step #:  417 , None of that
+step #:  417 , planner broken is  False
+step #:  418 , obj type for mask is : SoapBottle
+step #:  418 , None of that
+step #:  418 , planner broken is  False
+step #:  419 , obj type for mask is : SoapBottle
+step #:  419 , None of that
+step #:  419 , planner broken is  False
+step #:  420 , obj type for mask is : SoapBottle
+step #:  420 , None of that
+step #:  420 , planner broken is  False
+step #:  421 , obj type for mask is : SoapBottle
+step #:  421 , None of that
+step #:  421 , planner broken is  False
+step #:  422 , obj type for mask is : SoapBottle
+step #:  422 , None of that
+step #:  422 , planner broken is  False
+step #:  423 , obj type for mask is : SoapBottle
+step #:  423 , None of that
+step #:  423 , planner broken is  False
+step #:  424 , obj type for mask is : SoapBottle
+step #:  424 , None of that
+step #:  424 , planner broken is  False
+step #:  425 , obj type for mask is : SoapBottle
+step #:  425 , None of that
+step #:  425 , planner broken is  False
+step #:  426 , obj type for mask is : SoapBottle
+step #:  426 , None of that
+step #:  426 , planner broken is  False
+step #:  427 , obj type for mask is : SoapBottle
+step #:  428 , pointer increased goal name  ['Cabinet', 'OpenObject', 'Glassbottle', 'Cabinet', 1]
+step #:  428 , Center done
+step #:  428 , None of that
+step #:  428 , goal found!
+step #:  428 , planner broken is  False
+step #:  429 , obj type for mask is : Cabinet
+step #:  429 , Center done
+step #:  429 , None of that
+step #:  429 , goal found!
+step #:  429 , planner broken is  False
+step #:  430 , obj type for mask is : Cabinet
+step #:  430 , Center done
+step #:  430 , None of that
+step #:  430 , goal found!
+step #:  430 , planner broken is  False
+step #:  431 , obj type for mask is : Cabinet
+step #:  431 , Center done
+step #:  431 , None of that
+step #:  431 , goal found!
+step #:  431 , planner broken is  False
+step #:  432 , obj type for mask is : Cabinet
+step #:  432 , Center done
+step #:  432 , None of that
+step #:  432 , goal found!
+step #:  432 , planner broken is  False
+step #:  433 , obj type for mask is : Cabinet
+step #:  433 , Center done
+step #:  433 , None of that
+step #:  433 , goal found!
+step #:  433 , planner broken is  False
+step #:  434 , obj type for mask is : Cabinet
+step #:  434 , Center done
+step #:  434 , None of that
+step #:  434 , goal found!
+step #:  434 , planner broken is  False
+step #:  435 , obj type for mask is : Cabinet
+step #:  435 , Center done
+step #:  435 , None of that
+step #:  435 , goal found!
+step #:  435 , planner broken is  False
+step #:  436 , obj type for mask is : Cabinet
+step #:  436 , Center done
+step #:  436 , None of that
+step #:  436 , goal found!
+step #:  436 , planner broken is  False
+step #:  437 , obj type for mask is : Cabinet
+step #:  437 , Center done
+step #:  437 , None of that
+step #:  437 , goal found!
+step #:  437 , planner broken is  False
+step #:  438 , obj type for mask is : Cabinet
+step #:  438 , Center done
+step #:  438 , None of that
+step #:  438 , goal found!
+step #:  438 , planner broken is  False
+step #:  438 , wd is  249.3910447761194
+step #:  438 , sidestepping to right
+step #:  438 , side step called, order:  0
+step #:  439 , last three side stepped  ['right', None, None]
+step #:  439 , obj type for mask is : Cabinet
+step #:  439 , side step called, order:  1
+step #:  439 , checking consec moving!
+step #:  440 , obj type for mask is : Cabinet
+step #:  440 , side step called, order:  2
+step #:  441 , obj type for mask is : Cabinet
+step #:  441 , wd is  269.2839469808542
+step #:  441 , sidestepping to right
+step #:  441 , side step called, order:  0
+step #:  442 , last three side stepped  ['right', 'right', None]
+step #:  442 , obj type for mask is : Cabinet
+step #:  442 , side step called, order:  1
+step #:  442 , checking consec moving!
+step #:  443 , obj type for mask is : Cabinet
+step #:  443 , side step called, order:  2
+step #:  444 , obj type for mask is : Cabinet
+step #:  444 , wd is  51.42953821656051
+step #:  444 , sidestepping to left
+step #:  444 , side step called, order:  0
+step #:  445 , last three side stepped  ['left', 'right', 'right']
+step #:  445 , obj type for mask is : Cabinet
+step #:  445 , side step called, order:  1
+step #:  445 , checking consec moving!
+step #:  446 , obj type for mask is : Cabinet
+step #:  446 , side step called, order:  2
+step #:  447 , obj type for mask is : Cabinet
+step #:  447 , wd is  269.2839469808542
+step #:  447 , sidestepping to right
+step #:  447 , side step called, order:  0
+step #:  448 , last three side stepped  ['right', 'left', 'right']
+step #:  448 , obj type for mask is : Cabinet
+step #:  448 , side step called, order:  1
+step #:  448 , checking consec moving!
+step #:  449 , obj type for mask is : Cabinet
+step #:  449 , side step called, order:  2
+step #:  450 , obj type for mask is : Cabinet
+step #:  450 , wd is  51.42953821656051
+step #:  450 , sidestepping to left
+step #:  450 , side step called, order:  0
+step #:  451 , last three side stepped  ['right', 'right', 'left']
+step #:  451 , obj type for mask is : Cabinet
+step #:  451 , side step called, order:  1
+step #:  451 , checking consec moving!
+step #:  452 , obj type for mask is : Cabinet
+step #:  452 , side step called, order:  2
+step #:  453 , obj type for mask is : Cabinet
+step #:  454 , pointer increased goal name  ['Cabinet', 'PutObject', 'Glassbottle', 'Cabinet', 1]
+step #:  454 , consec action
+step #:  455 , step:  455 , err is  No valid Receptacle found
+step #:  455 , action taken in step  455 : 
+step #:  455 , None of that
+step #:  455 , planner broken is  False
+step #:  456 , obj type for mask is : Cabinet
+step #:  456 , None of that
+step #:  456 , planner broken is  False
+step #:  457 , obj type for mask is : Cabinet
+step #:  457 , None of that
+step #:  457 , planner broken is  False
+step #:  458 , obj type for mask is : Cabinet
+step #:  458 , None of that
+step #:  458 , planner broken is  False
+step #:  459 , obj type for mask is : Cabinet
+step #:  459 , step:  459 , err is  Cabinet_3d4c3913 is blocking Agent 0 from moving 0
+step #:  459 , action taken in step  459 : 
+step #:  459 , None of that
+step #:  459 , planner broken is  False
+step #:  460 , obj type for mask is : Cabinet
+step #:  460 , None of that
+step #:  460 , planner broken is  False
+step #:  461 , obj type for mask is : Cabinet
+step #:  461 , None of that
+step #:  461 , planner broken is  False
+step #:  462 , obj type for mask is : Cabinet
+step #:  462 , None of that
+step #:  462 , planner broken is  False
+step #:  463 , obj type for mask is : Cabinet
+step #:  463 , None of that
+step #:  463 , planner broken is  False
+step #:  464 , obj type for mask is : Cabinet
+step #:  464 , None of that
+step #:  464 , planner broken is  False
+step #:  465 , obj type for mask is : Cabinet
+step #:  465 , None of that
+step #:  465 , planner broken is  False
+step #:  466 , obj type for mask is : Cabinet
+step #:  466 , newly goal set
+step #:  466 , None of that
+step #:  466 , planner broken is  False
+step #:  467 , obj type for mask is : Cabinet
+step #:  467 , None of that
+step #:  467 , planner broken is  False
+step #:  468 , obj type for mask is : Cabinet
+step #:  468 , None of that
+step #:  468 , planner broken is  False
+step #:  469 , obj type for mask is : Cabinet
+step #:  469 , None of that
+step #:  469 , planner broken is  False
+step #:  470 , obj type for mask is : Cabinet
+step #:  470 , None of that
+step #:  470 , planner broken is  False
+step #:  471 , obj type for mask is : Cabinet
+step #:  471 , None of that
+step #:  471 , planner broken is  False
+step #:  472 , obj type for mask is : Cabinet
+step #:  472 , Tried to lookdownupleft
+step #:  473 , step:  473 , err is  Cannot teleport due to hand object collision.
+step #:  473 , action taken in step  473 : 
+step #:  473 , Tried to lookdownupleft
+step #:  475 , None of that
+step #:  475 , planner broken is  False
+step #:  476 , obj type for mask is : Cabinet
+step #:  476 , Tried to lookdownupleft
+step #:  479 , Tried to lookdownupleft
+step #:  483 , None of that
+step #:  483 , planner broken is  False
+step #:  484 , obj type for mask is : Cabinet
+step #:  484 , Tried to lookdownupleft
+step #:  487 , Tried to lookdownupleft
+step #:  491 , None of that
+step #:  491 , planner broken is  False
+step #:  492 , obj type for mask is : Cabinet
+step #:  492 , Tried to lookdownupleft
+step #:  495 , Tried to lookdownupleft
+step #:  499 , None of that
+step #:  499 , planner broken is  False
+step #:  500 , obj type for mask is : Cabinet
+step #:  500 , None of that
+step #:  500 , planner broken is  False
+step #:  501 , obj type for mask is : Cabinet
+step #:  501 , None of that
+step #:  501 , planner broken is  False
+step #:  502 , obj type for mask is : Cabinet
+step #:  502 , None of that
+step #:  502 , planner broken is  False
+step #:  503 , obj type for mask is : Cabinet
+step #:  503 , None of that
+step #:  503 , planner broken is  False
+step #:  504 , obj type for mask is : Cabinet
+step #:  504 , None of that
+step #:  504 , planner broken is  False
+step #:  505 , obj type for mask is : Cabinet
+step #:  505 , None of that
+step #:  505 , planner broken is  False
+step #:  506 , obj type for mask is : Cabinet
+step #:  506 , None of that
+step #:  506 , planner broken is  False
+step #:  507 , obj type for mask is : Cabinet
+step #:  507 , newly goal set
+step #:  507 , None of that
+step #:  507 , planner broken is  False
+step #:  508 , obj type for mask is : Cabinet
+step #:  508 , None of that
+step #:  508 , planner broken is  False
+step #:  509 , obj type for mask is : Cabinet
+step #:  509 , None of that
+step #:  509 , planner broken is  False
+step #:  510 , obj type for mask is : Cabinet
+step #:  510 , None of that
+step #:  510 , planner broken is  False
+step #:  511 , obj type for mask is : Cabinet
+step #:  511 , None of that
+step #:  511 , planner broken is  False
+step #:  512 , obj type for mask is : Cabinet
+step #:  512 , None of that
+step #:  512 , planner broken is  False
+step #:  513 , obj type for mask is : Cabinet
+step #:  513 , None of that
+step #:  513 , planner broken is  False
+step #:  514 , obj type for mask is : Cabinet
+step #:  514 , None of that
+step #:  514 , planner broken is  False
+step #:  515 , obj type for mask is : Cabinet
+step #:  515 , None of that
+step #:  515 , planner broken is  False
+step #:  516 , obj type for mask is : Cabinet
+step #:  516 , Tried to lookdownupleft
+step #:  519 , Tried to lookdownupleft
+step #:  523 , None of that
+step #:  523 , planner broken is  False
+step #:  524 , obj type for mask is : Cabinet
+step #:  524 , Tried to lookdownupleft
+step #:  526 , step:  526 , err is  Cannot teleport due to hand object collision.
+step #:  526 , action taken in step  526 : 
+step #:  526 , Tried to lookdownupleft
+step #:  528 , None of that
+step #:  528 , planner broken is  False
+step #:  529 , obj type for mask is : Cabinet
+step #:  529 , Tried to lookdownupleft
+step #:  532 , Tried to lookdownupleft
+step #:  536 , None of that
+step #:  536 , planner broken is  False
+step #:  537 , obj type for mask is : Cabinet
+step #:  537 , Tried to lookdownupleft
+step #:  540 , Tried to lookdownupleft
+step #:  544 , None of that
+step #:  544 , planner broken is  False
+step #:  545 , obj type for mask is : Cabinet
+step #:  545 , None of that
+step #:  545 , planner broken is  False
+step #:  546 , obj type for mask is : Cabinet
+step #:  546 , None of that
+step #:  546 , planner broken is  False
+step #:  547 , obj type for mask is : Cabinet
+step #:  548 , step:  548 , err is  Target openable Receptacle is CLOSED, can't place if target is not open!
+step #:  548 , action taken in step  548 : 
+
+===================================================
+episode # is 873
+step #:  0 , list of actions is  [['Glassbottle', 'PickupObject', 'Glassbottle', '0', 0], ['Cabinet', 'OpenObject', 'Glassbottle', 'Cabinet', 1], ['Cabinet', 'PutObject', 'Glassbottle', 'Cabinet', 1], ['Cabinet', 'CloseObject', 'Glassbottle', 'Cabinet', 1], ['Glassbottle', 'PickupObject', 'Glassbottle', '0', 2], ['Cabinet', 'OpenObject', 'Glassbottle', 'Cabinet', 3], ['Cabinet', 'PutObject', 'Glassbottle', 'Cabinet', 3], ['Cabinet', 'CloseObject', 'Glassbottle', 'Cabinet', 3]]
+step #:  2 , total cat2idx is  {'Knife': 0, 'SinkBasin': 1, 'ArmChair': 2, 'BathtubBasin': 3, 'Bed': 4, 'Cabinet': 5, 'Cart': 6, 'CoffeeMachine': 7, 'CoffeeTable': 8, 'CounterTop': 9, 'Desk': 10, 'DiningTable': 11, 'Drawer': 12, 'Dresser': 13, 'Fridge': 14, 'GarbageCan': 15, 'Microwave': 16, 'Ottoman': 17, 'Safe': 18, 'Shelf': 19, 'SideTable': 20, 'Sofa': 21, 'StoveBurner': 22, 'TVStand': 23, 'Toilet': 24, 'Glassbottle': 25, '0': 26, 'Kettle': 27, 'PepperShaker': 28, 'Pan': 29, 'Cloth': 30, 'HandTowel': 31, 'Box': 32, 'DishSponge': 33, 'Pencil': 34, 'Ladle': 35, 'CellPhone': 36, 'PotatoSliced': 37, 'Cup': 38, 'CD': 39, 'Tomato': 40, 'Egg': 41, 'WateringCan': 42, 'Bread': 43, 'ToiletPaperHanger': 44, 'BaseballBat': 45, 'FloorLamp': 46, 'Potato': 47, 'AppleSliced': 48, 'Faucet': 49, 'Apple': 50, 'WineBottle': 51, 'Fork': 52, 'RemoteControl': 53, 'CreditCard': 54, 'ButterKnife': 55, 'Spoon': 56, 'Sink': 57, 'BreadSliced': 58, 'AlarmClock': 59, 'Spatula': 60, 'BasketBall': 61, 'Lettuce': 62, 'TomatoSliced': 63, 'Pot': 64, 'KeyChain': 65, 'Pillow': 66, 'SaltShaker': 67, 'TennisRacket': 68, 'Plate': 69, 'Watch': 70, 'Newspaper': 71, 'Mug': 72, 'Candle': 73, 'Vase': 74, 'Bathtub': 75, 'Bowl': 76, 'Laptop': 77, 'Statue': 78, 'DeskLamp': 79, 'Plunger': 80, 'SoapBottle': 81, 'Pen': 82, 'ToiletPaper': 83, 'Book': 84, 'SprayBottle': 85, 'LettuceSliced': 86, 'SoapBar': 87, 'TissueBox': 88, 'None': 89}
+step #:  2 , newly goal set
+step #:  2 , None of that
+step #:  2 , planner broken is  False
+step #:  3 , obj type for mask is : Glassbottle
+step #:  3 , Tried to lookdownupleft
+step #:  6 , Tried to lookdownupleft
+step #:  10 , None of that
+step #:  10 , planner broken is  False
+step #:  11 , obj type for mask is : Glassbottle
+step #:  11 , Tried to lookdownupleft
+step #:  14 , Tried to lookdownupleft
+step #:  18 , None of that
+step #:  18 , planner broken is  False
+step #:  19 , obj type for mask is : Glassbottle
+step #:  19 , Tried to lookdownupleft
+step #:  22 , Tried to lookdownupleft
+step #:  26 , None of that
+step #:  26 , planner broken is  False
+step #:  27 , obj type for mask is : Glassbottle
+step #:  27 , Tried to lookdownupleft
+step #:  30 , Tried to lookdownupleft
+step #:  34 , None of that
+step #:  34 , planner broken is  False
+step #:  35 , obj type for mask is : Glassbottle
+step #:  35 , None of that
+step #:  35 , planner broken is  False
+step #:  36 , obj type for mask is : Glassbottle
+step #:  36 , None of that
+step #:  36 , planner broken is  False
+step #:  37 , obj type for mask is : Glassbottle
+step #:  37 , None of that
+step #:  37 , planner broken is  False
+step #:  38 , obj type for mask is : Glassbottle
+step #:  38 , None of that
+step #:  38 , planner broken is  False
+step #:  39 , obj type for mask is : Glassbottle
+step #:  39 , None of that
+step #:  39 , planner broken is  False
+step #:  40 , obj type for mask is : Glassbottle
+step #:  40 , None of that
+step #:  40 , planner broken is  False
+step #:  41 , obj type for mask is : Glassbottle
+step #:  41 , None of that
+step #:  41 , planner broken is  False
+step #:  42 , obj type for mask is : Glassbottle
+step #:  42 , None of that
+step #:  42 , planner broken is  False
+step #:  43 , obj type for mask is : Glassbottle
+step #:  43 , None of that
+step #:  43 , planner broken is  False
+step #:  44 , obj type for mask is : Glassbottle
+step #:  44 , None of that
+step #:  44 , planner broken is  False
+step #:  45 , obj type for mask is : Glassbottle
+step #:  45 , None of that
+step #:  45 , planner broken is  False
+step #:  46 , obj type for mask is : Glassbottle
+step #:  46 , None of that
+step #:  46 , planner broken is  False
+step #:  47 , obj type for mask is : Glassbottle
+step #:  47 , newly goal set
+step #:  47 , None of that
+step #:  47 , planner broken is  False
+step #:  48 , obj type for mask is : Glassbottle
+step #:  48 , None of that
+step #:  48 , planner broken is  False
+step #:  49 , obj type for mask is : Glassbottle
+step #:  49 , None of that
+step #:  49 , planner broken is  False
+step #:  50 , obj type for mask is : Glassbottle
+step #:  50 , None of that
+step #:  50 , planner broken is  False
+step #:  51 , obj type for mask is : Glassbottle
+step #:  51 , step:  51 , err is  ShowerDoor_b3f24a51 is blocking Agent 0 from moving 0
+step #:  51 , action taken in step  51 : 
+step #:  51 , None of that
+step #:  51 , planner broken is  False
+step #:  52 , obj type for mask is : Glassbottle
+step #:  52 , None of that
+step #:  52 , planner broken is  False
+step #:  53 , obj type for mask is : Glassbottle
+step #:  53 , None of that
+step #:  53 , planner broken is  False
+step #:  54 , obj type for mask is : Glassbottle
+step #:  54 , None of that
+step #:  54 , planner broken is  False
+step #:  55 , obj type for mask is : Glassbottle
+step #:  55 , None of that
+step #:  55 , planner broken is  False
+step #:  56 , obj type for mask is : Glassbottle
+step #:  56 , None of that
+step #:  56 , planner broken is  False
+step #:  57 , obj type for mask is : Glassbottle
+step #:  57 , step:  57 , err is  FP428:Baseboard.008 is blocking Agent 0 from moving 0
+step #:  57 , action taken in step  57 : 
+step #:  57 , None of that
+step #:  57 , planner broken is  False
+step #:  58 , obj type for mask is : Glassbottle
+step #:  58 , None of that
+step #:  58 , planner broken is  False
+step #:  59 , obj type for mask is : Glassbottle
+step #:  59 , None of that
+step #:  59 , planner broken is  False
+step #:  60 , obj type for mask is : Glassbottle
+step #:  60 , None of that
+step #:  60 , planner broken is  False
+step #:  61 , obj type for mask is : Glassbottle
+step #:  61 , step:  61 , err is  FP428:Baseboard.008 is blocking Agent 0 from moving 0
+step #:  61 , action taken in step  61 : 
+step #:  61 , None of that
+step #:  61 , planner broken is  False
+step #:  62 , obj type for mask is : Glassbottle
+step #:  62 , None of that
+step #:  62 , planner broken is  False
+step #:  63 , obj type for mask is : Glassbottle
+step #:  63 , None of that
+step #:  63 , planner broken is  False
+step #:  64 , obj type for mask is : Glassbottle
+step #:  64 , None of that
+step #:  64 , planner broken is  False
+step #:  65 , obj type for mask is : Glassbottle
+step #:  65 , None of that
+step #:  65 , planner broken is  False
+step #:  66 , obj type for mask is : Glassbottle
+step #:  66 , None of that
+step #:  66 , planner broken is  False
+step #:  67 , obj type for mask is : Glassbottle
+step #:  67 , None of that
+step #:  67 , planner broken is  False
+step #:  68 , obj type for mask is : Glassbottle
+step #:  68 , None of that
+step #:  68 , planner broken is  False
+step #:  69 , obj type for mask is : Glassbottle
+step #:  69 , None of that
+step #:  69 , planner broken is  False
+step #:  70 , obj type for mask is : Glassbottle
+step #:  70 , None of that
+step #:  70 , planner broken is  False
+step #:  71 , obj type for mask is : Glassbottle
+step #:  71 , None of that
+step #:  71 , planner broken is  False
+step #:  72 , obj type for mask is : Glassbottle
+step #:  72 , newly goal set
+step #:  72 , None of that
+step #:  72 , planner broken is  False
+step #:  73 , obj type for mask is : Glassbottle
+step #:  73 , None of that
+step #:  73 , planner broken is  False
+step #:  74 , obj type for mask is : Glassbottle
+step #:  74 , None of that
+step #:  74 , planner broken is  False
+step #:  75 , obj type for mask is : Glassbottle
+step #:  75 , None of that
+step #:  75 , planner broken is  False
+step #:  76 , obj type for mask is : Glassbottle
+step #:  76 , None of that
+step #:  76 , planner broken is  False
+step #:  77 , obj type for mask is : Glassbottle
+step #:  77 , Tried to lookdownupleft
+step #:  80 , Tried to lookdownupleft
+step #:  84 , None of that
+step #:  84 , planner broken is  False
+step #:  85 , obj type for mask is : Glassbottle
+step #:  85 , Tried to lookdownupleft
+step #:  88 , Tried to lookdownupleft
+step #:  92 , None of that
+step #:  92 , planner broken is  False
+step #:  93 , obj type for mask is : Glassbottle
+step #:  93 , Tried to lookdownupleft
+step #:  96 , Tried to lookdownupleft
+step #:  100 , None of that
+step #:  100 , planner broken is  False
+step #:  101 , obj type for mask is : Glassbottle
+step #:  101 , Tried to lookdownupleft
+step #:  104 , Tried to lookdownupleft
+step #:  108 , None of that
+step #:  108 , planner broken is  False
+step #:  109 , obj type for mask is : Glassbottle
+step #:  109 , None of that
+step #:  109 , planner broken is  False
+step #:  110 , obj type for mask is : Glassbottle
+step #:  110 , None of that
+step #:  110 , planner broken is  False
+step #:  111 , obj type for mask is : Glassbottle
+step #:  111 , None of that
+step #:  111 , planner broken is  False
+step #:  112 , obj type for mask is : Glassbottle
+step #:  112 , None of that
+step #:  112 , planner broken is  False
+step #:  113 , obj type for mask is : Glassbottle
+step #:  113 , None of that
+step #:  113 , planner broken is  False
+step #:  114 , obj type for mask is : Glassbottle
+step #:  114 , None of that
+step #:  114 , planner broken is  False
+step #:  115 , obj type for mask is : Glassbottle
+step #:  115 , None of that
+step #:  115 , planner broken is  False
+step #:  116 , obj type for mask is : Glassbottle
+step #:  116 , None of that
+step #:  116 , planner broken is  False
+step #:  117 , obj type for mask is : Glassbottle
+step #:  117 , newly goal set
+step #:  117 , None of that
+step #:  117 , planner broken is  False
+step #:  118 , obj type for mask is : Glassbottle
+step #:  118 , None of that
+step #:  118 , planner broken is  False
+step #:  119 , obj type for mask is : Glassbottle
+step #:  119 , None of that
+step #:  119 , planner broken is  False
+step #:  120 , obj type for mask is : Glassbottle
+step #:  120 , None of that
+step #:  120 , planner broken is  False
+step #:  121 , obj type for mask is : Glassbottle
+step #:  121 , None of that
+step #:  121 , planner broken is  False
+step #:  122 , obj type for mask is : Glassbottle
+step #:  122 , None of that
+step #:  122 , planner broken is  False
+step #:  123 , obj type for mask is : Glassbottle
+step #:  123 , None of that
+step #:  123 , planner broken is  False
+step #:  124 , obj type for mask is : Glassbottle
+step #:  124 , step:  124 , err is  Toilet_06558e89 is blocking Agent 0 from moving 0
+step #:  124 , action taken in step  124 : 
+step #:  124 , None of that
+step #:  124 , planner broken is  False
+step #:  125 , obj type for mask is : Glassbottle
+step #:  125 , None of that
+step #:  125 , planner broken is  False
+step #:  126 , obj type for mask is : Glassbottle
+step #:  126 , None of that
+step #:  126 , planner broken is  False
+step #:  127 , obj type for mask is : Glassbottle
+step #:  127 , None of that
+step #:  127 , planner broken is  False
+step #:  128 , obj type for mask is : Glassbottle
+step #:  128 , None of that
+step #:  128 , planner broken is  False
+step #:  129 , obj type for mask is : Glassbottle
+step #:  129 , None of that
+step #:  129 , planner broken is  False
+step #:  130 , obj type for mask is : Glassbottle
+step #:  130 , None of that
+step #:  130 , planner broken is  False
+step #:  131 , obj type for mask is : Glassbottle
+step #:  131 , None of that
+step #:  131 , planner broken is  False
+step #:  132 , obj type for mask is : Glassbottle
+step #:  132 , None of that
+step #:  132 , planner broken is  False
+step #:  133 , obj type for mask is : Glassbottle
+step #:  133 , Tried to lookdownupleft
+step #:  136 , Tried to lookdownupleft
+step #:  140 , None of that
+step #:  140 , planner broken is  False
+step #:  141 , obj type for mask is : Glassbottle
+step #:  141 , Tried to lookdownupleft
+step #:  144 , Tried to lookdownupleft
+step #:  148 , None of that
+step #:  148 , planner broken is  False
+step #:  149 , obj type for mask is : Glassbottle
+step #:  149 , Tried to lookdownupleft
+step #:  152 , Tried to lookdownupleft
+step #:  156 , None of that
+step #:  156 , planner broken is  False
+step #:  157 , obj type for mask is : Glassbottle
+step #:  157 , Tried to lookdownupleft
+step #:  160 , Tried to lookdownupleft
+step #:  164 , None of that
+step #:  164 , planner broken is  False
+step #:  165 , obj type for mask is : Glassbottle
+step #:  165 , None of that
+step #:  165 , planner broken is  False
+step #:  166 , obj type for mask is : Glassbottle
+step #:  166 , step:  166 , err is  Toilet_06558e89 is blocking Agent 0 from moving 0
+step #:  166 , action taken in step  166 : 
+step #:  166 , None of that
+step #:  166 , planner broken is  False
+step #:  167 , obj type for mask is : Glassbottle
+step #:  167 , None of that
+step #:  167 , planner broken is  False
+step #:  168 , obj type for mask is : Glassbottle
+step #:  168 , None of that
+step #:  168 , planner broken is  False
+step #:  169 , obj type for mask is : Glassbottle
+step #:  169 , None of that
+step #:  169 , planner broken is  False
+step #:  170 , obj type for mask is : Glassbottle
+step #:  170 , None of that
+step #:  170 , planner broken is  False
+step #:  171 , obj type for mask is : Glassbottle
+step #:  171 , None of that
+step #:  171 , planner broken is  False
+step #:  172 , obj type for mask is : Glassbottle
+step #:  172 , None of that
+step #:  172 , planner broken is  False
+step #:  173 , obj type for mask is : Glassbottle
+step #:  173 , None of that
+step #:  173 , planner broken is  False
+step #:  174 , obj type for mask is : Glassbottle
+step #:  174 , None of that
+step #:  174 , planner broken is  False
+step #:  175 , obj type for mask is : Glassbottle
+step #:  175 , None of that
+step #:  175 , planner broken is  False
+step #:  176 , obj type for mask is : Glassbottle
+step #:  176 , None of that
+step #:  176 , planner broken is  False
+step #:  177 , obj type for mask is : Glassbottle
+step #:  177 , None of that
+step #:  177 , planner broken is  False
+step #:  178 , obj type for mask is : Glassbottle
+step #:  178 , None of that
+step #:  178 , planner broken is  False
+step #:  179 , obj type for mask is : Glassbottle
+step #:  179 , None of that
+step #:  179 , planner broken is  False
+step #:  180 , obj type for mask is : Glassbottle
+step #:  180 , None of that
+step #:  180 , planner broken is  False
+step #:  181 , obj type for mask is : Glassbottle
+step #:  181 , None of that
+step #:  181 , planner broken is  False
+step #:  182 , obj type for mask is : Glassbottle
+step #:  182 , None of that
+step #:  182 , planner broken is  False
+step #:  183 , obj type for mask is : Glassbottle
+step #:  183 , None of that
+step #:  183 , planner broken is  False
+step #:  184 , obj type for mask is : Glassbottle
+step #:  184 , None of that
+step #:  184 , planner broken is  False
+step #:  185 , obj type for mask is : Glassbottle
+step #:  185 , None of that
+step #:  185 , planner broken is  False
+step #:  186 , obj type for mask is : Glassbottle
+step #:  186 , None of that
+step #:  186 , planner broken is  False
+step #:  187 , obj type for mask is : Glassbottle
+step #:  187 , newly goal set
+step #:  187 , None of that
+step #:  187 , planner broken is  False
+step #:  188 , obj type for mask is : Glassbottle
+step #:  188 , None of that
+step #:  188 , planner broken is  False
+step #:  189 , obj type for mask is : Glassbottle
+step #:  189 , None of that
+step #:  189 , planner broken is  False
+step #:  190 , obj type for mask is : Glassbottle
+step #:  190 , None of that
+step #:  190 , planner broken is  False
+step #:  191 , obj type for mask is : Glassbottle
+step #:  191 , None of that
+step #:  191 , planner broken is  False
+step #:  192 , obj type for mask is : Glassbottle
+step #:  192 , None of that
+step #:  192 , planner broken is  False
+step #:  193 , obj type for mask is : Glassbottle
+step #:  193 , None of that
+step #:  193 , planner broken is  False
+step #:  194 , obj type for mask is : Glassbottle
+step #:  194 , None of that
+step #:  194 , planner broken is  False
+step #:  195 , obj type for mask is : Glassbottle
+step #:  195 , None of that
+step #:  195 , planner broken is  False
+step #:  196 , obj type for mask is : Glassbottle
+step #:  196 , None of that
+step #:  196 , planner broken is  False
+step #:  197 , obj type for mask is : Glassbottle
+step #:  197 , None of that
+step #:  197 , planner broken is  False
+step #:  198 , obj type for mask is : Glassbottle
+step #:  198 , None of that
+step #:  198 , planner broken is  False
+step #:  199 , obj type for mask is : Glassbottle
+step #:  199 , None of that
+step #:  199 , planner broken is  False
+step #:  200 , obj type for mask is : Glassbottle
+step #:  200 , None of that
+step #:  200 , planner broken is  False
+step #:  201 , obj type for mask is : Glassbottle
+step #:  201 , Tried to lookdownupleft
+step #:  204 , Tried to lookdownupleft
+step #:  208 , None of that
+step #:  208 , planner broken is  False
+step #:  209 , obj type for mask is : Glassbottle
+step #:  209 , Tried to lookdownupleft
+step #:  212 , Tried to lookdownupleft
+step #:  216 , None of that
+step #:  216 , planner broken is  False
+step #:  217 , obj type for mask is : Glassbottle
+step #:  217 , Tried to lookdownupleft
+step #:  220 , Tried to lookdownupleft
+step #:  224 , None of that
+step #:  224 , planner broken is  False
+step #:  225 , obj type for mask is : Glassbottle
+step #:  225 , Tried to lookdownupleft
+step #:  228 , Tried to lookdownupleft
+step #:  232 , newly goal set
+step #:  232 , None of that
+step #:  232 , planner broken is  False
+step #:  233 , obj type for mask is : Glassbottle
+step #:  233 , None of that
+step #:  233 , planner broken is  False
+step #:  234 , obj type for mask is : Glassbottle
+step #:  234 , None of that
+step #:  234 , planner broken is  False
+step #:  235 , obj type for mask is : Glassbottle
+step #:  235 , None of that
+step #:  235 , planner broken is  False
+step #:  236 , obj type for mask is : Glassbottle
+step #:  236 , None of that
+step #:  236 , planner broken is  False
+step #:  237 , obj type for mask is : Glassbottle
+step #:  237 , None of that
+step #:  237 , planner broken is  False
+step #:  238 , obj type for mask is : Glassbottle
+step #:  238 , None of that
+step #:  238 , planner broken is  False
+step #:  239 , obj type for mask is : Glassbottle
+step #:  239 , None of that
+step #:  239 , planner broken is  False
+step #:  240 , obj type for mask is : Glassbottle
+step #:  240 , None of that
+step #:  240 , planner broken is  False
+step #:  241 , obj type for mask is : Glassbottle
+step #:  241 , None of that
+step #:  241 , planner broken is  False
+step #:  242 , obj type for mask is : Glassbottle
+step #:  242 , None of that
+step #:  242 , planner broken is  False
+step #:  243 , obj type for mask is : Glassbottle
+step #:  243 , None of that
+step #:  243 , planner broken is  False
+step #:  244 , obj type for mask is : Glassbottle
+step #:  244 , None of that
+step #:  244 , planner broken is  False
+step #:  245 , obj type for mask is : Glassbottle
+step #:  245 , Tried to lookdownupleft
+step #:  248 , Tried to lookdownupleft
+step #:  252 , None of that
+step #:  252 , planner broken is  False
+step #:  253 , obj type for mask is : Glassbottle
+step #:  253 , Tried to lookdownupleft
+step #:  256 , Tried to lookdownupleft
+step #:  260 , None of that
+step #:  260 , planner broken is  False
+step #:  261 , obj type for mask is : Glassbottle
+step #:  261 , Tried to lookdownupleft
+step #:  264 , Tried to lookdownupleft
+step #:  268 , None of that
+step #:  268 , planner broken is  False
+step #:  269 , obj type for mask is : Glassbottle
+step #:  269 , Tried to lookdownupleft
+step #:  272 , Tried to lookdownupleft
+step #:  276 , None of that
+step #:  276 , planner broken is  False
+step #:  277 , obj type for mask is : Glassbottle
+step #:  277 , newly goal set
+step #:  277 , None of that
+step #:  277 , planner broken is  False
+step #:  278 , obj type for mask is : Glassbottle
+step #:  278 , None of that
+step #:  278 , planner broken is  False
+step #:  279 , obj type for mask is : Glassbottle
+step #:  279 , None of that
+step #:  279 , planner broken is  False
+step #:  280 , obj type for mask is : Glassbottle
+step #:  280 , None of that
+step #:  280 , planner broken is  False
+step #:  281 , obj type for mask is : Glassbottle
+step #:  281 , None of that
+step #:  281 , planner broken is  False
+step #:  282 , obj type for mask is : Glassbottle
+step #:  282 , None of that
+step #:  282 , planner broken is  False
+step #:  283 , obj type for mask is : Glassbottle
+step #:  283 , None of that
+step #:  283 , planner broken is  False
+step #:  284 , obj type for mask is : Glassbottle
+step #:  284 , None of that
+step #:  284 , planner broken is  False
+step #:  285 , obj type for mask is : Glassbottle
+step #:  285 , None of that
+step #:  285 , planner broken is  False
+step #:  286 , obj type for mask is : Glassbottle
+step #:  286 , None of that
+step #:  286 , planner broken is  False
+step #:  287 , obj type for mask is : Glassbottle
+step #:  287 , None of that
+step #:  287 , planner broken is  False
+step #:  288 , obj type for mask is : Glassbottle
+step #:  288 , None of that
+step #:  288 , planner broken is  False
+step #:  289 , obj type for mask is : Glassbottle
+step #:  289 , None of that
+step #:  289 , planner broken is  False
+step #:  290 , obj type for mask is : Glassbottle
+step #:  290 , Tried to lookdownupleft
+step #:  293 , Tried to lookdownupleft
+step #:  297 , None of that
+step #:  297 , planner broken is  False
+step #:  298 , obj type for mask is : Glassbottle
+step #:  298 , Tried to lookdownupleft
+step #:  301 , Tried to lookdownupleft
+step #:  305 , None of that
+step #:  305 , planner broken is  False
+step #:  306 , obj type for mask is : Glassbottle
+step #:  306 , Tried to lookdownupleft
+step #:  309 , Tried to lookdownupleft
+step #:  313 , None of that
+step #:  313 , planner broken is  False
+step #:  314 , obj type for mask is : Glassbottle
+step #:  314 , Tried to lookdownupleft
+step #:  317 , Tried to lookdownupleft
+step #:  321 , None of that
+step #:  321 , planner broken is  False
+step #:  322 , obj type for mask is : Glassbottle
+step #:  322 , newly goal set
+step #:  322 , None of that
+step #:  322 , planner broken is  False
+step #:  323 , obj type for mask is : Glassbottle
+step #:  323 , arg Swap! Glassbottle --> SoapBottle
+step #:  323 , None of that
+step #:  323 , goal found!
+step #:  323 , planner broken is  False
+step #:  324 , obj type for mask is : SoapBottle
+step #:  324 , None of that
+step #:  324 , goal found!
+step #:  324 , planner broken is  False
+step #:  325 , obj type for mask is : SoapBottle
+step #:  325 , None of that
+step #:  325 , goal found!
+step #:  325 , planner broken is  False
+step #:  326 , obj type for mask is : SoapBottle
+step #:  326 , None of that
+step #:  326 , goal found!
+step #:  326 , planner broken is  False
+step #:  327 , obj type for mask is : SoapBottle
+step #:  327 , None of that
+step #:  327 , goal found!
+step #:  327 , planner broken is  False
+step #:  327 , moving until visible
+step #:  327 , current horizon is  45.0
+step #:  327 , move until visible order is  0
+step #:  328 , obj type for mask is : SoapBottle
+step #:  328 , moving until visible
+step #:  328 , current horizon is  45.0
+step #:  328 , move until visible order is  1
+step #:  329 , obj type for mask is : SoapBottle
+step #:  329 , moving until visible
+step #:  329 , current horizon is  45.0
+step #:  329 , move until visible order is  2
+step #:  330 , obj type for mask is : SoapBottle
+step #:  330 , moving until visible
+step #:  330 , current horizon is  45.0
+step #:  330 , move until visible order is  3
+step #:  331 , obj type for mask is : SoapBottle
+step #:  331 , moving until visible
+step #:  331 , current horizon is  45.0
+step #:  331 , move until visible order is  4
+step #:  336 , obj type for mask is : SoapBottle
+step #:  336 , moving until visible
+step #:  336 , current horizon is  0.0
+step #:  336 , move until visible order is  5
+step #:  339 , move until visible broken!
+step #:  339 , obj type for mask is : SoapBottle
+step #:  339 , moving until visible
+step #:  339 , current horizon is  45.0
+step #:  339 , move until visible order is  5
+step #:  344 , obj type for mask is : SoapBottle
+step #:  344 , moving until visible
+step #:  344 , current horizon is  0.0
+step #:  344 , move until visible order is  6
+step #:  347 , move until visible broken!
+step #:  347 , obj type for mask is : SoapBottle
+step #:  347 , moving until visible
+step #:  347 , current horizon is  45.0
+step #:  347 , move until visible order is  6
+step #:  352 , obj type for mask is : SoapBottle
+step #:  352 , moving until visible
+step #:  352 , current horizon is  0.0
+step #:  352 , move until visible order is  7
+step #:  355 , move until visible broken!
+step #:  355 , obj type for mask is : SoapBottle
+step #:  355 , moving until visible
+step #:  355 , current horizon is  45.0
+step #:  355 , move until visible order is  7
+step #:  360 , obj type for mask is : SoapBottle
+step #:  360 , moving until visible
+step #:  360 , current horizon is  0.0
+step #:  360 , move until visible order is  8
+step #:  363 , move until visible broken!
+step #:  363 , Went through one cycle of move until visible, step num is  363
+step #:  363 , obj type for mask is : SoapBottle
+step #:  363 , None of that
+step #:  363 , planner broken is  False
+step #:  364 , obj type for mask is : SoapBottle
+step #:  364 , None of that
+step #:  364 , planner broken is  False
+step #:  365 , obj type for mask is : SoapBottle
+step #:  365 , None of that
+step #:  365 , planner broken is  False
+step #:  366 , obj type for mask is : SoapBottle
+step #:  366 , None of that
+step #:  366 , planner broken is  False
+step #:  367 , obj type for mask is : SoapBottle
+step #:  367 , None of that
+step #:  367 , planner broken is  False
+step #:  368 , obj type for mask is : SoapBottle
+step #:  368 , None of that
+step #:  368 , planner broken is  False
+step #:  369 , obj type for mask is : SoapBottle
+step #:  369 , None of that
+step #:  369 , planner broken is  False
+step #:  370 , obj type for mask is : SoapBottle
+step #:  370 , None of that
+step #:  370 , planner broken is  False
+step #:  371 , obj type for mask is : SoapBottle
+step #:  371 , Tried to lookdownupleft
+step #:  374 , Tried to lookdownupleft
+step #:  378 , None of that
+step #:  378 , planner broken is  False
+step #:  379 , obj type for mask is : SoapBottle
+step #:  379 , None of that
+step #:  379 , planner broken is  False
+step #:  380 , obj type for mask is : SoapBottle
+step #:  380 , None of that
+step #:  380 , planner broken is  False
+step #:  381 , obj type for mask is : SoapBottle
+step #:  381 , None of that
+step #:  381 , planner broken is  False
+step #:  382 , obj type for mask is : SoapBottle
+step #:  382 , None of that
+step #:  382 , planner broken is  False
+step #:  383 , obj type for mask is : SoapBottle
+step #:  383 , None of that
+step #:  383 , planner broken is  False
+step #:  384 , obj type for mask is : SoapBottle
+step #:  384 , None of that
+step #:  384 , planner broken is  False
+step #:  385 , obj type for mask is : SoapBottle
+step #:  385 , None of that
+step #:  385 , planner broken is  False
+step #:  386 , obj type for mask is : SoapBottle
+step #:  386 , None of that
+step #:  386 , planner broken is  False
+step #:  387 , obj type for mask is : SoapBottle
+step #:  387 , None of that
+step #:  387 , planner broken is  False
+step #:  388 , obj type for mask is : SoapBottle
+step #:  388 , None of that
+step #:  388 , planner broken is  False
+step #:  389 , obj type for mask is : SoapBottle
+step #:  389 , None of that
+step #:  389 , planner broken is  False
+step #:  390 , obj type for mask is : SoapBottle
+step #:  390 , None of that
+step #:  390 , planner broken is  False
+step #:  391 , obj type for mask is : SoapBottle
+step #:  391 , Tried to lookdownupleft
+step #:  394 , Tried to lookdownupleft
+step #:  398 , None of that
+step #:  398 , planner broken is  False
+step #:  399 , obj type for mask is : SoapBottle
+step #:  399 , Tried to lookdownupleft
+step #:  402 , Tried to lookdownupleft
+step #:  406 , None of that
+step #:  406 , planner broken is  False
+step #:  407 , obj type for mask is : SoapBottle
+step #:  407 , Tried to lookdownupleft
+step #:  410 , Tried to lookdownupleft
+step #:  414 , None of that
+step #:  414 , planner broken is  False
+step #:  415 , obj type for mask is : SoapBottle
+step #:  415 , None of that
+step #:  415 , planner broken is  False
+step #:  416 , obj type for mask is : SoapBottle
+step #:  416 , newly goal set
+step #:  416 , None of that
+step #:  416 , planner broken is  False
+step #:  417 , obj type for mask is : SoapBottle
+step #:  417 , None of that
+step #:  417 , planner broken is  False
+step #:  418 , obj type for mask is : SoapBottle
+step #:  418 , None of that
+step #:  418 , planner broken is  False
+step #:  419 , obj type for mask is : SoapBottle
+step #:  419 , None of that
+step #:  419 , planner broken is  False
+step #:  420 , obj type for mask is : SoapBottle
+step #:  420 , None of that
+step #:  420 , planner broken is  False
+step #:  421 , obj type for mask is : SoapBottle
+step #:  421 , None of that
+step #:  421 , planner broken is  False
+step #:  422 , obj type for mask is : SoapBottle
+step #:  422 , None of that
+step #:  422 , planner broken is  False
+step #:  423 , obj type for mask is : SoapBottle
+step #:  423 , None of that
+step #:  423 , planner broken is  False
+step #:  424 , obj type for mask is : SoapBottle
+step #:  424 , None of that
+step #:  424 , planner broken is  False
+step #:  425 , obj type for mask is : SoapBottle
+step #:  425 , None of that
+step #:  425 , planner broken is  False
+step #:  426 , obj type for mask is : SoapBottle
+step #:  426 , None of that
+step #:  426 , planner broken is  False
+step #:  427 , obj type for mask is : SoapBottle
+step #:  428 , pointer increased goal name  ['Cabinet', 'OpenObject', 'Glassbottle', 'Cabinet', 1]
+step #:  428 , Center done
+step #:  428 , None of that
+step #:  428 , goal found!
+step #:  428 , planner broken is  False
+step #:  429 , obj type for mask is : Cabinet
+step #:  429 , Center done
+step #:  429 , None of that
+step #:  429 , goal found!
+step #:  429 , planner broken is  False
+step #:  430 , obj type for mask is : Cabinet
+step #:  430 , Center done
+step #:  430 , None of that
+step #:  430 , goal found!
+step #:  430 , planner broken is  False
+step #:  431 , obj type for mask is : Cabinet
+step #:  431 , Center done
+step #:  431 , None of that
+step #:  431 , goal found!
+step #:  431 , planner broken is  False
+step #:  432 , obj type for mask is : Cabinet
+step #:  432 , Center done
+step #:  432 , None of that
+step #:  432 , goal found!
+step #:  432 , planner broken is  False
+step #:  433 , obj type for mask is : Cabinet
+step #:  433 , Center done
+step #:  433 , None of that
+step #:  433 , goal found!
+step #:  433 , planner broken is  False
+step #:  434 , obj type for mask is : Cabinet
+step #:  434 , Center done
+step #:  434 , None of that
+step #:  434 , goal found!
+step #:  434 , planner broken is  False
+step #:  435 , obj type for mask is : Cabinet
+step #:  435 , Center done
+step #:  435 , None of that
+step #:  435 , goal found!
+step #:  435 , planner broken is  False
+step #:  436 , obj type for mask is : Cabinet
+step #:  436 , Center done
+step #:  436 , None of that
+step #:  436 , goal found!
+step #:  436 , planner broken is  False
+step #:  437 , obj type for mask is : Cabinet
+step #:  437 , Center done
+step #:  437 , None of that
+step #:  437 , goal found!
+step #:  437 , planner broken is  False
+step #:  438 , obj type for mask is : Cabinet
+step #:  438 , Center done
+step #:  438 , None of that
+step #:  438 , goal found!
+step #:  438 , planner broken is  False
+step #:  438 , wd is  249.3910447761194
+step #:  438 , sidestepping to right
+step #:  438 , side step called, order:  0
+step #:  439 , last three side stepped  ['right', None, None]
+step #:  439 , obj type for mask is : Cabinet
+step #:  439 , side step called, order:  1
+step #:  439 , checking consec moving!
+step #:  440 , obj type for mask is : Cabinet
+step #:  440 , side step called, order:  2
+step #:  441 , obj type for mask is : Cabinet
+step #:  441 , wd is  269.2839469808542
+step #:  441 , sidestepping to right
+step #:  441 , side step called, order:  0
+step #:  442 , last three side stepped  ['right', 'right', None]
+step #:  442 , obj type for mask is : Cabinet
+step #:  442 , side step called, order:  1
+step #:  442 , checking consec moving!
+step #:  443 , obj type for mask is : Cabinet
+step #:  443 , side step called, order:  2
+step #:  444 , obj type for mask is : Cabinet
+step #:  444 , wd is  51.42953821656051
+step #:  444 , sidestepping to left
+step #:  444 , side step called, order:  0
+step #:  445 , last three side stepped  ['left', 'right', 'right']
+step #:  445 , obj type for mask is : Cabinet
+step #:  445 , side step called, order:  1
+step #:  445 , checking consec moving!
+step #:  446 , obj type for mask is : Cabinet
+step #:  446 , side step called, order:  2
+step #:  447 , obj type for mask is : Cabinet
+step #:  447 , wd is  269.2839469808542
+step #:  447 , sidestepping to right
+step #:  447 , side step called, order:  0
+step #:  448 , last three side stepped  ['right', 'left', 'right']
+step #:  448 , obj type for mask is : Cabinet
+step #:  448 , side step called, order:  1
+step #:  448 , checking consec moving!
+step #:  449 , obj type for mask is : Cabinet
+step #:  449 , side step called, order:  2
+step #:  450 , obj type for mask is : Cabinet
+step #:  450 , wd is  51.42953821656051
+step #:  450 , sidestepping to left
+step #:  450 , side step called, order:  0
+step #:  451 , last three side stepped  ['right', 'right', 'left']
+step #:  451 , obj type for mask is : Cabinet
+step #:  451 , side step called, order:  1
+step #:  451 , checking consec moving!
+step #:  452 , obj type for mask is : Cabinet
+step #:  452 , side step called, order:  2
+step #:  453 , obj type for mask is : Cabinet
+step #:  454 , pointer increased goal name  ['Cabinet', 'PutObject', 'Glassbottle', 'Cabinet', 1]
+step #:  454 , consec action
+step #:  455 , step:  455 , err is  No valid Receptacle found
+step #:  455 , action taken in step  455 : 
+step #:  455 , None of that
+step #:  455 , planner broken is  False
+step #:  456 , obj type for mask is : Cabinet
+step #:  456 , None of that
+step #:  456 , planner broken is  False
+step #:  457 , obj type for mask is : Cabinet
+step #:  457 , None of that
+step #:  457 , planner broken is  False
+step #:  458 , obj type for mask is : Cabinet
+step #:  458 , None of that
+step #:  458 , planner broken is  False
+step #:  459 , obj type for mask is : Cabinet
+step #:  459 , step:  459 , err is  Cabinet_3d4c3913 is blocking Agent 0 from moving 0
+step #:  459 , action taken in step  459 : 
+step #:  459 , None of that
+step #:  459 , planner broken is  False
+step #:  460 , obj type for mask is : Cabinet
+step #:  460 , None of that
+step #:  460 , planner broken is  False
+step #:  461 , obj type for mask is : Cabinet
+step #:  461 , None of that
+step #:  461 , planner broken is  False
+step #:  462 , obj type for mask is : Cabinet
+step #:  462 , None of that
+step #:  462 , planner broken is  False
+step #:  463 , obj type for mask is : Cabinet
+step #:  463 , None of that
+step #:  463 , planner broken is  False
+step #:  464 , obj type for mask is : Cabinet
+step #:  464 , None of that
+step #:  464 , planner broken is  False
+step #:  465 , obj type for mask is : Cabinet
+step #:  465 , None of that
+step #:  465 , planner broken is  False
+step #:  466 , obj type for mask is : Cabinet
+step #:  466 , newly goal set
+step #:  466 , None of that
+step #:  466 , planner broken is  False
+step #:  467 , obj type for mask is : Cabinet
+step #:  467 , None of that
+step #:  467 , planner broken is  False
+step #:  468 , obj type for mask is : Cabinet
+step #:  468 , None of that
+step #:  468 , planner broken is  False
+step #:  469 , obj type for mask is : Cabinet
+step #:  469 , None of that
+step #:  469 , planner broken is  False
+step #:  470 , obj type for mask is : Cabinet
+step #:  470 , None of that
+step #:  470 , planner broken is  False
+step #:  471 , obj type for mask is : Cabinet
+step #:  471 , None of that
+step #:  471 , planner broken is  False
+step #:  472 , obj type for mask is : Cabinet
+step #:  472 , Tried to lookdownupleft
+step #:  473 , step:  473 , err is  Cannot teleport due to hand object collision.
+step #:  473 , action taken in step  473 : 
+step #:  473 , Tried to lookdownupleft
+step #:  475 , None of that
+step #:  475 , planner broken is  False
+step #:  476 , obj type for mask is : Cabinet
+step #:  476 , Tried to lookdownupleft
+step #:  479 , Tried to lookdownupleft
+step #:  483 , None of that
+step #:  483 , planner broken is  False
+step #:  484 , obj type for mask is : Cabinet
+step #:  484 , Tried to lookdownupleft
+step #:  487 , Tried to lookdownupleft
+step #:  491 , None of that
+step #:  491 , planner broken is  False
+step #:  492 , obj type for mask is : Cabinet
+step #:  492 , Tried to lookdownupleft
+step #:  495 , Tried to lookdownupleft
+step #:  499 , None of that
+step #:  499 , planner broken is  False
+step #:  500 , obj type for mask is : Cabinet
+step #:  500 , None of that
+step #:  500 , planner broken is  False
+step #:  501 , obj type for mask is : Cabinet
+step #:  501 , None of that
+step #:  501 , planner broken is  False
+step #:  502 , obj type for mask is : Cabinet
+step #:  502 , None of that
+step #:  502 , planner broken is  False
+step #:  503 , obj type for mask is : Cabinet
+step #:  503 , None of that
+step #:  503 , planner broken is  False
+step #:  504 , obj type for mask is : Cabinet
+step #:  504 , None of that
+step #:  504 , planner broken is  False
+step #:  505 , obj type for mask is : Cabinet
+step #:  505 , None of that
+step #:  505 , planner broken is  False
+step #:  506 , obj type for mask is : Cabinet
+step #:  506 , None of that
+step #:  506 , planner broken is  False
+step #:  507 , obj type for mask is : Cabinet
+step #:  507 , newly goal set
+step #:  507 , None of that
+step #:  507 , planner broken is  False
+step #:  508 , obj type for mask is : Cabinet
+step #:  508 , None of that
+step #:  508 , planner broken is  False
+step #:  509 , obj type for mask is : Cabinet
+step #:  509 , None of that
+step #:  509 , planner broken is  False
+step #:  510 , obj type for mask is : Cabinet
+step #:  510 , None of that
+step #:  510 , planner broken is  False
+step #:  511 , obj type for mask is : Cabinet
+step #:  511 , None of that
+step #:  511 , planner broken is  False
+step #:  512 , obj type for mask is : Cabinet
+step #:  512 , None of that
+step #:  512 , planner broken is  False
+step #:  513 , obj type for mask is : Cabinet
+step #:  513 , None of that
+step #:  513 , planner broken is  False
+step #:  514 , obj type for mask is : Cabinet
+step #:  514 , None of that
+step #:  514 , planner broken is  False
+step #:  515 , obj type for mask is : Cabinet
+step #:  515 , None of that
+step #:  515 , planner broken is  False
+step #:  516 , obj type for mask is : Cabinet
+step #:  516 , Tried to lookdownupleft
+step #:  519 , Tried to lookdownupleft
+step #:  523 , None of that
+step #:  523 , planner broken is  False
+step #:  524 , obj type for mask is : Cabinet
+step #:  524 , Tried to lookdownupleft
+step #:  526 , step:  526 , err is  Cannot teleport due to hand object collision.
+step #:  526 , action taken in step  526 : 
+step #:  526 , Tried to lookdownupleft
+step #:  528 , None of that
+step #:  528 , planner broken is  False
+step #:  529 , obj type for mask is : Cabinet
+step #:  529 , Tried to lookdownupleft
+step #:  532 , Tried to lookdownupleft
+step #:  536 , None of that
+step #:  536 , planner broken is  False
+step #:  537 , obj type for mask is : Cabinet
+step #:  537 , Tried to lookdownupleft
+step #:  540 , Tried to lookdownupleft
+step #:  544 , None of that
+step #:  544 , planner broken is  False
+step #:  545 , obj type for mask is : Cabinet
+step #:  545 , None of that
+step #:  545 , planner broken is  False
+step #:  546 , obj type for mask is : Cabinet
+step #:  546 , None of that
+step #:  546 , planner broken is  False
+step #:  547 , obj type for mask is : Cabinet
+step #:  548 , step:  548 , err is  Target openable Receptacle is CLOSED, can't place if target is not open!
+step #:  548 , action taken in step  548 : 
