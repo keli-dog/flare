@@ -21,7 +21,7 @@ class Semantic_Mapping(nn.Module):
 
     def __init__(self, args):
         super(Semantic_Mapping, self).__init__()
-
+  
         self.device = args.device
         self.screen_h = args.frame_height
         self.screen_w = args.frame_width
@@ -33,7 +33,7 @@ class Semantic_Mapping(nn.Module):
         self.dropout = 0.5
         self.fov = args.hfov
         self.du_scale = args.du_scale
-        self.print_time = args.print_time
+        self.print_time = args.print_time 
         self.cat_pred_threshold = args.cat_pred_threshold
         self.exp_pred_threshold = args.exp_pred_threshold
         self.map_pred_threshold = args.map_pred_threshold

@@ -33,9 +33,20 @@ log() {
 
 export DN SPLIT
 
+PYTHON_BIN="python"
+if command -v conda >/dev/null 2>&1; then
+    _CONDA_BASE="$(conda info --base)"
+    if [[ -f "${_CONDA_BASE}/etc/profile.d/conda.sh" ]]; then
+        # shellcheck disable=SC1091
+        source "${_CONDA_BASE}/etc/profile.d/conda.sh"
+        conda activate flare 2>/dev/null || true
+        PYTHON_BIN="python"
+    fi
+fi
+
 # Auto-detect resume point from analyze_recs if FROM_IDX not set
 if [[ -z "${FROM_IDX:-}" ]]; then
-    FROM_IDX="$(python - <<'PY'
+    FROM_IDX="$("${PYTHON_BIN}" - <<'PY'
 import glob, os, pickle
 
 dn = os.environ.get("DN", "flare_paper")
@@ -93,16 +104,40 @@ export DISPLAY=":${DISPLAY_ID}"
 log "ALFRED_ROOT=${ALFRED_ROOT}"
 log "MMP_RESULTS_DIR=${MMP_RESULTS_DIR}"
 
-if ! command -v conda >/dev/null 2>&1; then
-    log "WARN: conda not in PATH; ensure flare env is active"
-else
+CONDA_BASE=""
+if command -v conda >/dev/null 2>&1; then
+    CONDA_BASE="$(conda info --base)"
     # shellcheck disable=SC1091
-    source "$(conda info --base)/etc/profile.d/conda.sh"
+    source "${CONDA_BASE}/etc/profile.d/conda.sh"
     conda activate flare
-    log "conda env: flare"
+    log "conda env: flare ($(which python))"
+else
+    log "WARN: conda not in PATH; ensure flare env is active"
 fi
 
+launch_shard() {
+    local split="$1" start="$2" end="$3" dn="$4" shard_log="$5"
+    # Activate conda inside the background shell (nohup children do not always inherit activate).
+    nohup env CUDA_VISIBLE_DEVICES="${GPU_ID}" bash -c "
+        set -u
+        cd '${REPO_ROOT}'
+        if [[ -n '${CONDA_BASE}' && -f '${CONDA_BASE}/etc/profile.d/conda.sh' ]]; then
+            source '${CONDA_BASE}/etc/profile.d/conda.sh'
+            conda activate flare
+        fi
+        export ALFRED_ROOT='${ALFRED_ROOT}'
+        export FILM='${REPO_ROOT}'
+        export MMP_RESULTS_DIR='${MMP_RESULTS_DIR}'
+        export DISPLAY='${DISPLAY}'
+        echo \"[shard] python=\$(which python 2>/dev/null || echo missing)\"
+        echo \"[shard] cwd=\$(pwd)\"
+        echo \"[shard] range=[${start}, ${end}) dn=${dn}\"
+        exec bash eval.sh '${split}' '${start}' '${end}' '${dn}'
+    " >> "${shard_log}" 2>&1 &
+}
+
 PIDS=()
+SHARD_LOGS=()
 START="${FROM_IDX}"
 for ((i = 0; i < NUM_SHARDS; i++)); do
     END=$((START + CHUNK))
@@ -116,13 +151,13 @@ for ((i = 0; i < NUM_SHARDS; i++)); do
     SHARD_LOG="results/shard_logs/${SPLIT}_${START}_${END}_${DN}.log"
     log "Starting shard $((i + 1)): [${START}, ${END}) -> ${SHARD_LOG}"
 
-    CUDA_VISIBLE_DEVICES="${GPU_ID}" nohup bash eval.sh "${SPLIT}" "${START}" "${END}" "${DN}" \
-        >> "${SHARD_LOG}" 2>&1 &
+    launch_shard "${SPLIT}" "${START}" "${END}" "${DN}" "${SHARD_LOG}"
     pid=$!
     PIDS+=("$pid")
+    SHARD_LOGS+=("${SHARD_LOG}")
     log "  PID=${pid}"
 
-  START=$END
+    START=$END
 done
 
 log ""
@@ -132,11 +167,35 @@ log "Monitor logs: tail -f results/shard_logs/${SPLIT}_*_${DN}.log"
 log "Summarize:    bash scripts/summarize_tests_seen.sh"
 log ""
 
-sleep 3
-if ps -p "${PIDS[0]}" >/dev/null 2>&1; then
-    log "First shard still running (OK)."
-else
-    log "WARN: first shard may have exited early; check shard logs."
+sleep 5
+alive=0
+for i in "${!PIDS[@]}"; do
+    pid="${PIDS[$i]}"
+    shard_log="${SHARD_LOGS[$i]}"
+    if ps -p "${pid}" >/dev/null 2>&1; then
+        alive=$((alive + 1))
+        log "Shard $((i + 1)) PID=${pid} still running (OK)."
+    else
+        log "ERROR: Shard $((i + 1)) PID=${pid} exited early."
+        if [[ -f "${shard_log}" ]]; then
+            log "Last lines of ${shard_log}:"
+            tail -n 20 "${shard_log}" | sed 's/^/  /'
+        else
+            log "  (no log file yet: ${shard_log})"
+        fi
+    fi
+done
+
+if (( alive == 0 )); then
+    log ""
+    log "All shards died immediately. Common fixes:"
+    log "  1) conda activate flare && which python   # should be flare env"
+    log "  2) Xvfb on DISPLAY=${DISPLAY} (e.g. Xvfb :1 -screen 0 1024x768x24 &)"
+    log "  3) Try single shard: NUM_SHARDS=1 bash scripts/run_tests_seen_parallel.sh"
+    log "  4) Manual test: bash eval.sh tests_seen 204 205 flare_paper"
+    exit 1
+elif (( alive < ${#PIDS[@]} )); then
+    log "WARN: only ${alive}/${#PIDS[@]} shards still running."
 fi
 
 nvidia-smi || true
