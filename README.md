@@ -17,7 +17,6 @@ $ conda activate flare
 $ pip install -r requirements.txt
 ```
 
-
 ### Install PyTorch
 You also need to install Pytorch depending on your system. e.g., PyTorch v1.8.1 + cuda 11.1 <br>
 Refer [here](https://pytorch.kr/get-started/previous-versions/)
