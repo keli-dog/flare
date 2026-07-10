@@ -19,13 +19,34 @@ ALFRED_ROOT = os.environ["ALFRED_ROOT"]
 
 
 def get_client(api_key=None, base_url=None):
-    api_key = api_key or os.environ.get("LLM_API_KEY") or os.environ.get("DASHSCOPE_API_KEY")
+    api_key = (
+        api_key
+        or os.environ.get("LLM_API_KEY")
+        or os.environ.get("MINIMAX_API_KEY")
+        or os.environ.get("DASHSCOPE_API_KEY")
+    )
     if not api_key:
         raise ValueError(
-            "Set LLM_API_KEY (or DASHSCOPE_API_KEY) before running generate_plans.py."
+            "Set LLM_API_KEY, MINIMAX_API_KEY, or DASHSCOPE_API_KEY before running generate_plans.py."
         )
     base_url = base_url or os.environ.get("LLM_BASE_URL", DEFAULT_BASE_URL)
     return OpenAI(api_key=api_key, base_url=base_url)
+
+
+def build_request_kwargs(model, text, bias=None):
+    request_kwargs = {
+        "model": model,
+        "messages": [{"role": "user", "content": text}],
+        "temperature": 0,
+        "max_tokens": 90,
+        "stop": ["\n"],
+    }
+    if bias is not None:
+        request_kwargs["logit_bias"] = bias
+    # MiniMax-M3: disable thinking for short structured plan output
+    if "minimax" in model.lower():
+        request_kwargs["extra_body"] = {"thinking": {"type": "disabled"}}
+    return request_kwargs
 
 
 def load_task_json(task):
@@ -120,16 +141,7 @@ def main(sp, destination, client, model, use_gpt4_bias=False, rate_limit_batch=1
 
         text = build_prompt(inst, goal, high_descs)
         try:
-            request_kwargs = {
-                "model": model,
-                "messages": [{"role": "user", "content": text}],
-                "temperature": 0,
-                "max_tokens": 90,
-                "stop": ["\n"],
-            }
-            if bias is not None:
-                request_kwargs["logit_bias"] = bias
-
+            request_kwargs = build_request_kwargs(model, text, bias=bias)
             response = client.chat.completions.create(**request_kwargs)
             result[instruction]["triplet"].append(response.choices[0].message.content)
 
