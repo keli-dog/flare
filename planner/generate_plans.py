@@ -5,6 +5,7 @@ import time
 from collections import defaultdict
 from argparse import ArgumentDefaultsHelpFormatter, ArgumentParser
 
+import httpx
 from openai import OpenAI
 from tqdm import tqdm
 
@@ -30,7 +31,9 @@ def get_client(api_key=None, base_url=None):
             "Set LLM_API_KEY, MINIMAX_API_KEY, or DASHSCOPE_API_KEY before running generate_plans.py."
         )
     base_url = base_url or os.environ.get("LLM_BASE_URL", DEFAULT_BASE_URL)
-    return OpenAI(api_key=api_key, base_url=base_url)
+    # Avoid broken system socks/http proxies (e.g. socks://127.0.0.1:7897)
+    http_client = httpx.Client(trust_env=False, timeout=120.0)
+    return OpenAI(api_key=api_key, base_url=base_url, http_client=http_client)
 
 
 def build_request_kwargs(model, text, bias=None):
@@ -75,6 +78,10 @@ Next plan: {example['pddl'][:-2]}
     text += f"""Task description: {goal[:-1]}
 Step-by-step instructions: {high_descs[:-1]}
 Next plan: """
+    text += (
+        "\nReply with ONLY comma-separated actions, no numbering, no markdown, no explanation. "
+        "Example: PickupObject(Apple,0), HeatObject(Apple,Microwave), PutObject(Apple,Fridge)"
+    )
     return text
 
 

@@ -7,9 +7,7 @@ import time
 from argparse import ArgumentParser
 from collections import defaultdict
 
-from openai import OpenAI
-
-from generate_plans import PLANNER_DIR, build_prompt, build_request_kwargs, load_task_json
+from generate_plans import PLANNER_DIR, build_prompt, build_request_kwargs, get_client, load_task_json
 
 
 def main():
@@ -26,7 +24,7 @@ def main():
         raise SystemExit("Set LLM_API_KEY or MINIMAX_API_KEY")
 
     alfred_root = os.environ["ALFRED_ROOT"]
-    client = OpenAI(api_key=api_key, base_url=args.base_url)
+    client = get_client(api_key=api_key, base_url=args.base_url)
 
     output_path = os.path.join(PLANNER_DIR, f"planner_results/{args.dn}/turbo-bias-{args.split}_result.json")
     if not os.path.isfile(output_path):
