@@ -18,6 +18,16 @@ PLANNER_DIR = os.path.dirname(os.path.abspath(__file__))
 failed = []
 ALFRED_ROOT = os.environ["ALFRED_ROOT"]
 
+from postprocess import parse_actions_from_string
+
+
+def normalize_llm_response(content):
+    """Keep only Action(Obj, Recep) tuples for postprocess."""
+    actions = parse_actions_from_string(content or "")
+    if not actions:
+        return (content or "").strip().split("\n")[0].strip()
+    return ", ".join(f"{a}({o},{r})" for a, o, r in actions)
+
 
 def get_client(api_key=None, base_url=None):
     api_key = (
@@ -150,7 +160,9 @@ def main(sp, destination, client, model, use_gpt4_bias=False, rate_limit_batch=1
         try:
             request_kwargs = build_request_kwargs(model, text, bias=bias)
             response = client.chat.completions.create(**request_kwargs)
-            result[instruction]["triplet"].append(response.choices[0].message.content)
+            result[instruction]["triplet"].append(
+                normalize_llm_response(response.choices[0].message.content)
+            )
 
             with open(output_path, "w") as f:
                 json.dump(result, f, indent=4)

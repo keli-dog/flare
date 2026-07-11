@@ -1,4 +1,4 @@
-import os, json
+import os, json, re
 from argparse import ArgumentDefaultsHelpFormatter, ArgumentParser
 
 
@@ -9,20 +9,57 @@ VALID_ACTIONS = (    'PickupObject', 'PutObject', 'ToggleObject', 'CleanObject',
     'HeatObject', 'CoolObject', 'SliceObject',
 )
 
+ACTION_RE = re.compile(
+    r'(PickupObject|PutObject|ToggleObject|CleanObject|HeatObject|CoolObject|SliceObject)'
+    r'\s*\(\s*([^,)]+?)\s*,\s*([^)]+?)\s*\)',
+    re.IGNORECASE,
+)
+
 
 def fix_action_name(action):
     if action.startswith('ickupObject'):
         return 'P' + action
-    return action
+    a = action.strip()
+    for valid in VALID_ACTIONS:
+        if a.lower() == valid.lower() or a.lower().startswith(valid.lower()):
+            return valid
+    return a
 
 
 def normalize_llm_plan_string(raw):
     s = raw.strip()
+    # use first non-empty line; drop markdown / numbering prefixes
+    for line in s.splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        line = re.sub(r'^[\d\.\)\-\*]+\s*', '', line)
+        s = line
+        break
     if not any(s.startswith(a) for a in VALID_ACTIONS):
-        s = s[1:].strip()
+        s = re.sub(r'^[\W_]+', '', s)
     if s.startswith('ickupObject'):
         s = 'P' + s
     return s
+
+
+def parse_actions_from_string(s):
+    """Parse Action(Obj, Recep) tuples from LLM text."""
+    tmp = []
+    for action, obj, recep in ACTION_RE.findall(s):
+        tmp.append([fix_action_name(action), obj.strip(), recep.strip()])
+    if tmp:
+        return tmp
+
+    # fallback: legacy comma-split parser
+    parts = s.split(',')
+    for i in range(len(parts)):
+        if 'Object' in parts[i]:
+            action = fix_action_name(parts[i].strip())
+            obj = parts[i + 1].strip() if i + 1 < len(parts) else "0"
+            recep = parts[i + 2].strip() if i + 2 < len(parts) else "0"
+            tmp.append([action, obj, recep])
+    return tmp
 
 
 def parse_plan_to_triplet(plan_entry):
@@ -35,23 +72,19 @@ def parse_plan_to_triplet(plan_entry):
         parsed = []
         for item in triplet:
             if isinstance(item, list) and len(item) >= 3:
-                parsed.append([fix_action_name(item[0]), item[1], item[2]])
+                action = fix_action_name(str(item[0]))
+                if action in VALID_ACTIONS:
+                    parsed.append([action, str(item[1]).strip(), str(item[2]).strip()])
+                else:
+                    # recover from corrupted entries like "PickupObject(Apple"
+                    parsed.extend(parse_actions_from_string(",".join(str(x) for x in item)))
+            elif isinstance(item, str):
+                parsed.extend(parse_actions_from_string(item))
         return parsed
 
     if isinstance(first, str):
         s = normalize_llm_plan_string(first)
-        tmp = []
-        parts = s.split(',')
-        for i in range(len(parts)):
-            if 'Object' in parts[i]:
-                action = fix_action_name(parts[i].strip())
-                obj = parts[i + 1].strip()
-                try:
-                    recep = parts[i + 2].strip()
-                except IndexError:
-                    recep = "0"
-                tmp.append([action, obj, recep])
-        return tmp
+        return parse_actions_from_string(s)
 
     return []
 

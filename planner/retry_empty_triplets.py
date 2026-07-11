@@ -7,7 +7,14 @@ import time
 from argparse import ArgumentParser
 from collections import defaultdict
 
-from generate_plans import PLANNER_DIR, build_prompt, build_request_kwargs, get_client, load_task_json
+from generate_plans import (
+    PLANNER_DIR,
+    build_prompt,
+    build_request_kwargs,
+    get_client,
+    load_task_json,
+    normalize_llm_response,
+)
 
 
 def main():
@@ -71,7 +78,9 @@ def main():
             try:
                 resp = client.chat.completions.create(**build_request_kwargs(args.model, text))
                 result[instruction]["root"] = os.path.join("data/json_feat_2.1.0", task_id)
-                result[instruction]["triplet"] = [resp.choices[0].message.content]
+                result[instruction]["triplet"] = [
+                    normalize_llm_response(resp.choices[0].message.content)
+                ]
                 result[instruction].setdefault("low_actions", [])
                 result[instruction].setdefault("low_classes", [])
                 result[instruction].setdefault("high_idxs", [])
